@@ -1,7 +1,7 @@
 Glossary of Icons & Symbols
 +++++++++++++++++++++++++++++
 
-Email - envelope icon
+Email - Envelope Icon
 ----------------------
 |image1|
 
