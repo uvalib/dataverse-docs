@@ -1,0 +1,15 @@
+Dataverse Management
+++++++++++++++++++++++++++++
+
+A dataverse is a container for datasets (research data, code, documentation, and metadata) and other dataverses, 
+which can be setup for individual researchers, departments, journals and organizations.
+
+|image1|
+
+
+Libra Data has turned off the ability to Create Dataverse
+===================================================
+
+If your department, lab, or center would like a dataverse added, please email libra@virginia.edu.
+
+.. |image1| image:: ./img/Dataverse-Diagram.png

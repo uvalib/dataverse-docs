@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>R Data Format &mdash; Dataverse.org</title>
+    
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/docsdataverse_org.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '4.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Dataverse.org" href="../../index.html" />
+    <link rel="up" title="Tabular Data File Ingest" href="index.html" />
+    <link rel="next" title="Excel" href="excel.html" />
+    <link rel="prev" title="SPSS" href="spss.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link type="image/png" rel="icon" href="../_static/images/favicondataverse.png" />
+
+  </head>
+  <body role="document">
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#dv-bs-navbar-details">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://dataverse.org" id="dataverse-org-homepage-url">Dataverse Project</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+
+       <div class="collapse navbar-collapse" id="dv-bs-navbar-details"></div><!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<script type="text/javascript" src="/en/latest/_static/navbar_from_dataverse_org.js"></script>
+<!--<script type="text/javascript" src="/_static/js/navbar_from_dataverse_org.js"></script>-->
+<script>
+    $(document).ready(function () {
+        load_navbar();
+    });
+</script>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary">
+<form action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">User Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../account.html">Libra Data Account Creation &amp; Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html">Glossary of Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../icon-glossary.html">Glossary of Icons &amp; Symbols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../find-use-data.html">Finding and Using Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dataverse-management.html">Dataverse Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dataset-management.html">Dataset + File Management</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Tabular Data File Ingest</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="supportedformats.html">Supported File Formats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ingestprocess.html">Tabular Data, Representation, Storage and Ingest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spss.html">SPSS</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">R Data Format</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="excel.html">Excel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="csv.html">CSV</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../data-exploration/index.html">Data Exploration Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../appendix.html">Appendix</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9">
+      
+  <div class="section" id="r-data-format">
+<h1>R Data Format<a class="headerlink" href="#r-data-format" title="Permalink to this headline">¶</a></h1>
+<p>Support for R (.RData) files has been introduced in DVN 3.5.</p>
+<div class="section" id="overview">
+<h2>Overview.<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>R has been increasingly popular in the research/academic community,
+owing to the fact that it is free and open-source (unlike SPSS and
+STATA). Consequently, there is an increasing amount of data available
+exclusively in R format.</p>
+</div>
+<div class="section" id="data-formatting-requirements">
+<h2>Data Formatting Requirements.<a class="headerlink" href="#data-formatting-requirements" title="Permalink to this headline">¶</a></h2>
+<p>The data must be formatted as an R dataframe (data.frame()). If an
+.RData file contains multiple dataframes, only the 1st one will be
+ingested (this may change in the future).</p>
+</div>
+<div class="section" id="data-types-compared-to-other-supported-formats-stat-spss">
+<h2>Data Types, compared to other supported formats (Stat, SPSS)<a class="headerlink" href="#data-types-compared-to-other-supported-formats-stat-spss" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="integers-doubles-character-strings">
+<h3>Integers, Doubles, Character strings<a class="headerlink" href="#integers-doubles-character-strings" title="Permalink to this headline">¶</a></h3>
+<p>The handling of these types is intuitive and straightforward. The
+resulting tab file columns, summary statistics and UNF signatures
+should be identical to those produced by ingesting the same vectors
+from SPSS and Stata.</p>
+<p><strong>Things that are unique to R:</strong></p>
+<p>R explicitly supports Missing Values for all of the types above;
+Missing Values encoded in R vectors will be recognized and preserved
+in TAB files, counted in the generated summary statistics
+and data analysis. Please note however that the Dataverse notation for
+a missing value, as stored in a TAB file, is an empty string, an not &#8220;NA&#8221; as in R.</p>
+<p>In addition to Missing Values, R recognizes &#8220;Not a Value&#8221; (NaN) and
+positive and negative infinity for floating point variables. These
+are now properly supported by the DVN.</p>
+<p>Also note, that unlike Stata, that does recognize &#8220;float&#8221; and &#8220;double&#8221;
+as distinct data types, all floating point values in R are in fact
+doubles.</p>
+</div>
+<div class="section" id="r-factors">
+<h3>R Factors<a class="headerlink" href="#r-factors" title="Permalink to this headline">¶</a></h3>
+<p>These are ingested as &#8220;Categorical Values&#8221; in the DVN.</p>
+<p>One thing to keep in mind: in both Stata and SPSS, the actual value of
+a categorical variable can be both character and numeric. In R, all
+factor values are strings, even if they are string representations of
+numbers. So the values of the resulting categoricals in the DVN will
+always be of string type too.</p>
+<p>Another thing to note is that R factors have no builtin support for
+SPSS or STATA-like descriptive labels. This is in fact potentially
+confusing, as they also use the word &#8220;label&#8221;, in R parlance. However,
+in the context of a factor in R, it still refers to the &#8220;payload&#8221;, or
+the data content of its value. For example, if you create a factor
+with the &#8220;labels&#8221; of <em>democrat</em>, <em>republican</em> and <em>undecided</em>, these
+strings become the actual values of the resulting vector. Once
+ingested in the Dataverse, these values will be stored in the
+tab-delimited file. The Dataverse DataVariable object representing the
+vector will be of type &#8220;Character&#8221; and have 3 VariableCategory objects
+with the <em>democrat</em>, etc. for <strong>both</strong> the CategoryValue and
+CategoryLabel.  (In one of the future releases, we are planning to
+make it possible for the user to edit the CategoryLabel, using it for
+its intended purpose - as a descriptive, human-readable text text
+note).</p>
+<div class="line-block">
+<div class="line">To properly handle R vectors that are <em>ordered factors</em> Dataverse (starting with DVN 3.6) supports the concept of an &#8220;Ordered Categorical&#8221; - a categorical value where an explicit order is assigned to the list of value labels.</div>
+</div>
+</div>
+<div class="section" id="boolean-values">
+<h3>Boolean values<a class="headerlink" href="#boolean-values" title="Permalink to this headline">¶</a></h3>
+<p>R Boolean (logical) values are supported.</p>
+</div>
+<div class="section" id="limitations-of-r-as-compared-to-spss-and-stata">
+<h3>Limitations of R, as compared to SPSS and STATA.<a class="headerlink" href="#limitations-of-r-as-compared-to-spss-and-stata" title="Permalink to this headline">¶</a></h3>
+<p>Most noticeably, R lacks a standard mechanism for defining descriptive
+labels for the data frame variables.  In the DVN, similarly to
+both Stata and SPSS, variables have distinct names and labels; with
+the latter reserved for longer, descriptive text.
+With variables ingested from R data frames the variable name will be
+used for both the &#8220;name&#8221; and the &#8220;label&#8221;.</p>
+<div class="line-block">
+<div class="line"><em>Optional R packages exist for providing descriptive variable labels;
+in one of the future versions support may be added for such a
+mechanism. It would of course work only for R files that were
+created with such optional packages</em>.</div>
+</div>
+<p>Similarly, R categorical values (factors) lack descriptive labels too.
+<strong>Note:</strong> This is potentially confusing, since R factors do
+actually have &#8220;labels&#8221;.  This is a matter of terminology - an R
+factor&#8217;s label is in fact the same thing as the &#8220;value&#8221; of a
+categorical variable in SPSS or Stata and DVN; it contains the actual
+meaningful data for the given observation. It is NOT a field reserved
+for explanatory, human-readable text, such as the case with the
+SPSS/Stata &#8220;label&#8221;.</p>
+<p>Ingesting an R factor with the level labels &#8220;MALE&#8221; and &#8220;FEMALE&#8221; will
+produce a categorical variable with &#8220;MALE&#8221; and &#8220;FEMALE&#8221; in the
+values and labels both.</p>
+</div>
+</div>
+<div class="section" id="time-values-in-r">
+<h2>Time values in R<a class="headerlink" href="#time-values-in-r" title="Permalink to this headline">¶</a></h2>
+<p>This warrants a dedicated section of its own, because of some unique
+ways in which time values are handled in R.</p>
+<p>R makes an effort to treat a time value as a real time instance. This
+is in contrast with either SPSS or Stata, where time value
+representations such as &#8220;Sep-23-2013 14:57:21&#8221; are allowed; note that
+in the absence of an explicitly defined time zone, this value cannot
+be mapped to an exact point in real time.  R handles times in the
+&#8220;Unix-style&#8221; way: the value is converted to the
+&#8220;seconds-since-the-Epoch&#8221; Greenwich time (GMT or UTC) and the
+resulting numeric value is stored in the data file; time zone
+adjustments are made in real time as needed.</p>
+<p>Things still get ambiguous and confusing when R <strong>displays</strong> this time
+value: unless the time zone was explicitly defined, R will adjust the
+value to the current time zone. The resulting behavior is often
+counter-intuitive: if you create a time value, for example:</p>
+<blockquote>
+<div>timevalue&lt;-as.POSIXct(&#8220;03/19/2013 12:57:00&#8221;, format = &#8220;%m/%d/%Y %H:%M:%OS&#8221;);</div></blockquote>
+<p>on a computer configured for the San Francisco time zone, the value
+will be differently displayed on computers in different time zones;
+for example, as &#8220;12:57 PST&#8221; while still on the West Coast, but as
+&#8220;15:57 EST&#8221; in Boston.</p>
+<p>If it is important that the values are always displayed the same way,
+regardless of the current time zones, it is recommended that the time
+zone is explicitly defined. For example:</p>
+<blockquote>
+<div>attr(timevalue,&#8221;tzone&#8221;)&lt;-&#8220;PST&#8221;</div></blockquote>
+<dl class="docutils">
+<dt>or</dt>
+<dd>timevalue&lt;-as.POSIXct(&#8220;03/19/2013 12:57:00&#8221;, format = &#8220;%m/%d/%Y %H:%M:%OS&#8221;, tz=&#8221;PST&#8221;);</dd>
+</dl>
+<p>Now the value will always be displayed as &#8220;15:57 PST&#8221;, regardless of
+the time zone that is current for the OS ... <strong>BUT ONLY</strong> if the OS
+where R is installed actually understands the time zone &#8220;PST&#8221;, which
+is not by any means guaranteed! Otherwise, it will <strong>quietly adjust</strong>
+the stored GMT value to <strong>the current time zone</strong>, yet it will still
+display it with the &#8220;PST&#8221; tag attached!** One way to rephrase this is
+that R does a fairly decent job <strong>storing</strong> time values in a
+non-ambiguous, platform-independent manner - but gives you no guarantee that
+the values will be displayed in any way that is predictable or intuitive.</p>
+<p>In practical terms, it is recommended to use the long/descriptive
+forms of time zones, as they are more likely to be properly recognized
+on most computers. For example, &#8220;Japan&#8221; instead of &#8220;JST&#8221;.  Another possible
+solution is to explicitly use GMT or UTC (since it is very likely to be
+properly recognized on any system), or the &#8220;UTC+&lt;OFFSET&gt;&#8221; notation. Still, none of the above
+<strong>guarantees</strong> proper, non-ambiguous handling of time values in R data
+sets. The fact that R <strong>quietly</strong> modifies time values when it doesn&#8217;t
+recognize the supplied timezone attribute, yet still appends it to the
+<strong>changed</strong> time value does make it quite difficult. (These issues are
+discussed in depth on R-related forums, and no attempt is made to
+summarize it all in any depth here; this is just to made you aware of
+this being a potentially complex issue!)</p>
+<p>An important thing to keep in mind, in connection with the DVN ingest
+of R files, is that it will <strong>reject</strong> an R data file with any time
+values that have time zones that we can&#8217;t recognize. This is done in
+order to avoid (some) of the potential issues outlined above.</p>
+<p>It is also recommended that any vectors containing time values
+ingested into the DVN are reviewed, and the resulting entries in the
+TAB files are compared against the original values in the R data
+frame, to make sure they have been ingested as expected.</p>
+<p>Another <strong>potential issue</strong> here is the <strong>UNF</strong>. The way the UNF
+algorithm works, the same date/time values with and without the
+timezone (e.g. &#8220;12:45&#8221; vs. &#8220;12:45 EST&#8221;) <strong>produce different
+UNFs</strong>. Considering that time values in Stata/SPSS do not have time
+zones, but ALL time values in R do (yes, they all do - if the timezone
+wasn&#8217;t defined explicitly, it implicitly becomes a time value in the
+&#8220;UTC&#8221; zone!), this means that it is <strong>impossible</strong> to have 2 time
+value vectors, in Stata/SPSS and R, that produce the same UNF.</p>
+<div class="line-block">
+<div class="line"><strong>A pro tip:</strong> if it is important to produce SPSS/Stata and R versions of</div>
+</div>
+<p>the same data set that result in the same UNF when ingested, you may
+define the time variables as <strong>strings</strong> in the R data frame, and use
+the &#8220;YYYY-MM-DD HH:mm:ss&#8221; formatting notation. This is the formatting used by the UNF
+algorithm to normalize time values, so doing the above will result in
+the same UNF as the vector of the same time values in Stata.</p>
+<p>Note: date values (dates only, without time) should be handled the
+exact same way as those in SPSS and Stata, and should produce the same
+UNFs.</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        <a href="http://datascience.iq.harvard.edu/" target="_blank">Data Science</a> at <a href="http://www.iq.harvard.edu/" target="_blank">The Institute for Quantitative Social Science</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse.org" title="Dataverse.org on GitHub" target="_blank"><img src="../_static/images/githubicon.png" width="20" alt="Dataverse.org on GitHub"/></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> 1.4a0+<br/>Version 4.3 &nbsp;|&nbsp; Last updated on Feb 10, 2016<br/>&copy; Copyright 2015, The President &amp; Fellows of Harvard College <br/>
+    </p>
+  </div>
+</footer>
+
+
+  </body>
+</html>

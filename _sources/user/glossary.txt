@@ -1,0 +1,18 @@
+Glossary of Terms
++++++++++++++++++++++++++++++
+
+Dataverse
+===================
+A dataverse is a container for datasets (research data, code, documentation, and metadata) and other dataverses, which can be setup for individual researchers, departments, journals and organizations.
+
+Dataset 
+==================
+A dataset in Dataverse is a container for your data, documentation, code, and the metadata describing this Dataset.
+
+Metadata
+========================
+#. **Citation Metadata**: any metadata that would be needed for generating a data citation and other general metadata that could be applied to any dataset;
+#. **Domain specific Metadata**: with specific support currently for Social Science, Life Science, Geospatial, and Astronomy datasets; and
+#. **File-level Metadata**: varies depending on the type of data file - see *File Handling and Uploading* section below for more details). 
+
+

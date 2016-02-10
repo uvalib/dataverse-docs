@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>CSV &mdash; Dataverse.org</title>
+    
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/docsdataverse_org.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '4.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Dataverse.org" href="../../index.html" />
+    <link rel="up" title="Tabular Data File Ingest" href="index.html" />
+    <link rel="next" title="Data Exploration Guide" href="../data-exploration/index.html" />
+    <link rel="prev" title="Excel" href="excel.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link type="image/png" rel="icon" href="../_static/images/favicondataverse.png" />
+
+  </head>
+  <body role="document">
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#dv-bs-navbar-details">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://dataverse.org" id="dataverse-org-homepage-url">Dataverse Project</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+
+       <div class="collapse navbar-collapse" id="dv-bs-navbar-details"></div><!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<script type="text/javascript" src="/en/latest/_static/navbar_from_dataverse_org.js"></script>
+<!--<script type="text/javascript" src="/_static/js/navbar_from_dataverse_org.js"></script>-->
+<script>
+    $(document).ready(function () {
+        load_navbar();
+    });
+</script>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary">
+<form action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">User Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../account.html">Libra Data Account Creation &amp; Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html">Glossary of Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../icon-glossary.html">Glossary of Icons &amp; Symbols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../find-use-data.html">Finding and Using Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dataverse-management.html">Dataverse Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dataset-management.html">Dataset + File Management</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Tabular Data File Ingest</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="supportedformats.html">Supported File Formats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ingestprocess.html">Tabular Data, Representation, Storage and Ingest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spss.html">SPSS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdata.html">R Data Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="excel.html">Excel</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">CSV</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../data-exploration/index.html">Data Exploration Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../appendix.html">Appendix</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9">
+      
+  <div class="section" id="csv">
+<h1>CSV<a class="headerlink" href="#csv" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="ingest-of-comma-separated-values-files-as-tabular-data">
+<h2>Ingest of Comma-Separated Values files as tabular data.<a class="headerlink" href="#ingest-of-comma-separated-values-files-as-tabular-data" title="Permalink to this headline">¶</a></h2>
+<p>Dataverse will make an attempt to turn CSV files uploaded by the user into tabular data.</p>
+</div>
+<div class="section" id="main-formatting-requirements">
+<h2>Main formatting requirements:<a class="headerlink" href="#main-formatting-requirements" title="Permalink to this headline">¶</a></h2>
+<p>The first line must contan a comma-separated list of the variable names;</p>
+<p>All the lines that follow must contain the same number of comma-separated values as the first, variable name line.</p>
+</div>
+<div class="section" id="limitations">
+<h2>Limitations:<a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h2>
+<p>Except for the variable names supplied in the top line, very little information describing the data can be obtained from a CSV file. We strongly recommend using one of the supported rich files formats (Stata, SPSS and R) to provide more descriptive metadata (informatinve lables, categorical values and labels, and more) that cannot be encoded in a CSV file.</p>
+<p>The application will however make an attempt to recognize numeric, string and date/time values in CSV files.</p>
+</div>
+<div class="section" id="tab-delimited-data-files">
+<h2>Tab-delimited Data Files:<a class="headerlink" href="#tab-delimited-data-files" title="Permalink to this headline">¶</a></h2>
+<p>Tab-delimited files could be ingested by replacing the TABs with commas.</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        <a href="http://datascience.iq.harvard.edu/" target="_blank">Data Science</a> at <a href="http://www.iq.harvard.edu/" target="_blank">The Institute for Quantitative Social Science</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse.org" title="Dataverse.org on GitHub" target="_blank"><img src="../_static/images/githubicon.png" width="20" alt="Dataverse.org on GitHub"/></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> 1.4a0+<br/>Version 4.3 &nbsp;|&nbsp; Last updated on Feb 10, 2016<br/>&copy; Copyright 2015, The President &amp; Fellows of Harvard College <br/>
+    </p>
+  </div>
+</footer>
+
+
+  </body>
+</html>
