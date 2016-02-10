@@ -6,7 +6,7 @@
 Dataverse 4.3 Guides
 ====================
 
-These guides are for the most recent version of Dataverse. For the guides for **version 4.2.1** please go `here <http://guides.dataverse.org/en/4.2.1/>`_.
+These guides are for the most recent version of Dataverse. 
 
 .. toctree::
   :glob:
@@ -18,11 +18,16 @@ These guides are for the most recent version of Dataverse. For the guides for **
 How the Guides Are Organized
 =============================
 
-The Guides are reference documents that explain how to use Dataverse installed at UVa
-which are divided into the following section: User Guide.
+The Guides are reference documents that explain how to use Libra Data the local instance of Dataverse installed at UVa.
+They are divided into the following section: User Guide.
 The User Guide is further divided into primary activities: finding & using
 data, adding Datasets, administering dataverses or Datasets, and Dataset exploration/visualizations. Details
 on all of the above tasks can be found in the Users Guide.
+
+Libra Data Support
+==================
+If you have any questions or problems with Libra Data and UVa's Dataverse implementation, please email
+`libra@virginia.edu <mailto:libra@virginia.edu>`_.
 
 Other Resources
 =========================
@@ -34,27 +39,7 @@ including presentations, information about upcoming releases, data
 management and citation, and announcements can be found at
 `http://dataverse.org/ <http://dataverse.org/>`__
 
-**User Group**
 
-As the user community grows we encourage people to shares ideas, ask
-questions, or offer suggestions for improvement. Go to
-`https://groups.google.com/group/dataverse-community <https://groups.google.com/group/dataverse-community>`__ to register to our dataverse community group.
-
-**Follow Us on Twitter**
-
-For up to date news, information and developments, follow our twitter account: `https://twitter.com/dataverseorg <https://twitter.com/dataverseorg>`__
-
-**Support**
-
-We maintain an email based support service that's free of charge. We
-attempt to respond within one business day to all questions and if it
-cannot be resolved immediately, we'll let you know what to expect.
-
-The support email address is
-`support@dataverse.org <mailto:support@dataverse.org>`__.
-
-This is the same address as the Report Issue link. We try to respond
-within one business day.
   
 
 Indices and tables
