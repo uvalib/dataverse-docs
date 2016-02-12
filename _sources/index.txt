@@ -3,10 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Dataverse 4.3 Guides
+Libra Data - Dataverse Guides
 ====================
 
-These guides are for the most recent version of Dataverse. 
+These guides are for the version of Dataverse installed on Libra Data. 
 
 .. toctree::
   :glob:
@@ -39,12 +39,3 @@ including presentations, information about upcoming releases, data
 management and citation, and announcements can be found at
 `http://dataverse.org/ <http://dataverse.org/>`__
 
-
-  
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
