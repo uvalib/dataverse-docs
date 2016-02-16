@@ -3,12 +3,12 @@ Glossary of Terms
 
 Dataset
 ==================
-A dataset in Dataverse is a container for your data, documentation, code, and the metadata describing this Dataset.
+A **dataset** in Dataverse is a container for your data, documentation, code, and the metadata describing this Dataset.
 
 
 Dataverse
 ===================
-A dataverse is a container for datasets (research data, code, documentation, and metadata) and other dataverses, which can be setup for individual researchers, departments, journals and organizations.
+A **dataverse** is a container for datasets (research data, code, documentation, and metadata) and other dataverses, which can be setup for individual researchers, departments, journals and organizations.
 
 Dates in Libra Data
 ======================
@@ -26,8 +26,8 @@ Dates in Libra Data
 
 Metadata in Dataverse
 ========================
-#. **Citation Metadata**: any metadata that would be needed for generating a data citation and other general metadata that could be applied to any dataset. Also known as **Citation Information** or **Cataloging Information**.
-#. **Domain specific Metadata**: When creating a dataset, you can choose domain specific metadata (if the administrator has activated the domain specific metadata) to describe special datasets, currently Dataverse supports metadata for Social Science, Life Science, Geospatial, and Astronomy datasets. Please contact libra@virginia.edu, if you  need domain specific metadata. We will create a new dataverse for you.
-#. **File-level Metadata**: When uploading files, you can give each file a description and a tag. You can also change the filename that displys.
+**Citation Metadata**: any metadata that would be needed for generating a data citation and other general metadata that could be applied to any dataset. Also known as **Citation Information** or **Cataloging Information**.
+**Domain specific Metadata**: When creating a dataset, you can choose domain specific metadata (if the administrator has activated the domain specific metadata) to describe special datasets, currently Dataverse supports metadata for Social Science, Life Science, Geospatial, and Astronomy datasets. Please contact libra@virginia.edu, if you  need domain specific metadata. We will create a new dataverse for you.
+**File-level Metadata**: When uploading files, you can give each file a description and a tag. You can also change the filename that displys.
 
 
