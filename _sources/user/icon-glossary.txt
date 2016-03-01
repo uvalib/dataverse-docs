@@ -42,7 +42,9 @@ Sharing Datasets
 ----------------
 |image8|
 
-To share a dataset on your favorite social media networks. Click the "share" icon (seen above). You can only share datasets that have been published. You can share on Facebook, Twitter or Google+ by clicking on the following color icons respectively |image9|
+To share a dataset on your favorite social media networks. Click the "share" icon (seen above). You can only share datasets that have been published. You can share on Facebook, Twitter or Google+ by clicking on the following icons respectively |image13|
+
+Depending on browser configuration and add ons, you may only see the color icons like the following: |image9|. These color icons correspond to the colors in the previous image.
 
 Publish Datasets
 ----------------
@@ -81,3 +83,4 @@ Once the dataset is published, this symbol is not seen by the public. The owner 
 .. |image10| image:: ./img/publish.png
 .. |image11| image:: ./img/warning.png
 .. |image12| image:: ./img/ingestFail.png
+.. |image13| image:: ./img/ShareDataverseIcons.png
