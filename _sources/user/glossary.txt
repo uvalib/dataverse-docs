@@ -9,7 +9,7 @@ A **dataset** in Dataverse is a container for your data, documentation, code, an
 
 Dataverse
 ===================
-A **dataverse** is a container for datasets (research data, code, documentation, and metadata) and other dataverses, which can be setup for individual researchers, departments, journals and organizations. For more information on using dataverses in Libra Data, see the section `Dataverse management <../user/dataverse--management.html>`_.
+A **dataverse** is a container for datasets (research data, code, documentation, and metadata) and other dataverses, which can be setup for individual researchers, departments, journals and organizations. For more information on using dataverses in Libra Data, see the section `Dataverse management <../user/dataverse-management.html>`_.
 
 |image2|
 
