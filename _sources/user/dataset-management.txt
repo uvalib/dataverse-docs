@@ -48,6 +48,8 @@ more information.
 
 To use the ingest functionality for tabular files, a file can only be up to 2GB in size, however, to upload a tabular file without using ingest, a file can be up to 2GB in size.
 
+**For files larger that 2GB, please contact libra@virginia.edu for upload assistance.**
+
 To use the ingest functionality for RData files, a file can only be up to 1MB in size, however, to upload a RData file without using ingest, a file can be up to 2GB in size.
 
 Additional download options available for tabular data (found
