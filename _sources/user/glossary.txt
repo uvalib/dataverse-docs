@@ -5,10 +5,13 @@ Dataset
 ==================
 A **dataset** in Dataverse is a container for your data, documentation, code, and the metadata describing this Dataset.
 
+|image 1|
 
 Dataverse
 ===================
 A **dataverse** is a container for datasets (research data, code, documentation, and metadata) and other dataverses, which can be setup for individual researchers, departments, journals and organizations.
+
+|image 2|
 
 Dates in Libra Data
 ======================
@@ -33,3 +36,5 @@ Metadata in Dataverse
 **File-level Metadata**: When uploading files, you can give each file a description and a tag. You can also change the filename that displys.
 
 
+.. |image1| image:: ./img/DatasetDiagram.png
+.. |image2| image:: ./img/Dataverse-Diagram.png
