@@ -9,7 +9,6 @@ User Guide
 Contents:
 
 .. toctree::
-   :maxdepth: 1
 
   account
   glossary
