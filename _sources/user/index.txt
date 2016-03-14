@@ -3,35 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Libra Data - User Guide
+User Guide
 =================================================
-These guides are for UVa's version of Dataverse installed on Libra Data.
 
-How the Guides Are Organized
-=============================
-
-The Guides are reference documents that explain how to use Libra Data the local instance of Dataverse installed at UVa.
-The main guide is divided into primary activities: finding & using
-data, adding Datasets, administering dataverses or Datasets, and Dataset exploration/visualizations. Details
-on all of the above tasks can be found in the Users Guide.
-
-Libra Data Support
-==================
-If you have any questions or problems with Libra Data and UVa's Dataverse implementation, please email
-`libra@virginia.edu <mailto:libra@virginia.edu>`_.
-
-Other Resources
-=========================
-
-**Dataverse Project Site**
-
-Additional information about the Dataverse Project itself
-including presentations, information about upcoming releases, data
-management and citation, and announcements can be found at
-`http://dataverse.org/ <http://dataverse.org/>`__
-
-User Guide Contents
-====================
+Contents:
 
 .. toctree::
    :maxdepth: 2
