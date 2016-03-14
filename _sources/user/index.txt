@@ -9,11 +9,8 @@ Libra Data - Dataverse Guides
 These guides are for the version of Dataverse installed on Libra Data. 
 
 .. toctree::
-  :glob:
-  :titlesonly:
   :maxdepth: 2
 
-  user/index
 
 How the Guides Are Organized
 =============================
