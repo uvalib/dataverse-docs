@@ -13,7 +13,8 @@ Create User Account (UVA Only Account Creations)
 #. In the top right corner of each page, click on the **Log In** link.
 #. On the right-side, choose the UVA icon, or "University of Virginia" in the pulldown menu.  |image1|
 #. Sign in with your UVa Netbadge Credentials.
-#. First time you sign in you must accept the Libra Data Deposit Terms. We ask that you read the terms and confirm. You can see the terms here: `http://www.library.virginia.edu/libra/datasets/public-dataset-license/ <http://www.library.virginia.edu/libra/datasets/public-dataset-license/>`_.
+
+First time you sign in you must accept the Libra Data Deposit Terms. We ask that you read the terms and confirm. You can see the terms here: `http://www.library.virginia.edu/libra/datasets/public-dataset-license/ <http://www.library.virginia.edu/libra/datasets/public-dataset-license/>`_.
 |image2|
 
 My Data
