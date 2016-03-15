@@ -1,3 +1,6 @@
+
+README FILE TEMPLATE
+
 Please complete this template ReadMe file for each data package you deposit, and save as a TEXT file named "README_{Metadata/Dataset title}_{Todays date}.txt" (ex. "ReadMe_BeetleData_20080131").  A ReadMe file must be submitted along with the dataset file(s). Multiple ReadMe files may be submitted if it is necessary to document each data file separately.
 
 The outline below should be completed with information relevant to the submitted data package or data file:
