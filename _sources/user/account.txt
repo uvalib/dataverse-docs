@@ -11,8 +11,11 @@ Create User Account (UVA Only Account Creations)
 ===================
 
 #. In the top right corner of each page, click on the **Log In** link.
+#. On the right-side, choose the UVA icon, or "University of Virginia" in the pulldown menu.
+|image1|
 #. Sign in with your UVa Netbadge Credentials.
 #. First time you sign in you must accept the Libra Data Deposit Terms. We ask that you read the terms and confirm. You can see the terms here: `http://www.library.virginia.edu/libra/datasets/public-dataset-license/ <http://www.library.virginia.edu/libra/datasets/public-dataset-license/>`_.
+|image2|
 
 My Data
 ========================
@@ -35,3 +38,7 @@ Generate Your API Token
 #. To generate your API token, click on your name in the hearder on right hand side and then click on Account Information.
 #. On the top right of your account page, click on the "Account Information" button and click on API Token in the list.
 #. Your API Token is located on that page.
+
+.. |image1| image:: ./img/Institution-login.png
+.. |image2| image:: ./img/TermsAcceptance.png
+
