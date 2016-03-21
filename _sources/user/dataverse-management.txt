@@ -7,7 +7,7 @@ which can be setup for individual researchers, departments, journals and organiz
 |image1|
 
 
-Libra Data has turned off the ability to Create Dataverse
+Libra Data users must submit a request to create a Dataverse or sub-dataverse to Libra@virginia.edu
 ===================================================
 
 If your department, lab, or center would like a dataverse added, please email libra@virginia.edu.

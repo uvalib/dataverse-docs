@@ -5,7 +5,7 @@ Email - Envelope Icon
 ----------------------
 |image1|
 
-Email recipient depends on context of where the envelope appears. On Dataverse pages (top UVa Level and sub, department levels), the email goes to UVA Libra Data Support (libra@virginia.edu)
+Email recipient depends on context of where the envelope appears. On Dataverse pages, the email goes to UVA Libra Data Support (libra@virginia.edu)
 
 If you are viewing a personal dataset, then the email will go to the creator of the dataset.
 
@@ -31,7 +31,7 @@ Search Icons
 Search icon at the top of the page. Use to search all dataverses.
 
 |image6|
-If you are in a sub, departmental dataverse, the search will search the top level dataverse and other sub dataverses. If you use the search box above the list of datasets, the current dataverse will be searched. If the current dataverse is the top-level, then all sub dataverses will be searched.
+If you are in a sub dataverse, the search will search the top level dataverse and other sub dataverses. If you use the search box above the list of datasets, the current dataverse will be searched. If the current dataverse is the top-level, then all sub dataverses will be searched.
 
 Asterisks
 ---------
@@ -50,7 +50,7 @@ Publish Datasets
 ----------------
 |image10|
 
-When you publish a dataset, you make it available to the public so that other users can browse or search for it. Note: UVa depositors MUST acknowledge the following:
+When you publish a dataset, you make it available to the public so that other users can browse or search for it. Note: UVA depositors MUST acknowledge the following:
 
 #. You have the legal right and authorization to make the data publicly available online world-wide through Libra.
 #. In preparing the data for public archiving and distribution, you have removed any confidential or sensitive information, student education records protected under FERPA, and all information that personally identifies any individual or that contains any information classified as highly sensitive under state or federal law, or UVA policy. 

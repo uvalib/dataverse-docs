@@ -6,7 +6,7 @@
 Libra Data - Dataverse Guides
 ====================
 
-These guides are for the version of Dataverse installed on Libra Data. 
+These guides are for the version of Dataverse installed on UVA's Libra Data Service. 
 
 .. toctree::
   :glob:
@@ -18,15 +18,14 @@ These guides are for the version of Dataverse installed on Libra Data.
 How the Guides Are Organized
 =============================
 
-The Guides are reference documents that explain how to use Libra Data the local instance of Dataverse installed at UVa.
-They are divided into the following section: User Guide.
-The User Guide is further divided into primary activities: finding & using
+The Guides are reference documents that explain how to use Libra Data, the local instance of Dataverse installed at UVA.
+The User Guide is divided into primary activities: finding & using
 data, adding Datasets, administering dataverses or Datasets, and Dataset exploration/visualizations. Details
 on all of the above tasks can be found in the Users Guide.
 
 Libra Data Support
 ==================
-If you have any questions or problems with Libra Data and UVa's Dataverse implementation, please email
+If you have any questions or problems with Libra Data and UVA's Dataverse implementation, please email
 `libra@virginia.edu <mailto:libra@virginia.edu>`_.
 
 Other Resources
