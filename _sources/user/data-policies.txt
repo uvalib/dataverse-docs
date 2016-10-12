@@ -1,0 +1,16 @@
+.. _data-policies:
+
+Libra Data Policies
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Below are the Libra Data suite of polices along with best practices for giving Academic Credit: 
+
+`University of Virginia's Privacy Policy <http://www.virginia.edu/siteinfo/privacy>`_
+
+`Libra General Terms of Use <http://www.library.virginia.edu/libra/terms-of-use/>`_
+
+`Libra Data Public Deposit License <http://www.library.virginia.edu/libra/datasets/public-dataset-license/>`_
+
+Libra Data API Terms of Use 
+
+

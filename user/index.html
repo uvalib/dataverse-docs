@@ -97,6 +97,7 @@
 <li class="toctree-l2"><a class="reference internal" href="dataset-management.html">Dataset + File Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tabulardataingest/index.html">Tabular Data File Ingest</a></li>
 <li class="toctree-l2"><a class="reference internal" href="appendix.html">Appendix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-policies.html">Libra Data Policies</a></li>
 </ul>
 </li>
 </ul>
@@ -114,7 +115,7 @@
 <li class="toctree-l2"><a class="reference internal" href="account.html#create-uva-user-account-required-for-uva-depositors">Create UVA User Account (required for UVA depositors)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account.html#my-data">My Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account.html#notifications-setup-maintenance">Notifications: Setup &amp; Maintenance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="account.html#generate-your-api-token">Generate Your API Token</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account.html#create-your-api-token">Create Your API Token</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary of Terms</a><ul>
@@ -144,7 +145,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="find-use-data.html#using-data">Using Data</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="find-use-data.html#view-dataverses-datasets">View Dataverses + Datasets</a></li>
-<li class="toctree-l3"><a class="reference internal" href="find-use-data.html#download-citation">Download Citation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="find-use-data.html#cite-data">Cite Data</a></li>
 <li class="toctree-l3"><a class="reference internal" href="find-use-data.html#download-files">Download Files</a></li>
 </ul>
 </li>
@@ -158,6 +159,7 @@
 <li class="toctree-l2"><a class="reference internal" href="dataset-management.html#supported-metadata">Supported Metadata</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dataset-management.html#file-handling-uploading">File Handling + Uploading</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="dataset-management.html#tabular-data-files">Tabular Data Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dataset-management.html#geospatial">Geospatial</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dataset-management.html#astronomy-fits">Astronomy (FITS)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dataset-management.html#compressed-files">Compressed Files</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dataset-management.html#advanced-options">Advanced Options</a></li>
@@ -167,8 +169,11 @@
 <li class="toctree-l3"><a class="reference internal" href="dataset-management.html#supported-html-fields">Supported HTML Fields</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="dataset-management.html#edit-dataset">Edit Dataset</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dataset-management.html#upload-new-files">Upload New Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataset-management.html#edit-files">Edit Files</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="dataset-management.html#file-tags">File Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dataset-management.html#upload-new-files">Upload New Files</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="dataset-management.html#terms">Terms</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="dataset-management.html#cc0-waiver-dataset-terms-of-use">CC0 Waiver + Dataset Terms of Use</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dataset-management.html#setting-up-custom-terms-of-use-for-datasets">Setting up Custom Terms of Use for Datasets</a></li>
@@ -179,6 +184,12 @@
 <li class="toctree-l2"><a class="reference internal" href="dataset-management.html#permissions">Permissions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="dataset-management.html#dataset-level">Dataset-Level</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dataset-management.html#file-level">File-Level</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="dataset-management.html#widgets">Widgets</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="dataset-management.html#dataset-widget">Dataset Widget</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dataset-management.html#dataset-citation-widget">Dataset Citation Widget</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dataset-management.html#adding-widgets-to-an-openscholar-website">Adding Widgets to an OpenScholar Website</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="dataset-management.html#publish-dataset">Publish Dataset</a></li>
@@ -231,6 +242,7 @@
 <li class="toctree-l2"><a class="reference internal" href="appendix.html#metadata-references">Metadata References</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="data-policies.html">Libra Data Policies</a></li>
 </ul>
 </div>
 </div>
@@ -248,7 +260,7 @@
       
     </p>
     <p>
-        <a href="http://datascience.iq.harvard.edu/" target="_blank">Data Science</a> at <a href="http://www.iq.harvard.edu/" target="_blank">The Institute for Quantitative Social Science</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse.org" title="Dataverse.org on GitHub" target="_blank"><img src="../_static/images/githubicon.png" width="20" alt="Dataverse.org on GitHub"/></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> 1.4a0+<br/>Version 4.3 &nbsp;|&nbsp; Last updated on Mar 29, 2016<br/>&copy; Copyright 2015, The President &amp; Fellows of Harvard College <br/>
+        <a href="http://datascience.iq.harvard.edu/" target="_blank">Data Science</a> at <a href="http://www.iq.harvard.edu/" target="_blank">The Institute for Quantitative Social Science</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse.org" title="Dataverse.org on GitHub" target="_blank"><img src="../_static/images/githubicon.png" width="20" alt="Dataverse.org on GitHub"/></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> 1.4a0+<br/>Version 4.3 &nbsp;|&nbsp; Last updated on Sep 30, 2016<br/>&copy; Copyright 2015, The President &amp; Fellows of Harvard College <br/>
     </p>
   </div>
 </footer>

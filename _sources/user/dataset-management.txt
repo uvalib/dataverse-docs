@@ -16,6 +16,8 @@ A dataset contains three levels of metadata:
 
 For more details about what Citation and Domain specific metadata is supported please see our `Appendix <../user/appendix.html#metadata-references>`_.
 
+Note that once a dataset has been published its metadata may be exported. A button on the dataset page’s metadata tab will allow a user to export the metadata of the most recently published version of the dataset. Currently supported export formats are DDI, Dublin Core and JSON.
+
 File Handling + Uploading
 ===============================
 
@@ -61,9 +63,42 @@ in the same drop-down menu under the "Download" button):
 - The original file uploaded by the user; 
 - Saved as R data (if the original file was not in R format); 
 - Variable Metadata (as a `DDI Codebook <http://www.ddialliance.org/Specification/DDI-Codebook/>`_ XML file);
-- Data File Citation (currently in either RIS or EndNote XML format); 
+- Data File Citation (currently in either RIS, EndNote XML format, or BibTeX format);
 
 |image2|
+
+Geospatial
+--------------------
+
+Geospatial `shapefiles <http://en.wikipedia.org/wiki/Shapefile>`_ can be further explored and manipulated through our integration
+with `WorldMap <../user/data-exploration/worldmap.html>`_, a geospatial data visualization
+and analysis tool developed by the `Center for Geographic Analysis <http://gis.harvard.edu/>`_ at Harvard University. A shapefile is a set of files, often uploaded/transferred in .zip format.  This set may contain up to 15 files.  A minimum of 3 specific files (.shp, .shx, .dbf) are needed to be a valid shapefile and a 4th file (.prj) is required for WorldMap--or any type of meaningful visualization.
+
+For ingest into Dataverse and connecting to WorldMap, these 4 files are the minimum required:
+
+* .shp - shape format; the feature geometry itself
+* .shx - shape index format; a positional index of the feature geometry to allow seeking forwards and backwards quickly
+* .dbf - attribute format; columnar attributes for each shape, in dBase IV format
+* .prj - projection format; the coordinate system and projection information, a plain text file describing the projection using well-known text format
+
+For a zipped shapefile, we require 4 files with these extensions. Other files may be included within the zipped shapefile, but they are not required: 
+
+* .shp
+* .shx 
+* .prj 
+* .dbf 
+
+For example, if these files were included within a .zip, the “Map Data” button would appear: 
+
+* subway_line.shp 
+* subway_line.shx 
+* subway_line.prj 
+* subway_line.dbf
+
+Once you publish your dataset with your shape files, you will be able to use the "Map Data" button using `GeoConnect <https://github.com/IQSS/geoconnect>`_ to visualize and manipulate these files
+for users to Explore this geospatial data using the `WorldMap <http://worldmap.harvard.edu/>`_ interface.
+Please note: In order to map your data file, a copy will be sent to Harvard's `WorldMap <http://worldmap.harvard.edu/>`_ platform. You have the ability to delete any maps, and associated data, from the Harvard WorldMap platform, at any time.
+
 
 Astronomy (FITS)
 --------------------
@@ -98,6 +133,7 @@ Adding a New Dataset
    You can also upload your files directly from your Dropbox. **Tip:** You can drag and drop or select multiple files at a time from your desktop,
    directly into the upload widget. Your files will appear below the "Select Files to Add" button where you can add a
    description and tags (via the "Edit Tag" button) for each file. Additionally, an MD5 checksum will be added for each file. If you upload a tabular file a :ref:`Universal Numerical Fingerprint (UNF) <unf>` will be added to this file.
+
 #. Click the "Save Dataset" button when you are done. Your unpublished dataset is now created. 
 
 Note: You can add additional metadata once you have completed the initial dataset creation by going to Edit Dataset > Metadata. 
@@ -109,7 +145,7 @@ We currently only support the following HTML tags for any of our textbox meatdat
 <br>, <code>, <del>, <dd>, <dl>, <dt>, <em>, <hr>, <h1>-<h3>, <i>, <img>, <kbd>, <li>, <ol>, <p>, <pre>, <s>, <sup>, <sub>, 
 <strong>, <strike>, <ul>.
 
-Edit Dataset
+Edit Files 
 ==================
 
 Go to the dataset you would like to edit where you will see the listing of files. Select the files you would like to edit by using either the "Select All" checkbox or individually selecting files. Next, click on the "Edit" button above the files and select if you would like to:
@@ -122,12 +158,21 @@ Go to the dataset you would like to edit where you will see the listing of files
 
 All of these actions, besides editing file metadata, will happen within this page and not bring you to another page. If you restrict files, you will also be asked to fill out the Terms of Access for the files. If Terms of Access already exist, you will be asked to confirm them.
 
-Upload New Files
-===================
+File Tags
+--------------------------------------------------------------
 
-To upload new files to a dataset, go the dataset you want to update and click on the "Upload Files" button in the files tab. From there you will be brought to the Upload page for the dataset. Once you have uploaded files, you will be able to edit the file metadata, restrict, add tags, or delete them before saving.
+The File Tags are comprised of custom, category (i.e. Documentation, Data, Code) and tabular data tags (i.e. Event, Genomics, Geospatial, Network, Panel, Survey, Time Series). Use the dropdown select menus as well as the custom file tag input to apply these tags to the selected files. There is also a Delete Tags feature that, if checked, will allow you to delete unused file tags within that dataset.
+
+
+
+Upload New Files
+---------------------------------------------------------------
+
+To upload new files to a dataset, go to the dataset you want to update and click on the Upload Files button in the files tab. From there you will be brought to the Upload Files page for the dataset. Once you have uploaded files, you will be able to edit the file metadata, restrict, add tags, or delete them before saving.
+
 
 .. _license-terms:
+
 
 Terms
 =======================
@@ -185,6 +230,36 @@ specific restricted files. Dataset file permissions are located under Permission
 The file permissions page has two sections: Users/Groups and Files.
 
 To give someone access to your restricted files, click on the "Grant Access to Users/Groups" button in the Users/Groups section. 
+
+.. _widgets:
+
+Widgets
+=============================
+
+The Widgets feature provides you with code for your personal website so your dataset can be displayed. There are two types of Widgets for a dataset: the Dataset Widget and the Dataset Citation Widget. The Widgets are found by going to your dataset page, clicking the Edit button (the one with the pencil icon) and selecting Widgets from the dropdown menu.
+
+On the Widgets page, you can copy and paste the code snippets for the widget you would like to add to your website. If you need to adjust the height of the widget on your website, you may do so by editing the `heightPx=500` parameter in the code snippet.
+
+Dataset Widget
+---------------------
+
+The Dataset Widget allows the citation, metadata, files and terms of your dataset to be displayed on your website. When someone downloads a data file in the widget, it will download directly from the datasets on your website. If a file is restricted, they will be directed to your dataverse to log in, instead of logging in through the widget on your site. 
+
+To edit your dataset, you will need to return to the Dataverse repository where the dataset is stored. You can easily do this by clicking on the link that says "Data Stored in (Name) Dataverse" found in the bottom of the widget.
+
+Dataset Citation Widget
+--------------------------
+
+The Dataset Citation Widget will provide a citation for your dataset on your personal or project website. Users can download the citation in various formats by using the Cite Data button. The persistent URL in the citation will direct users to the dataset in your dataverse. 
+
+
+Adding Widgets to an OpenScholar Website
+----------------------------------------------
+#. Log in to your OpenScholar website
+#. Either build a new page or navigate to the page you would like to use to show the Dataverse widgets.
+#. Click on the Settings Cog and select Layout
+#. At the top right, select Add New Widget and under Misc. you will see the Dataverse Dataset and the Dataverse Dataset Citation Widgets. Click on the widget you would like to add, fill out the form, and then drag it to where you would like it to display in the page.
+
 
 Publish Dataset
 ====================

@@ -25,6 +25,9 @@ Dataverse symbol - Dataverses display this symbol inclosed in a "red" box.
 |image4|
 Dataset symbol - Datasets display this symbol enclosed in a "blue" box.
 
+Linked Dataset - Datasets that are linked from another dataverse display this symbol. Linked datasets can be found when searching either of the dataverses (one published in and one that it is linked to).
+|image14|
+
 Search Icons
 -------------
 |image5|
@@ -84,3 +87,4 @@ Once the dataset is published, this symbol is not seen by the public. The owner 
 .. |image11| image:: ./img/warning.png
 .. |image12| image:: ./img/ingestFail.png
 .. |image13| image:: ./img/ShareDataverseIcons.png
+.. |image14| image:: ./img/link.png
