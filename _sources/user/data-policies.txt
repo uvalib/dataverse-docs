@@ -11,8 +11,8 @@ Below are the Libra Data suite of polices along with best practices for data sha
 
 `Libra Data Public Deposit License <http://www.library.virginia.edu/libra/datasets/public-dataset-license/>`_
 
-`Libra Data API Terms of Use <http://www.library.virginia.edu/libra/datasets/libra-data-api-terms-of-use>` -
+`Libra Data API Terms of Use <http://www.library.virginia.edu/libra/datasets/libra-data-api-terms-of-use/>` -
 
-`Libra Collections Policy <http://www.library.virginia.edu/assets/Libra-Collections-Policy.pdf>` -
+`Libra Collections Policy <http://www.library.virginia.edu/assets/Libra-Collections-Policy.pdf/>` -
 
-'Libra Data Community Norms <http://www.library.virginia.edu/libra/datasets/libra-data-community-norms>` -
+`Libra Data Community Norms <http://www.library.virginia.edu/libra/datasets/libra-data-community-norms/>` -
