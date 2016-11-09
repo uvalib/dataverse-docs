@@ -3,7 +3,7 @@ Glossary of Terms
 
 Dataset
 ==================
-A **dataset** in Dataverse is a container for your data, documentation, code, and the metadata describing this Dataset. For more information on creating datasets, see the section `Dataset + File Management <../user/dataset-management.html>`_.
+A **dataset** in Dataverse is a container for your data, documentation, code, and other products of research and the metadata describing this Dataset. For more information on creating datasets, see the section `Dataset + File Management <../user/dataset-management.html>`_.
 
 |image1|
 
