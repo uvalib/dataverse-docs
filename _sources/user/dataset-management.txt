@@ -256,9 +256,11 @@ The Dataset Citation Widget will provide a citation for your dataset on your per
 Publish Dataset
 ====================
 
-When you publish a dataset (available to an Admin, Curator, or any custom role which has this level of permission assigned), you make it available to the public so that other users can browse or search for it. Once your dataset is ready to go public, go to your dataset page and click on the "Publish" button on the right hand side of the page. A pop-up will appear to confirm that you are ready to actually Publish since once a dataset is made public it can no longer be unpublished or deleted. 
+When you publish a dataset (available to an Admin, Curator, or any custom role which has this level of permission assigned), you make it available to the public so that other users can browse or search for it. Once your dataset is ready to go public, go to your dataset page and click on the "Publish" button on the right hand side of the page. A pop-up will appear (see below)  to confirm that you are ready to actually Publish since **once a dataset is made public it can no longer be unpublished or deleted**. 
 
-Whenever you edit your dataset, you are able to publish a new version of the dataset. The publish dataset button will reappear whenever you edit the metadata of the dataset or add a file.
+|image4|
+
+[Not Recommended at UVA - Versioning] Whenever you edit your dataset, you are able to publish a new version of the dataset. The publish dataset button will reappear whenever you edit the metadata of the dataset or add a file.
 
 Note: Prior to publishing your dataset the Data Citation will indicate that this is a draft but the "DRAFT VERSION" text
 will be removed as soon as you Publish.
@@ -284,7 +286,7 @@ To disable a Private URL
 If ever you had shared a Private URL to your dataset and wish to revoke access, follow the same steps as above until step #3 but in the pop-up select “Disable Private URL”.
 
 
-Dataset Versioning
+Dataset Versioning [Not Recommended at UVA]
 ======================
 
 Versioning is important for long term-research data management where metadata and/or files are updated over time.
@@ -324,4 +326,4 @@ If you deaccession the most recently published version of the dataset but not al
 .. |image1| image:: ./img/DatasetDiagram.png
 .. |image2| image:: ./img/data-download.png 
 .. |image3| image:: ./img/version_workflow.png
-
+.. |image4| image:: ./img/publish-popup.png
