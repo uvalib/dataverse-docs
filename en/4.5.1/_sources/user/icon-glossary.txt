@@ -25,6 +25,12 @@ Dataverse symbol - Dataverses display this symbol inclosed in a "red" box.
 |image4|
 Dataset symbol - Datasets display this symbol enclosed in a "blue" box.
 
+|image14|
+Linked Dataset - Datasets that are linked from another local dataverse display this symbol. Linked datasets can be found when searching either of the dataverses (one published in and one that it is linked to).
+
+|image15|
+Harvested Dataset - Metadata records that have been harvested from other Dataverses, such as Harvard, Odum Institute, plus others. Harvested metadata records are searchable as other records in Libra Data. Clicking on a harvested dataset takes the user to the original repository. 
+
 Search Icons
 -------------
 |image5|
@@ -50,7 +56,7 @@ Publish Datasets
 ----------------
 |image10|
 
-When you publish a dataset, you make it available to the public so that other users can browse or search for it. Note: UVA depositors MUST acknowledge the following:
+When you publish a dataset, you make it available to the public so that other users can browse or search for it. Note: UVA depositors MUST acknowledge the following before a dataset can be published:
 
 #. You have the legal right and authorization to make the data publicly available online world-wide through Libra.
 #. In preparing the data for public archiving and distribution, you have removed any confidential or sensitive information, student education records protected under FERPA, and all information that personally identifies any individual or that contains any information classified as highly sensitive under state or federal law, or UVA policy. 
@@ -84,3 +90,5 @@ Once the dataset is published, this symbol is not seen by the public. The owner 
 .. |image11| image:: ./img/warning.png
 .. |image12| image:: ./img/ingestFail.png
 .. |image13| image:: ./img/ShareDataverseIcons.png
+.. |image14| image:: ./img/link.png
+.. |image15| image:: ./img/harvested-dataset.png
