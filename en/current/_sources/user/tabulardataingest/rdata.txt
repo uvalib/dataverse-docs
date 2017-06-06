@@ -4,7 +4,7 @@ R Data Format
 Support for R (.RData) files has been introduced in DVN 3.5.
 
 
-Overview.
+Overview
 ===========
 
 
@@ -132,7 +132,7 @@ value: unless the time zone was explicitly defined, R will adjust the
 value to the current time zone. The resulting behavior is often
 counter-intuitive: if you create a time value, for example:
 
-		   timevalue<-as.POSIXct("03/19/2013 12:57:00", format = "%m/%d/%Y %H:%M:%OS");
+``timevalue<-as.POSIXct("03/19/2013 12:57:00", format = "%m/%d/%Y %H:%M:%OS");``
 
 on a computer configured for the San Francisco time zone, the value
 will be differently displayed on computers in different time zones;
@@ -143,9 +143,11 @@ If it is important that the values are always displayed the same way,
 regardless of the current time zones, it is recommended that the time
 zone is explicitly defined. For example: 
 
-     attr(timevalue,"tzone")<-"PST"
+``attr(timevalue,"tzone")<-"PST"``
+
 or 
-   timevalue<-as.POSIXct("03/19/2013 12:57:00", format = "%m/%d/%Y %H:%M:%OS", tz="PST");
+
+``timevalue<-as.POSIXct("03/19/2013 12:57:00", format = "%m/%d/%Y %H:%M:%OS", tz="PST");``
 
 Now the value will always be displayed as "15:57 PST", regardless of
 the time zone that is current for the OS ... **BUT ONLY** if the OS

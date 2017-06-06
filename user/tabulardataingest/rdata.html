@@ -34,7 +34,7 @@
     <link rel="top" title="Dataverse.org" href="../../index.html" />
     <link rel="up" title="Tabular Data File Ingest" href="index.html" />
     <link rel="next" title="Excel" href="excel.html" />
-    <link rel="prev" title="SPSS" href="spss.html" />
+    <link rel="prev" title="Stata" href="stata.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -100,6 +100,7 @@
 <li class="toctree-l3"><a class="reference internal" href="supportedformats.html">Supported File Formats</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ingestprocess.html">Tabular Data, Representation, Storage and Ingest</a></li>
 <li class="toctree-l3"><a class="reference internal" href="spss.html">SPSS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="stata.html">Stata</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">R Data Format</a></li>
 <li class="toctree-l3"><a class="reference internal" href="excel.html">Excel</a></li>
 <li class="toctree-l3"><a class="reference internal" href="csv.html">CSV</a></li>
@@ -119,7 +120,7 @@
 <h1>R Data Format<a class="headerlink" href="#r-data-format" title="Permalink to this headline">¶</a></h1>
 <p>Support for R (.RData) files has been introduced in DVN 3.5.</p>
 <div class="section" id="overview">
-<h2>Overview.<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
 <p>R has been increasingly popular in the research/academic community,
 owing to the fact that it is free and open-source (unlike SPSS and
 STATA). Consequently, there is an increasing amount of data available
@@ -227,8 +228,7 @@ adjustments are made in real time as needed.</p>
 value: unless the time zone was explicitly defined, R will adjust the
 value to the current time zone. The resulting behavior is often
 counter-intuitive: if you create a time value, for example:</p>
-<blockquote>
-<div>timevalue&lt;-as.POSIXct(&#8220;03/19/2013 12:57:00&#8221;, format = &#8220;%m/%d/%Y %H:%M:%OS&#8221;);</div></blockquote>
+<p><code class="docutils literal"><span class="pre">timevalue&lt;-as.POSIXct(&quot;03/19/2013</span> <span class="pre">12:57:00&quot;,</span> <span class="pre">format</span> <span class="pre">=</span> <span class="pre">&quot;%m/%d/%Y</span> <span class="pre">%H:%M:%OS&quot;);</span></code></p>
 <p>on a computer configured for the San Francisco time zone, the value
 will be differently displayed on computers in different time zones;
 for example, as &#8220;12:57 PST&#8221; while still on the West Coast, but as
@@ -236,12 +236,9 @@ for example, as &#8220;12:57 PST&#8221; while still on the West Coast, but as
 <p>If it is important that the values are always displayed the same way,
 regardless of the current time zones, it is recommended that the time
 zone is explicitly defined. For example:</p>
-<blockquote>
-<div>attr(timevalue,&#8221;tzone&#8221;)&lt;-&#8220;PST&#8221;</div></blockquote>
-<dl class="docutils">
-<dt>or</dt>
-<dd>timevalue&lt;-as.POSIXct(&#8220;03/19/2013 12:57:00&#8221;, format = &#8220;%m/%d/%Y %H:%M:%OS&#8221;, tz=&#8221;PST&#8221;);</dd>
-</dl>
+<p><code class="docutils literal"><span class="pre">attr(timevalue,&quot;tzone&quot;)&lt;-&quot;PST&quot;</span></code></p>
+<p>or</p>
+<p><code class="docutils literal"><span class="pre">timevalue&lt;-as.POSIXct(&quot;03/19/2013</span> <span class="pre">12:57:00&quot;,</span> <span class="pre">format</span> <span class="pre">=</span> <span class="pre">&quot;%m/%d/%Y</span> <span class="pre">%H:%M:%OS&quot;,</span> <span class="pre">tz=&quot;PST&quot;);</span></code></p>
 <p>Now the value will always be displayed as &#8220;15:57 PST&#8221;, regardless of
 the time zone that is current for the OS ... <strong>BUT ONLY</strong> if the OS
 where R is installed actually understands the time zone &#8220;PST&#8221;, which
@@ -306,7 +303,7 @@ UNFs.</p>
       
     </p>
     <p>
-        <a href="https://dataverse.lib.virginia.edu/" target="_blank">Libra Data</a>, UVA's Institutional Dataverse developed at Harvard's <a href="http://www.iq.harvard.edu/" target="_blank">IQSS</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse.org" title="Dataverse.org on GitHub" target="_blank"><img src="/dataverse-docs/_static/images/githubicon.png" width="20" alt="Dataverse.org on GitHub"/></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> 1.4.6<br/>Version 4.3 &nbsp;|&nbsp; Last updated on Nov 09, 2016<br/>&copy; Copyright 2016 by the Rector and Visitors of the University of Virginia <br/>
+        <a href="https://dataverse.lib.virginia.edu/" target="_blank">Libra Data</a>, UVA's Institutional Dataverse developed at Harvard's <a href="http://www.iq.harvard.edu/" target="_blank">IQSS</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse.org" title="Dataverse.org on GitHub" target="_blank"><img src="/dataverse-docs/_static/images/githubicon.png" width="20" alt="Dataverse.org on GitHub"/></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> 1.4.6<br/>Version 4.3 &nbsp;|&nbsp; Last updated on Jun 06, 2017<br/>&copy; Copyright 2016 by the Rector and Visitors of the University of Virginia <br/>
     </p>
   </div>
 </footer>
