@@ -1,7 +1,7 @@
 Dataset + File Management
 +++++++++++++++++++++++++++++
 
-A dataset in Dataverse is a container for your data, documentation, code, and the metadata describing this dataset.
+A dataset in Dataverse is a container for your data, documentation, code, and other products of research in addition to metadata describing this "dataset".
 
 |image1|
 
@@ -32,7 +32,7 @@ Adding a New Dataset
 
 #. Click the "Save Dataset" button when you are done. Your unpublished dataset is now created.
 
-Note: You can add additional metadata once you have completed the initial dataset creation by going to Edit Dataset > Metadata.
+Note: You can add additional metadata once you have completed the initial dataset creation by clicking **Edit** and selecting **Metadata**.
 
 Supported HTML Fields
 ------------------------
@@ -185,7 +185,7 @@ After successfully replacing a file, a new dataset draft version will be created
 Terms
 =======================
 
-In the Terms tab, which can also be found by clicking on the "Edit" dropdown button of a dataset, you can setup how users can use your data once they have downloaded it (CC0 waiver or custom Terms of Use), how they can access your data if you have files that are restricted (terms of access), and enable a Guestbook for your dataset so that you can track who is using your data and for what purposes. These are explained in further detail below:
+In the Terms tab, which can also be found by clicking on the "Edit" dropdown button of a dataset, you can setup how users can use your data once they have downloaded it (CC0 waiver or custom Terms of Use) and how they can access your data if you have files that are restricted (terms of access). These are explained in further detail below:
 
 CC0 Waiver + Dataset Terms of Use 
 ---------------------------------------------------------------
@@ -209,12 +209,8 @@ Here is an `example of a Data Usage Agreement <http://best-practices.dataverse.o
 Restricted Files + Terms of Access 
 -----------------------------------------------
 
-If you restrict any files in your dataset, you will be prompted by a pop-up to enter Terms of Access for the data. This can also be edited in the Terms tab or selecting Terms in the "Edit" dropdown button in the dataset. You may also allow users to request access for your restricted files by enabling "Request Access". To add more information about the Terms of Access, click on "Additional Information \[+]".
+If you restrict any files in your dataset, you will be prompted by a pop-up to enter Terms of Access for the data. This can also be edited in the Terms tab or selecting Terms in the "Edit" dropdown button in the dataset. You may also allow users to request access for your restricted files by enabling "Request Access". To add more information about the Terms of Access, click on "Additional Information \[+]". The University of Virginia does not recommend restricting files as the purpose of Libra Data is to share "Openly" your scholarship. If you do restrict files, pleae note that **only UVa affiliated users will be able to login and request access**.
 
-Guestbook
---------------
-
-This is where you will enable a particular Guestbook for your dataset, which is setup at the Dataverse-level. For specific instructions please visit the Dataverse Management Guide `Dataset Guestbook section <../user/dataverse-management.html#dataset-guestbooks>`_.
 
 .. _permissions:
 
@@ -241,22 +237,44 @@ To give someone access to your restricted files, click on the "Grant Access to U
 
 .. _widgets:
 
-Widgets
+Thumbnails + Widgets
 =============================
+
+Thumbnails
+-------------
+
+Thumbnail images can be assigned to a dataset manually or automatically. The thumbnail for a dataset appears on the search result card for that dataset and on the dataset page itself. If a dataset contains one or more data files that Dataverse recognizes as an image, then one of those images is automatically selected as the dataset thumbnail.
+
+If you would like to manually select your dataset’s thumbnail, you can do so by clicking the “Edit” button on your dataset, and selecting “Thumbnails + Widgets” from the dropdown menu.
+
+On this page, under the Thumbnail tab you will see three possible actions.
+
+**Select Available File:** Click the “Select Thumbnail” button to choose an image from your dataset to use as the dataset thumbnail.
+
+**Upload New File:** Upload an image file from your computer to use as the dataset thumbnail. While by default your thumbnail image is drawn from a file in your dataset, this will allow you to upload a separate image file to use as your dataset thumbnail. This uploaded image file will only be used as the dataset thumbnail; it will not be stored as a data file in your dataset.
+
+**Remove Thumbnail:** If you click the “Remove” button under the thumbnail image, you will remove the dataset’s current thumbnail. The Dataset will then revert to displaying a basic default icon as the dataset thumbnail.
+
+When you’re finished on this page, be sure to click “Save Changes” to save what you’ve done.
+
+Note: If you prefer, it is also possible to set an image file in your dataset as your thumbnail by selecting the file, going to Edit Files -> Metadata, and using the “Set Thumbnail” button.
+
+Widgets
+------------
 
 The Widgets feature provides you with code for your personal website so your dataset can be displayed. There are two types of Widgets for a dataset: the Dataset Widget and the Dataset Citation Widget. The Widgets are found by going to your dataset page, clicking the Edit button (the one with the pencil icon) and selecting Widgets from the dropdown menu.
 
 In the Widgets tab, you can copy and paste the code snippets for the widget you would like to add to your website. If you need to adjust the height of the widget on your website, you may do so by editing the `heightPx=500` parameter in the code snippet.
 
 Dataset Widget
----------------------
+~~~~~~~~~~~~~~~~
 
 The Dataset Widget allows the citation, metadata, files and terms of your dataset to be displayed on your website. When someone downloads a data file in the widget, it will download directly from the datasets on your website. If a file is restricted, they will be directed to your dataverse to log in, instead of logging in through the widget on your site. 
 
 To edit your dataset, you will need to return to the Dataverse repository where the dataset is stored. You can easily do this by clicking on the link that says "Data Stored in (Name) Dataverse" found in the bottom of the widget.
 
 Dataset Citation Widget
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Dataset Citation Widget will provide a citation for your dataset on your personal or project website. Users can download the citation in various formats by using the Cite Data button. The persistent URL in the citation will direct users to the dataset in your dataverse. 
 
@@ -307,7 +325,7 @@ Versioning is important for long term-research data management where metadata an
 
 Once you edit your published dataset a new draft version of this dataset will be created. To publish this new version of your dataset, select the “Publish Dataset” button on the top right side of the page. If you were at version 1 of your dataset, depending on the types of changes you had made, you would be asked to publish your draft as either version 1.1 or version 2.0.
 
-Important Note: If you add a file, your dataset will automatically be bumped up to a major version (e.g., if you were at 1.0 you will go to 2.0).
+**Important Note:** If you add a file, your dataset will automatically be bumped up to a major version (e.g., if you were at 1.0 you will go to 2.0).
 
 On the Versions tab of a dataset page, there is a versions table that displays the version history of the dataset. You can use the version number links in this table to navigate between the different versions of the dataset, including the unpublished draft version, if you have permission to access it.
 
@@ -341,7 +359,7 @@ If you deaccession the most recently published version of the dataset but not al
 
 
 
-.. |image1| image:: ./img/DatasetDiagram.png
+.. |image1| image:: ./img/DatasetDiagramV2.png
 .. |image2| image:: ./img/data-download.png 
 .. |image3| image:: ./img/version_workflow.png
 .. |image4| image:: ./img/publish-popup.png

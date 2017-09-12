@@ -109,8 +109,8 @@
       
   <div class="section" id="dataset-file-management">
 <h1>Dataset + File Management<a class="headerlink" href="#dataset-file-management" title="Permalink to this headline">¶</a></h1>
-<p>A dataset in Dataverse is a container for your data, documentation, code, and the metadata describing this dataset.</p>
-<p><img alt="image1" src="../_images/DatasetDiagram.png" /></p>
+<p>A dataset in Dataverse is a container for your data, documentation, code, and other products of research in addition to metadata describing this &#8220;dataset&#8221;.</p>
+<p><img alt="image1" src="../_images/DatasetDiagramV2.png" /></p>
 <div class="section" id="supported-metadata">
 <h2>Supported Metadata<a class="headerlink" href="#supported-metadata" title="Permalink to this headline">¶</a></h2>
 <p>A dataset contains three levels of metadata:</p>
@@ -135,7 +135,7 @@ directly into the upload widget. Your files will appear below the &#8220;Select 
 description and tags (via the &#8220;Edit Tag&#8221; button) for each file. Additionally, an MD5 checksum will be added for each file. If you upload a tabular file a <span class="xref std std-ref">Universal Numerical Fingerprint (UNF)</span> will be added to this file.</li>
 <li>Click the &#8220;Save Dataset&#8221; button when you are done. Your unpublished dataset is now created.</li>
 </ol>
-<p>Note: You can add additional metadata once you have completed the initial dataset creation by going to Edit Dataset &gt; Metadata.</p>
+<p>Note: You can add additional metadata once you have completed the initial dataset creation by clicking <strong>Edit</strong> and selecting <strong>Metadata</strong>.</p>
 <div class="section" id="supported-html-fields">
 <h3>Supported HTML Fields<a class="headerlink" href="#supported-html-fields" title="Permalink to this headline">¶</a></h3>
 <p>We currently only support the following HTML tags for any of our textbox meatdata fields (i.e., Description) : &lt;a&gt;, &lt;b&gt;, &lt;blockquote&gt;,
@@ -261,7 +261,7 @@ is. If the number of files inside are more than a set limit (1,000), you will ge
 </div>
 <div class="section" id="terms">
 <span id="license-terms"></span><h2>Terms<a class="headerlink" href="#terms" title="Permalink to this headline">¶</a></h2>
-<p>In the Terms tab, which can also be found by clicking on the &#8220;Edit&#8221; dropdown button of a dataset, you can setup how users can use your data once they have downloaded it (CC0 waiver or custom Terms of Use), how they can access your data if you have files that are restricted (terms of access), and enable a Guestbook for your dataset so that you can track who is using your data and for what purposes. These are explained in further detail below:</p>
+<p>In the Terms tab, which can also be found by clicking on the &#8220;Edit&#8221; dropdown button of a dataset, you can setup how users can use your data once they have downloaded it (CC0 waiver or custom Terms of Use) and how they can access your data if you have files that are restricted (terms of access). These are explained in further detail below:</p>
 <div class="section" id="cc0-waiver-dataset-terms-of-use">
 <h3>CC0 Waiver + Dataset Terms of Use<a class="headerlink" href="#cc0-waiver-dataset-terms-of-use" title="Permalink to this headline">¶</a></h3>
 <p>Starting with Dataverse version 4.0, all new datasets will default to a <a class="reference external" href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 public domain dedication</a> . CC0 facilitates reuse and extensibility of research data.
@@ -278,11 +278,7 @@ your own custom Terms of Use for your datasets.</p>
 </div>
 <div class="section" id="restricted-files-terms-of-access">
 <h3>Restricted Files + Terms of Access<a class="headerlink" href="#restricted-files-terms-of-access" title="Permalink to this headline">¶</a></h3>
-<p>If you restrict any files in your dataset, you will be prompted by a pop-up to enter Terms of Access for the data. This can also be edited in the Terms tab or selecting Terms in the &#8220;Edit&#8221; dropdown button in the dataset. You may also allow users to request access for your restricted files by enabling &#8220;Request Access&#8221;. To add more information about the Terms of Access, click on &#8220;Additional Information [+]&#8221;.</p>
-</div>
-<div class="section" id="guestbook">
-<h3>Guestbook<a class="headerlink" href="#guestbook" title="Permalink to this headline">¶</a></h3>
-<p>This is where you will enable a particular Guestbook for your dataset, which is setup at the Dataverse-level. For specific instructions please visit the Dataverse Management Guide <a class="reference external" href="../user/dataverse-management.html#dataset-guestbooks">Dataset Guestbook section</a>.</p>
+<p>If you restrict any files in your dataset, you will be prompted by a pop-up to enter Terms of Access for the data. This can also be edited in the Terms tab or selecting Terms in the &#8220;Edit&#8221; dropdown button in the dataset. You may also allow users to request access for your restricted files by enabling &#8220;Request Access&#8221;. To add more information about the Terms of Access, click on &#8220;Additional Information [+]&#8221;. The University of Virginia does not recommend restricting files as the purpose of Libra Data is to share &#8220;Openly&#8221; your scholarship. If you do restrict files, pleae note that <strong>only UVa affiliated users will be able to login and request access</strong>.</p>
 </div>
 </div>
 <div class="section" id="permissions">
@@ -301,18 +297,32 @@ The file permissions page has two sections: Users/Groups and Files.</p>
 <p>To give someone access to your restricted files, click on the &#8220;Grant Access to Users/Groups&#8221; button in the Users/Groups section.</p>
 </div>
 </div>
-<div class="section" id="widgets">
-<span id="id6"></span><h2>Widgets<a class="headerlink" href="#widgets" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="thumbnails-widgets">
+<span id="widgets"></span><h2>Thumbnails + Widgets<a class="headerlink" href="#thumbnails-widgets" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="thumbnails">
+<h3>Thumbnails<a class="headerlink" href="#thumbnails" title="Permalink to this headline">¶</a></h3>
+<p>Thumbnail images can be assigned to a dataset manually or automatically. The thumbnail for a dataset appears on the search result card for that dataset and on the dataset page itself. If a dataset contains one or more data files that Dataverse recognizes as an image, then one of those images is automatically selected as the dataset thumbnail.</p>
+<p>If you would like to manually select your dataset’s thumbnail, you can do so by clicking the “Edit” button on your dataset, and selecting “Thumbnails + Widgets” from the dropdown menu.</p>
+<p>On this page, under the Thumbnail tab you will see three possible actions.</p>
+<p><strong>Select Available File:</strong> Click the “Select Thumbnail” button to choose an image from your dataset to use as the dataset thumbnail.</p>
+<p><strong>Upload New File:</strong> Upload an image file from your computer to use as the dataset thumbnail. While by default your thumbnail image is drawn from a file in your dataset, this will allow you to upload a separate image file to use as your dataset thumbnail. This uploaded image file will only be used as the dataset thumbnail; it will not be stored as a data file in your dataset.</p>
+<p><strong>Remove Thumbnail:</strong> If you click the “Remove” button under the thumbnail image, you will remove the dataset’s current thumbnail. The Dataset will then revert to displaying a basic default icon as the dataset thumbnail.</p>
+<p>When you’re finished on this page, be sure to click “Save Changes” to save what you’ve done.</p>
+<p>Note: If you prefer, it is also possible to set an image file in your dataset as your thumbnail by selecting the file, going to Edit Files -&gt; Metadata, and using the “Set Thumbnail” button.</p>
+</div>
+<div class="section" id="id6">
+<h3>Widgets<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
 <p>The Widgets feature provides you with code for your personal website so your dataset can be displayed. There are two types of Widgets for a dataset: the Dataset Widget and the Dataset Citation Widget. The Widgets are found by going to your dataset page, clicking the Edit button (the one with the pencil icon) and selecting Widgets from the dropdown menu.</p>
 <p>In the Widgets tab, you can copy and paste the code snippets for the widget you would like to add to your website. If you need to adjust the height of the widget on your website, you may do so by editing the <cite>heightPx=500</cite> parameter in the code snippet.</p>
 <div class="section" id="dataset-widget">
-<h3>Dataset Widget<a class="headerlink" href="#dataset-widget" title="Permalink to this headline">¶</a></h3>
+<h4>Dataset Widget<a class="headerlink" href="#dataset-widget" title="Permalink to this headline">¶</a></h4>
 <p>The Dataset Widget allows the citation, metadata, files and terms of your dataset to be displayed on your website. When someone downloads a data file in the widget, it will download directly from the datasets on your website. If a file is restricted, they will be directed to your dataverse to log in, instead of logging in through the widget on your site.</p>
 <p>To edit your dataset, you will need to return to the Dataverse repository where the dataset is stored. You can easily do this by clicking on the link that says &#8220;Data Stored in (Name) Dataverse&#8221; found in the bottom of the widget.</p>
 </div>
 <div class="section" id="dataset-citation-widget">
-<h3>Dataset Citation Widget<a class="headerlink" href="#dataset-citation-widget" title="Permalink to this headline">¶</a></h3>
+<h4>Dataset Citation Widget<a class="headerlink" href="#dataset-citation-widget" title="Permalink to this headline">¶</a></h4>
 <p>The Dataset Citation Widget will provide a citation for your dataset on your personal or project website. Users can download the citation in various formats by using the Cite Data button. The persistent URL in the citation will direct users to the dataset in your dataverse.</p>
+</div>
 </div>
 </div>
 <div class="section" id="publish-dataset">
@@ -350,7 +360,7 @@ will be removed as soon as you Publish.</p>
 <p>Versioning is important for long term-research data management where metadata and/or files are updated over time. It is used to track any metadata or file changes (e.g., by uploading a new file, changing file metadata, adding or editing metadata) once you have published your dataset.</p>
 <p><img alt="image3" src="../_images/version_workflow.png" /></p>
 <p>Once you edit your published dataset a new draft version of this dataset will be created. To publish this new version of your dataset, select the “Publish Dataset” button on the top right side of the page. If you were at version 1 of your dataset, depending on the types of changes you had made, you would be asked to publish your draft as either version 1.1 or version 2.0.</p>
-<p>Important Note: If you add a file, your dataset will automatically be bumped up to a major version (e.g., if you were at 1.0 you will go to 2.0).</p>
+<p><strong>Important Note:</strong> If you add a file, your dataset will automatically be bumped up to a major version (e.g., if you were at 1.0 you will go to 2.0).</p>
 <p>On the Versions tab of a dataset page, there is a versions table that displays the version history of the dataset. You can use the version number links in this table to navigate between the different versions of the dataset, including the unpublished draft version, if you have permission to access it.</p>
 <p>There is also a Versions tab on the file page. The versions table for a file displays the same information as the dataset, but the summaries are filtered down to only show the actions related to that file. If a new dataset version were created without any changes to an individual file, that file’s version summary for that dataset version would read “No changes associated with this version”.</p>
 <div class="section" id="version-details">
@@ -386,7 +396,7 @@ will be removed as soon as you Publish.</p>
       
     </p>
     <p>
-        <a href="https://dataverse.lib.virginia.edu/" target="_blank">Libra Data</a>, UVA's Institutional Dataverse developed at Harvard's <a href="http://www.iq.harvard.edu/" target="_blank">IQSS</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse.org" title="Dataverse.org on GitHub" target="_blank"><img src="/dataverse-docs/_static/images/githubicon.png" width="20" alt="Dataverse.org on GitHub"/></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> 1.4.6<br/>Version 4.3 &nbsp;|&nbsp; Last updated on Jun 06, 2017<br/>&copy; Copyright 2016 by the Rector and Visitors of the University of Virginia <br/>
+        <a href="https://dataverse.lib.virginia.edu/" target="_blank">Libra Data</a>, UVA's Institutional Dataverse developed at Harvard's <a href="http://www.iq.harvard.edu/" target="_blank">IQSS</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse.org" title="Dataverse.org on GitHub" target="_blank"><img src="/dataverse-docs/_static/images/githubicon.png" width="20" alt="Dataverse.org on GitHub"/></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> 1.4.6<br/>Version 4.3 &nbsp;|&nbsp; Last updated on Sep 12, 2017<br/>&copy; Copyright 2016 by the Rector and Visitors of the University of Virginia <br/>
     </p>
   </div>
 </footer>

@@ -9,7 +9,8 @@ A **dataset** in Dataverse is a container for your data, documentation, code, an
 
 Dataverse
 ===================
-A **dataverse** is a container for datasets (research data, code, documentation, and metadata) and other dataverses, which can be setup for individual researchers, departments, journals and organizations. For more information on using dataverses in Libra Data, see the section `Dataverse management <../user/dataverse-management.html>`_.
+A **dataverse** is a container for datasets (research data, code, documentation, and metadata) and other dataverses, which can be setup for individual researchers, departments, journals and organizations. Libra Data users cannot create dataverses on their own, but must submit a request. If your department, lab, or center would like a dataverse added, please email libra@virginia.edu.
+
 
 |image2|
 
@@ -36,5 +37,5 @@ Metadata in Dataverse
 **File-level Metadata**: When uploading files, you can give each file a description and a tag. You can also change the filename that displys.
 
 
-.. |image1| image:: ./img/DatasetDiagram.png
+.. |image1| image:: ./img/DatasetDiagramV2.png
 .. |image2| image:: ./img/Dataverse-Diagram.png

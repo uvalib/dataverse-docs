@@ -5,7 +5,7 @@ As a registered UVA user, you can:
 
 -  Add datasets to dataverses.
 -  Contribute to existing datasets, if available.
--  Request access to restricted files, if available.
+-  Request and/or access to restricted files, if available.
 
 Login for UVA Users (required for UVA depositors)
 ===================
@@ -13,7 +13,7 @@ Login for UVA Users (required for UVA depositors)
 Authenticated UVA users log in through NetBadge:
 
 #. In the top right corner of each page, click on the **Log In** link.
-#. Choose the UVA icon, or "University of Virginia" in the pulldown menu.  |image1|
+#. Choose the UVA icon, or "University of Virginia" in the pulldown menu and click **Continue**.  |image1|
 #. Sign in with your UVa Netbadge Credentials.
 
 The first time you sign in to Libra Data, you must accept the Libra Data Deposit Terms. The University expects that you read the terms before confirming your agreement. You can see the terms here: `http://www.library.virginia.edu/libra/datasets/public-dataset-license/ <http://www.library.virginia.edu/libra/datasets/public-dataset-license/>`_.
@@ -38,7 +38,7 @@ You will receive a notification when:
 - You've added a dataset
 - Another Dataverse user has requested access to a restricted file in one of your datasets
 
-Libra Data will email your unread notifications once a day. Notifications will only be emailed one time even if you haven't read the notification on the Dataverse site.
+Notifications will only be emailed one time even if you haven't read the notification on the Dataverse site.
 
 Create Your API Token
 -----------------------

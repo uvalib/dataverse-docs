@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Libra Data - Dataverse Guides
+|image1| - Dataverse Guides
 ====================
 
 These guides are for the version of Dataverse installed on UVA's Libra Data Service. 
@@ -38,3 +38,4 @@ including presentations, information about upcoming releases, data
 management and citation, and announcements can be found at
 `http://dataverse.org/ <http://dataverse.org/>`__
 
+.. |image1| image:: ./img/LibraData.png
