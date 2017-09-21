@@ -11,7 +11,7 @@ A user can search the dataverses, datasets, and files within a particular datave
 
 Basic Search
 --------------
-From a Dataverse homepage, you can begin searching that dataverse with an exact phrase search or entering a search term or query in the search box (on the left) that says, "Search this dataverse". If you have navigated to a sub-dataverse, you can use the search box at the top of the page that says, "Search all dataverses". 
+From a Dataverse homepage, you can begin searching that dataverse with an exact phrase search or entering a search term or query in the search box (on the left) that says, "Search this dataverse". If you have navigated to a sub-dataverse, to search ALL dataverses, use the search box at the top of the page that says, "Search all dataverses". 
 
 **Search results features**
 

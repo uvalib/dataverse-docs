@@ -7,7 +7,7 @@ Email - Envelope Icon
 
 Email recipient depends on context of where the envelope appears. On Dataverse pages, the email goes to UVA Libra Data Support (libra@virginia.edu)
 
-If you are viewing a personal dataset, then the email will go to the creator of the dataset.
+If you are viewing a personal dataset, then the email will go to the dataset contact, in many cases, the dataset creator.
 
 Plus sign
 ----------
@@ -34,10 +34,15 @@ Harvested Dataset - Metadata records that have been harvested from other Dataver
 Search Icons
 -------------
 |image5|
-Search icon at the top of the page. Use to search all dataverses.
+Search icon at the top of the page. Use to search within all dataverses.
 
+There are other search boxes that are context dependent.
+ 
 |image6|
-If you are in a sub dataverse, the search will search the top level dataverse and other sub dataverses. If you use the search box above the list of datasets, the current dataverse will be searched. If the current dataverse is the top-level, then all sub dataverses will be searched.
+
+If you are in a dataverse, the search box with the "Find" icon, will search within the current dataverse and osther sub dataverses.  If the current dataverse is the top-level, then all sub dataverses will be searched.
+
+If you are in a dataset, the search box with the "Find" icon, will search within the current dataset.
 
 Asterisks
 ---------
@@ -77,14 +82,14 @@ Hovering over the warning icon displays detailed information, such as:
 Once the dataset is published, this symbol is not seen by the public. The owner of the data file will still see the icon.
 
 
-.. |image1| image:: ./img/email.png
+.. |image1| image:: ./img/email-contact.png
 .. |image2| image:: ./img/plus.png
 .. |image3| image:: ./img/dv-symbol.png
 .. |image4| image:: ./img/ds-symbol.png
 .. |image5| image:: ./img/search.png
-.. |image6| image:: ./img/search-box.png
+.. |image6| image:: ./img/find.png
 .. |image7| image:: ./img/asterisks.png
-.. |image8| image:: ./img/shareIcon.png
+.. |image8| image:: ./img/ShareIcon.png
 .. |image9| image:: ./img/shareApps.png
 .. |image10| image:: ./img/publish.png
 .. |image11| image:: ./img/warning.png
