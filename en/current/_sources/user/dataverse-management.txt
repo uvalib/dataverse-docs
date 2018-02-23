@@ -9,7 +9,7 @@ which can be setup for individual researchers, departments, journals and organiz
 
 Request to create a dataverse
 ===============================
-Libra Data users must submit a request to create a dataverse.
+LibraData users must submit a request to create a dataverse.
 
 If your department, lab, or center would like a dataverse added, please email libra@virginia.edu.
 

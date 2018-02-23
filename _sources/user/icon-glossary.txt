@@ -5,7 +5,7 @@ Email - Envelope Icon
 ----------------------
 |image1|
 
-Email recipient depends on context of where the envelope appears. On Dataverse pages, the email goes to UVA Libra Data Support (libra@virginia.edu)
+Email recipient depends on context of where the envelope appears. On Dataverse pages, the email goes to UVA LibraData Support (libra@virginia.edu)
 
 If you are viewing a personal dataset, then the email will go to the dataset contact, in many cases, the dataset creator.
 
@@ -29,7 +29,7 @@ Dataset symbol - Datasets display this symbol enclosed in a "blue" box.
 Linked Dataset - Datasets that are linked from another local dataverse display this symbol. Linked datasets can be found when searching either of the dataverses (one published in and one that it is linked to).
 
 |image15|
-Harvested Dataset - Metadata records that have been harvested from other Dataverses, such as Harvard, Odum Institute, plus others. Harvested metadata records are searchable as other records in Libra Data. Clicking on a harvested dataset takes the user to the original repository. 
+Harvested Dataset - Metadata records that have been harvested from other Dataverses, such as Harvard, Odum Institute, plus others. Harvested metadata records are searchable as other records in LibraData. Clicking on a harvested dataset takes the user to the original repository. 
 
 Search Icons
 -------------

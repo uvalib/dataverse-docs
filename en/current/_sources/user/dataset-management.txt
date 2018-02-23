@@ -49,7 +49,7 @@ To upload new files to a dataset, click the “Edit” button at the top of the 
 
 Once you have uploaded files, you will be able to edit the file metadata, restrict, add tags. Click “Save Changes” to complete the upload. If you uploaded a file by mistake, you can delete them before saving by clicking the checkbox to select the file, and then clicking the “Delete” button above the files table.
 
-All file formats are supported, up to 6GB per file for Libra Data Dataverse.  You can also add descriptions and categorize each by adding tags.
+All file formats are supported, up to 6GB per file for LibraData Dataverse.  You can also add descriptions and categorize each by adding tags.
 
 **Please contact libra@virginia.edu if you need to upload a file that is larger than 6GB.**
 
@@ -209,7 +209,7 @@ Here is an `example of a Data Usage Agreement <http://best-practices.dataverse.o
 Restricted Files + Terms of Access 
 -----------------------------------------------
 
-If you restrict any files in your dataset, you will be prompted by a pop-up to enter Terms of Access for the data. This can also be edited in the Terms tab or selecting Terms in the "Edit" dropdown button in the dataset. You may also allow users to request access for your restricted files by enabling "Request Access". To add more information about the Terms of Access, click on "Additional Information \[+]". The University of Virginia does not recommend restricting files as the purpose of Libra Data is to share "Openly" your scholarship. If you do restrict files, pleae note that **only UVa affiliated users will be able to login and request access**.
+If you restrict any files in your dataset, you will be prompted by a pop-up to enter Terms of Access for the data. This can also be edited in the Terms tab or selecting Terms in the "Edit" dropdown button in the dataset. You may also allow users to request access for your restricted files by enabling "Request Access". To add more information about the Terms of Access, click on "Additional Information \[+]". The University of Virginia does not recommend restricting files as the purpose of LibraData is to share "Openly" your scholarship. If you do restrict files, pleae note that **only UVa affiliated users will be able to login and request access**.
 
 
 .. _permissions:

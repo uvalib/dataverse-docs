@@ -1,4 +1,4 @@
-Libra Data Account Creation & Management
+LibraData Account Creation & Management
 +++++++++++++++++++++++++++++
 
 As a registered UVA user, you can:
@@ -16,7 +16,7 @@ Authenticated UVA users log in through NetBadge:
 #. Choose the UVA icon, or "University of Virginia" in the pulldown menu and click **Continue**.  |image1|
 #. Sign in with your UVa Netbadge Credentials.
 
-The first time you sign in to Libra Data, you must accept the Libra Data Deposit Terms. The University expects that you read the terms before confirming your agreement. You can see the terms here: `http://www.library.virginia.edu/libra/datasets/public-dataset-license/ <http://www.library.virginia.edu/libra/datasets/public-dataset-license/>`_.
+The first time you sign in to LibraData, you must accept the LibraData Deposit Terms. The University expects that you read the terms before confirming your agreement. You can see the terms here: `http://www.library.virginia.edu/libra/datasets/public-dataset-license/ <http://www.library.virginia.edu/libra/datasets/public-dataset-license/>`_.
 |image2|
 
 Account Information

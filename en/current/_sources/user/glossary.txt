@@ -9,12 +9,12 @@ A **dataset** in Dataverse is a container for your data, documentation, code, an
 
 Dataverse
 ===================
-A **dataverse** is a container for datasets (research data, code, documentation, and metadata) and other dataverses, which can be setup for individual researchers, departments, journals and organizations. Libra Data users cannot create dataverses on their own, but must submit a request. If your department, lab, or center would like a dataverse added, please email libra@virginia.edu.
+A **dataverse** is a container for datasets (research data, code, documentation, and metadata) and other dataverses, which can be setup for individual researchers, departments, journals and organizations. LibraData users cannot create dataverses on their own, but must submit a request. If your department, lab, or center would like a dataverse added, please email libra@virginia.edu.
 
 
 |image2|
 
-Dates in Libra Data
+Dates in LibraData
 ======================
 **Data Production Date**:  Date when the data collection or other materials were produced (NOT distributed, published or deposited).
 
