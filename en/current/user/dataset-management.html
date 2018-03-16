@@ -146,10 +146,16 @@ description and tags (via the &#8220;Edit Tag&#8221; button) for each file. Addi
 <div class="section" id="file-handling-uploading">
 <h2>File Handling + Uploading<a class="headerlink" href="#file-handling-uploading" title="Permalink to this headline">¶</a></h2>
 <p>To upload new files to a dataset, click the “Edit” button at the top of the dataset page and from the dropdown list select “Files (Upload)” or click the “Upload Files” button above the files table in the Files tab. From either option you will be brought to the Upload Files page for that dataset.</p>
-<p>Once you have uploaded files, you will be able to edit the file metadata, restrict, add tags. Click “Save Changes” to complete the upload. If you uploaded a file by mistake, you can delete them before saving by clicking the checkbox to select the file, and then clicking the “Delete” button above the files table.</p>
-<p>All file formats are supported, up to 6GB per file for LibraData Dataverse.  You can also add descriptions and categorize each by adding tags.</p>
+<p>Once you have uploaded files, you will be able to edit the file name, add a description, restrict access <a class="footnote-reference" href="#f1" id="id1">[1]</a> , add tags. Click “Save Changes” to complete the upload. If you uploaded a file by mistake, you can delete it before saving by clicking the checkbox to select the file, and then clicking the “Delete” button above the files table.</p>
+<p>All file formats are supported, up to 6GB per file for LibraData Dataverse.</p>
 <p><strong>Please contact libra&#64;virginia.edu if you need to upload a file that is larger than 6GB.</strong></p>
 <p>The file types listed below are supported by additional functionality, which can include downloading in different formats, subsets, file-level metadata preservation, file-level data citation; and exploration through data visualization and analysis.</p>
+<table class="docutils footnote" frame="void" id="f1" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Some Dataverse installations do not allow this feature.</td></tr>
+</tbody>
+</table>
 <div class="section" id="tabular-data-files">
 <h3>Tabular Data Files<a class="headerlink" href="#tabular-data-files" title="Permalink to this headline">¶</a></h3>
 <p>Files in certain formats - Stata, SPSS, R, Excel(xlsx) and CSV - may
@@ -281,20 +287,23 @@ your own custom Terms of Use for your datasets.</p>
 <p>If you restrict any files in your dataset, you will be prompted by a pop-up to enter Terms of Access for the data. This can also be edited in the Terms tab or selecting Terms in the &#8220;Edit&#8221; dropdown button in the dataset. You may also allow users to request access for your restricted files by enabling &#8220;Request Access&#8221;. To add more information about the Terms of Access, click on &#8220;Additional Information [+]&#8221;. The University of Virginia does not recommend restricting files as the purpose of LibraData is to share &#8220;Openly&#8221; your scholarship. If you do restrict files, pleae note that <strong>only UVa affiliated users will be able to login and request access</strong>.</p>
 </div>
 </div>
-<div class="section" id="permissions">
-<span id="id5"></span><h2>Permissions<a class="headerlink" href="#permissions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="roles-permissions">
+<span id="permissions"></span><h2>Roles &amp; Permissions<a class="headerlink" href="#roles-permissions" title="Permalink to this headline">¶</a></h2>
+<p>Dataverse user accounts can be granted roles that define which actions they are allowed to take on specific dataverses, datasets, and/or files. Each role comes with a set of permissions, which define the specific actions that users may take.</p>
+<p>Roles and permissions may also be granted to groups. Groups can be defined as a collection of Dataverse user accounts, a collection of IP addresses (e.g. all users of a library&#8217;s computers), or a collection of all users who log in using a particular institutional login (e.g. everyone who logs in with a particular university&#8217;s account credentials).</p>
 <div class="section" id="dataset-level">
 <h3>Dataset-Level<a class="headerlink" href="#dataset-level" title="Permalink to this headline">¶</a></h3>
-<p>Dataset permissions can be found from the dataset by clicking the “Edit” button and from the dropdown list selecting “Permissions”.</p>
-<p>The dataset permissions page has two sections: Users/Groups and Roles. In the top, “Users/Groups” panel, you can find all the users and groups that have access to your dataset. To give someone access to view your unpublished dataset or edit your published or unpublished dataset, click on the “Assign Roles to Users/Groups” button in the Users/Groups section.</p>
-<p>The panel below that is “Roles” where you can find all the roles set up in your dataverse, that you can assign to users and groups. These roles are set at your dataverse-level and are displayed here at the dataset-level as a reference for when you are granting permission to users and/or groups.</p>
+<p>Admins or curators of a dataset can assign roles and permissions to the users of that dataset. If you are an admin or curator of a dataset, then you can get to the dataset permissions page by clicking the &#8220;Edit&#8221; button, highlighting &#8220;Permissions&#8221; from the dropdown list, and clicking &#8220;Dataset&#8221;.</p>
+<p>When you access a dataset&#8217;s permissions page, you will see two sections:</p>
+<p><strong>Users/Groups:</strong> Here you can assign roles to specific users or groups, determining which actions they are permitted to take on your dataset. You can also reference a list of all users who have roles assigned to them for your dataset and remove their roles if you please. Some of the users listed may have roles assigned at the dataverse level, in which case those roles can only be removed from the dataverse permissions page.</p>
+<p><strong>Roles:</strong> Here you can reference a full list of roles that can be assigned to users of your dataset. Each role lists the permissions that it offers.</p>
 </div>
 <div class="section" id="file-level">
 <h3>File-Level<a class="headerlink" href="#file-level" title="Permalink to this headline">¶</a></h3>
-<p>If you have restricted specific files the file-level permissions is where you will need to go to grant users/groups access to
-specific restricted files. Dataset file permissions are located under Permissions in the Edit button on a dataset page.
-The file permissions page has two sections: Users/Groups and Files.</p>
-<p>To give someone access to your restricted files, click on the &#8220;Grant Access to Users/Groups&#8221; button in the Users/Groups section.</p>
+<p>If specific files in your dataset are restricted access, then you can grant specific users or groups access to those files while still keeping them restricted to the general public. If you are an admin or curator of a dataset, then you can get to the file-level permissions page by clicking the &#8220;Edit&#8221; button, highlighting &#8220;Permissions&#8221; from the dropdown list, and clicking &#8220;File&#8221;.</p>
+<p>When you access a dataset&#8217;s file-level permissions page, you will see two sections:</p>
+<p><strong>Users/Groups:</strong> Here you can see which users or groups have been granted access to which files. You can click the &#8220;Grant Access to Users/Groups&#8221; button to see a box where you can grant access to specific files within your dataset to specific users or groups. If any users have requested access to a file in your dataset, you can grant or reject their access request here.</p>
+<p><strong>Restricted Files:</strong> In this section, you can see the same information, but broken down by each individual file in your dataset. For each file, you can click the &#8220;Assign Access&#8221; button to see a box where you can grant access to that file to specific users or groups.</p>
 </div>
 </div>
 <div class="section" id="thumbnails-widgets">
@@ -396,7 +405,7 @@ will be removed as soon as you Publish.</p>
       
     </p>
     <p>
-        <a href="https://dataverse.lib.virginia.edu/" target="_blank">LibraData</a>, UVA's Institutional Dataverse developed at Harvard's <a href="http://www.iq.harvard.edu/" target="_blank">IQSS</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse.org" title="Dataverse.org on GitHub" target="_blank"><img src="/dataverse-docs/_static/images/githubicon.png" width="20" alt="Dataverse.org on GitHub"/></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> 1.4.6<br/>Version 4.3 &nbsp;|&nbsp; Last updated on Feb 23, 2018<br/>&copy; Copyright 2018 by the Rector and Visitors of the University of Virginia <br/>
+        <a href="https://dataverse.lib.virginia.edu/" target="_blank">LibraData</a>, UVA's Institutional Dataverse developed at Harvard's <a href="http://www.iq.harvard.edu/" target="_blank">IQSS</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse.org" title="Dataverse.org on GitHub" target="_blank"><img src="/dataverse-docs/_static/images/githubicon.png" width="20" alt="Dataverse.org on GitHub"/></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> 1.4.6<br/>Version 4.3 &nbsp;|&nbsp; Last updated on Mar 16, 2018<br/>&copy; Copyright 2018 by the Rector and Visitors of the University of Virginia <br/>
     </p>
   </div>
 </footer>

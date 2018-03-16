@@ -89,7 +89,7 @@ Once the dataset is published, this symbol is not seen by the public. The owner 
 .. |image5| image:: ./img/search.png
 .. |image6| image:: ./img/find.png
 .. |image7| image:: ./img/asterisks.png
-.. |image8| image:: ./img/ShareIcon.png
+.. |image8| image:: ./img/shareIcon.png
 .. |image9| image:: ./img/shareApps.png
 .. |image10| image:: ./img/publish.png
 .. |image11| image:: ./img/warning.png

@@ -13,7 +13,7 @@ Basic Search
 --------------
 From a Dataverse homepage, you can begin searching that dataverse with an exact phrase search or entering a search term or query in the search box (on the left) that says, "Search this dataverse". If you have navigated to a sub-dataverse, to search ALL dataverses, use the search box at the top of the page that says, "Search all dataverses". 
 
-**Search results features**
+**Sorting and Viewing Search Results**
 
 - Facets: to the left of the search results, there are several facets a user can click on to narrow the number of results displayed. 
     - Choosing a facet: to choose a facet, click on the facet to choose it
@@ -66,8 +66,8 @@ You can find the citation for the dataset at the top of the dataset page in a bl
 Download Files
 -----------------
 
-Within the Files tab on a dataset page, a user can download the Original File Format, Tab Delimited Format, Variable Metadata, Data File Citation (RIS Format, EndNote XML, or BibTeX Format), or Subset (options appear depending on file format). 
+Within the Files tab on a dataset page, you can download the files in that dataset. To download more than one file at a time, select the files you would like to download and then click the "Download" button above the files. The selected files will download in zip format.
 
-To download more than one file at a time, select the files you would like to download and then click the "Download" button above the files. The selected files will download in zip format.
+With tabular data files, a user can download the Original File Format, Tab Delimited Format, Variable Metadata, Data File Citation (RIS Format, EndNote XML, or BibTeX Format), or Subset (options appear depending on file format). 
 
 
