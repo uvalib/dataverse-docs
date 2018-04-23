@@ -13,6 +13,6 @@ Below are the LibraData suite of polices along with best practices for data shar
 
 `LibraData API Terms of Use <http://www.library.virginia.edu/libra/datasets/libra-data-api-terms-of-use/>`_
 
-`Libra Collections Policy <http://www.library.virginia.edu/assets/Libra-Collections-Policy.pdf>`_
+`Libra Collections Policy <https://wwwstatic.lib.virginia.edu/files/2018-03/LibraCollectionsPolicy-20180122.pdf>`_
 
 `LibraData Community Norms <http://www.library.virginia.edu/libra/datasets/libra-data-community-norms/>`_
