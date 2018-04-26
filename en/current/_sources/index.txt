@@ -27,7 +27,9 @@ on all of the above tasks can be found in the Users Guide.
 
 LibraData Support
 ==================
-If you have any questions or problems with LibraData and UVA's Dataverse implementation, please email
+To start depositing in LibraData, check out the 'LibraData Deposit Checklist <http://www.library.virginia.edu/libra/datasets/libra-data-deposit-checklist/>`_ 
+
+If you have any questions or problems with LibraData, UVA's Dataverse implementation, please email
 `libra@virginia.edu <mailto:libra@virginia.edu>`_.
 
 Other Resources
