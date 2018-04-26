@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>WorldMap: Geospatial Data Exploration &#8212; Dataverse.org</title>
+    
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/docsdataverse_org.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '4.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Dataverse.org" href="../../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<rmeta name="apple-mobile-web-app-capable" content="yes">
+<link type="image/png" rel="icon" href="../_static/images/favicondataverse.png" />
+
+  </head>
+  <body role="document">
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#dv-bs-navbar-details">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://dataverse.lib.virginia.edu" id="dataverse-org-homepage-url"">LibraData Dataverse</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+
+       <div class="collapse navbar-collapse" id="dv-bs-navbar-details"></div><!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<script type="text/javascript" src="/en/latest/_static/navbar_from_dataverse_org.js"></script>
+<!--<script type="text/javascript" src="/_static/js/navbar_from_dataverse_org.js"></script>-->
+<script>
+    $(document).ready(function () {
+        load_navbar();
+    });
+</script>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary">
+<form action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form><ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">User Guide</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9">
+      
+  <div class="section" id="worldmap-geospatial-data-exploration">
+<h1>WorldMap: Geospatial Data Exploration<a class="headerlink" href="#worldmap-geospatial-data-exploration" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="worldmap">
+<h2>WorldMap<a class="headerlink" href="#worldmap" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://worldmap.harvard.edu/">WorldMap</a> is developed by the Center for Geographic Analysis (CGA) at Harvard and is an open source software that helps researchers visualize and explore their data in maps. The WorldMap and Dataverse collaboration allows researchers to be able to upload shapefiles to Dataverse for long term storage and receive a persistent identifier (through DOI) as well as be able to easily move into WorldMap to interact with the data and save to WorldMap as well. GeoConnect is the platform integrating Dataverse and WorldMap together and what you will use to visualize your data.</p>
+</div>
+<div class="section" id="uploading-shapefiles-to-dataverse">
+<h2>Uploading Shapefiles to Dataverse<a class="headerlink" href="#uploading-shapefiles-to-dataverse" title="Permalink to this headline">¶</a></h2>
+<p>To get started, you will need to create a dataset in Dataverse. For more detailed instructions on creating a dataset, read the <a class="reference external" href="http://guides.dataverse.org/en/latest/user/dataset-management.html">Dataset + File Management</a> portion of this user guide.</p>
+<p>Dataverse recognizes ZIP files that contain the components of a shapefile and will ingest them as a ZIP.</p>
+<p>Once you have uploaded your ZIP files comprising a shapefile, a Map Data button will appear next to the file in the dataset.</p>
+</div>
+<div class="section" id="mapping-your-data-with-geoconnect">
+<h2>Mapping your data with Geoconnect<a class="headerlink" href="#mapping-your-data-with-geoconnect" title="Permalink to this headline">¶</a></h2>
+<p>In order to use the WorldMap and Dataverse integration, your dataset will need to be published. Once it has been published, you will be able to use the MapData button. Click on the Map Data button to be brought to GeoConnect, the portal between Dataverse and WorldMap that will process your shapefile and send it to WorldMap.</p>
+<p>To get started with visualizing your shapefile, click on the blue Visualize on WorldMap button in GeoConnect. It may take 30 seconds or longer for the data to be sent to WorldMap and then back to GeoConnect</p>
+<p>Once the visualizing has finished, you will be able to style your map through Attribute, Classification Method, Number of Intervals, and Colors. At any time, you can view the map on WorldMap if you would like to see how it will be displayed there.</p>
+<p>After styling your map, you can delete it or return to Dataverse. If you decide to delete the map, it will no longer appear on WorldMap. By returning to Dataverse, you will send the styled map layer to WorldMap as well as to Dataverse where a preview will be available of the map layer you styled using GeoConnect.</p>
+<p>To map the shapefile again, all you will need to do is click the Map Data button again.</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        <a href="https://dataverse.lib.virginia.edu/" target="_blank">LibraData</a>, UVA's Institutional Dataverse developed at Harvard's <a href="http://www.iq.harvard.edu/" target="_blank">IQSS</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse.org" title="Dataverse.org on GitHub" target="_blank"><img src="/dataverse-docs/_static/images/githubicon.png" width="20" alt="Dataverse.org on GitHub"/></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> 1.4.6<br/>Version 4.3 &nbsp;|&nbsp; Last updated on Feb 23, 2018<br/>&copy; Copyright 2018 by the Rector and Visitors of the University of Virginia <br/>
+    </p>
+  </div>
+</footer>
+
+
+  </body>
+</html>

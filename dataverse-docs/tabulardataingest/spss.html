@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>SPSS &#8212; Dataverse.org</title>
+    
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/docsdataverse_org.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '4.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Dataverse.org" href="../../index.html" />
+    <link rel="up" title="Tabular Data File Ingest" href="index.html" />
+    <link rel="next" title="Stata" href="stata.html" />
+    <link rel="prev" title="Tabular Data, Representation, Storage and Ingest" href="ingestprocess.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<rmeta name="apple-mobile-web-app-capable" content="yes">
+<link type="image/png" rel="icon" href="../_static/images/favicondataverse.png" />
+
+  </head>
+  <body role="document">
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#dv-bs-navbar-details">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://dataverse.lib.virginia.edu" id="dataverse-org-homepage-url"">LibraData Dataverse</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+
+       <div class="collapse navbar-collapse" id="dv-bs-navbar-details"></div><!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<script type="text/javascript" src="/en/latest/_static/navbar_from_dataverse_org.js"></script>
+<!--<script type="text/javascript" src="/_static/js/navbar_from_dataverse_org.js"></script>-->
+<script>
+    $(document).ready(function () {
+        load_navbar();
+    });
+</script>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary">
+<form action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">User Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../account.html">LibraData Account Creation &amp; Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html">Glossary of Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../icon-glossary.html">Glossary of Icons &amp; Symbols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../find-use-data.html">Finding and Using Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dataverse-management.html">Dataverse Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dataset-management.html">Dataset + File Management</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Tabular Data File Ingest</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="supportedformats.html">Supported File Formats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ingestprocess.html">Tabular Data, Representation, Storage and Ingest</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">SPSS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="stata.html">Stata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdata.html">R Data Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="excel.html">Excel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="csv.html">CSV</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../appendix.html">Appendix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data-policies.html">LibraData Policies</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9">
+      
+  <div class="section" id="spss">
+<h1>SPSS<a class="headerlink" href="#spss" title="Permalink to this headline">¶</a></h1>
+<p>SPSS data files (POR and SAV formats).</p>
+<div class="section" id="supported-versions">
+<h2>Supported Versions<a class="headerlink" href="#supported-versions" title="Permalink to this headline">¶</a></h2>
+<p>Dataverse supports reading of all SPSS versions 7 to 22. But please see the &#8220;Limitations&#8221; section.</p>
+</div>
+<div class="section" id="limitations">
+<h2>Limitations<a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h2>
+<p>SPSS does not openly publish the specifications of their proprietary file formats. Our ability to read and parse their files is based on some documentation online from unofficial sources, and some reverse engineering. Because of that we cannot, unfortunately, guarantee to be able
+to process <em>any</em> SPSS file uploaded.</p>
+<p>However, we&#8217;ve been improving this process for a few years by now, and it should be quite robust in the current version of Dataverse. Thus your chances of success - uploading an SPSS files and having it turned into a fully functional tabular data table in the Dataverse - should be reasonably good.</p>
+<p>If you are having a problem with a particular SPSS file, please contact our support and we&#8217;ll see if it&#8217;s something we could further improve in our SPSS ingest driver.</p>
+</div>
+<div class="section" id="spss-control-cards-not-supported">
+<h2>SPSS Control Cards - not supported<a class="headerlink" href="#spss-control-cards-not-supported" title="Permalink to this headline">¶</a></h2>
+<p>In the past, there have been attempts to support SPSS &#8220;control cards&#8221;, in addition to the .SAV and .POR files; both in the early VDC software, and in some versions of DVN. A &#8220;control card&#8221; is a plain text file with a set of SPSS commands that describe the raw data, provided in a separate, fixed-width-columns or comma-separated-values file. For various reasons, it has never been very successful. We weren&#8217;t seeing too much demand for this ingest feature, so it was dropped from Dataverse 4.0.</p>
+<p>Please contact us if you have any questions and/or strong feelings on this issue, or if you have serious amounts of data exclusively available in this format that you would like to ingest under Dataverse.</p>
+</div>
+<div class="section" id="support-for-language-encodings-in-spss">
+<h2>Support for Language Encodings in SPSS<a class="headerlink" href="#support-for-language-encodings-in-spss" title="Permalink to this headline">¶</a></h2>
+<p>Historically, there was no support for specifying a particular language/code page encoding for the data stored in an SPSS file. Meaning, text values in none-ASCII encodings, or non-Latin characters could be entered and stored, but there was no setting to unambiguously specify what language, or what character set it was. By default, Dataverse will try to interpret binary characters as UTF8. If that&#8217;s not working - for example, if the descriptive labels and/or categorical values ingest as garbage - and if you know happen to know what encoding was used in the original file, you can now specify it in the Ingest Options.
+For example, if you know that the text in your SAV file is in Mandarin, and is encoded using the GB2312, specify it as follows:</p>
+<p>Upload your file, in the &#8220;Edit Files&#8221; tab of the Dataset page. Once the file is recognized as SPSS/save, and <em>before</em> you click Save, go into the &#8220;Advanced Ingest Options&#8221;, and select &#8220;Simplified Chinese, GB2312&#8221; in the nested menu under &#8220;Language Encoding&#8221; -&gt; &#8220;East Asian&#8221;.</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        <a href="https://dataverse.lib.virginia.edu/" target="_blank">LibraData</a>, UVA's Institutional Dataverse developed at Harvard's <a href="http://www.iq.harvard.edu/" target="_blank">IQSS</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse.org" title="Dataverse.org on GitHub" target="_blank"><img src="/dataverse-docs/_static/images/githubicon.png" width="20" alt="Dataverse.org on GitHub"/></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> 1.4.6<br/>Version 4.3 &nbsp;|&nbsp; Last updated on Feb 23, 2018<br/>&copy; Copyright 2018 by the Rector and Visitors of the University of Virginia <br/>
+    </p>
+  </div>
+</footer>
+
+
+  </body>
+</html>
