@@ -40,7 +40,7 @@ There are other search boxes that are context dependent.
  
 |image6|
 
-If you are in a dataverse, the search box with the "Find" icon, will search within the current dataverse and osther sub dataverses.  If the current dataverse is the top-level, then all sub dataverses will be searched.
+If you are in a dataverse, the search box with the "Find" icon, will search within the current dataverse and its sub dataverses.  If the current dataverse is the top-level, then all sub dataverses will be searched.
 
 If you are in a dataset, the search box with the "Find" icon, will search within the current dataset.
 

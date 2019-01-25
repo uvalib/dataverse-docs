@@ -16,7 +16,7 @@ A **dataverse** is a container for datasets (research data, code, documentation,
 
 Dates in LibraData
 ======================
-**Data Production Date**:  Date when the data collection or other materials were produced (NOT distributed, published or deposited).
+**Data Creation Date**:  Date when the data collection or other materials were produced (NOT distributed, published or deposited).
 
 **Deposit Date**:  Current Date: The Date that the Dataset was deposited into THIS repository. Set automatically on dataset creation.
 

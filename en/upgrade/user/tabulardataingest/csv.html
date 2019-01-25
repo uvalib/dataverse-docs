@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>CSV &#8212; Dataverse.org</title>
+    <title>CSV/TSV &#8212; Dataverse.org</title>
     
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -103,11 +103,11 @@
 <li class="toctree-l3"><a class="reference internal" href="stata.html">Stata</a></li>
 <li class="toctree-l3"><a class="reference internal" href="rdata.html">R Data Format</a></li>
 <li class="toctree-l3"><a class="reference internal" href="excel.html">Excel</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">CSV</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">CSV/TSV</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../appendix.html">Appendix</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data-policies.html">LibraData Policies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data-policies.html">LibraData Policies and Sharing Norms</a></li>
 </ul>
 </li>
 </ul>
@@ -116,11 +116,11 @@
       </div>
     <div class="col-md-9">
       
-  <div class="section" id="csv">
-<h1>CSV<a class="headerlink" href="#csv" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="ingest-of-comma-separated-values-files-as-tabular-data">
-<h2>Ingest of Comma-Separated Values files as tabular data.<a class="headerlink" href="#ingest-of-comma-separated-values-files-as-tabular-data" title="Permalink to this headline">¶</a></h2>
-<p>Dataverse will make an attempt to turn CSV files uploaded by the user into tabular data, using the <a class="reference external" href="https://commons.apache.org/proper/commons-csv/">Apache CSV parser</a>.</p>
+  <div class="section" id="csv-tsv">
+<h1>CSV/TSV<a class="headerlink" href="#csv-tsv" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="ingest-of-comma-separated-values-and-tab-separated-values-files-as-tabular-data">
+<h2>Ingest of Comma-Separated Values and Tab-Separated Values files as tabular data<a class="headerlink" href="#ingest-of-comma-separated-values-and-tab-separated-values-files-as-tabular-data" title="Permalink to this headline">¶</a></h2>
+<p>Dataverse will make an attempt to turn CSV and TSV files uploaded by the user into tabular data, using the <a class="reference external" href="https://commons.apache.org/proper/commons-csv/">Apache CSV parser</a>.</p>
 </div>
 <div class="section" id="main-formatting-requirements">
 <h2>Main formatting requirements<a class="headerlink" href="#main-formatting-requirements" title="Permalink to this headline">¶</a></h2>
@@ -162,12 +162,7 @@ n
 <p>In character strings, an empty value (a comma followed by another comma, or the line end) is treated as an empty string (NOT as a <em>missing value</em>).</p>
 <p>Any non-Latin characters are allowed in character string values, <strong>as long as the encoding is UTF8</strong>.</p>
 <p><strong>Note:</strong> When the ingest recognizes a CSV column as a numeric vector, or as a date/time value, this information is reflected and saved in the database as the <em>data variable metadata</em>. To inspect that metadata, click on the <em>Download</em> button next to a tabular data file, and select <em>Variable Metadata</em>. This will export the variable records in the DDI XML format. (Alternatively, this metadata fragment can be downloaded via the Data Access API; for example: <code class="docutils literal"><span class="pre">http://localhost:8080/api/access/datafile/&lt;FILEID&gt;/metadata/ddi</span></code>).</p>
-<p>The most immediate implication is in the calculation of the UNF signatures for the data vectors, as different normalization rules are applied to numeric, character, and date/time values. (see the <span class="xref doc">/developers/unf/index</span> section for more information). If it is important to you that the UNF checksums of your data are accurately calculated, check that the numeric and date/time columns in your file were recognized as such (as <code class="docutils literal"><span class="pre">type=numeric</span></code> and <code class="docutils literal"><span class="pre">type=character,</span> <span class="pre">category=date(time)</span></code>, respectively). If, for example, a column that was supposed to be numeric is recognized as a vector of character values (strings), double-check that the formatting of the values is consistent. Remember, a single improperly-formatted value in the column will turn it into a vector of character strings, and result in a different UNF. Fix any formatting errors you find, delete the file from the dataset, and try to ingest it again.</p>
-</div>
-<div class="section" id="tab-delimited-data-files">
-<h2>Tab-delimited Data Files<a class="headerlink" href="#tab-delimited-data-files" title="Permalink to this headline">¶</a></h2>
-<p>Presently, tab-delimited files can be ingested by replacing the TABs with commas.
-(We are planning to add direct support for tab-delimited files in an upcoming release).</p>
+<p>The most immediate implication is in the calculation of the UNF signatures for the data vectors, as different normalization rules are applied to numeric, character, and date/time values. If it is important to you that the UNF checksums of your data are accurately calculated, check that the numeric and date/time columns in your file were recognized as such (as <code class="docutils literal"><span class="pre">type=numeric</span></code> and <code class="docutils literal"><span class="pre">type=character,</span> <span class="pre">category=date(time)</span></code>, respectively). If, for example, a column that was supposed to be numeric is recognized as a vector of character values (strings), double-check that the formatting of the values is consistent. Remember, a single improperly-formatted value in the column will turn it into a vector of character strings, and result in a different UNF. Fix any formatting errors you find, delete the file from the dataset, and try to ingest it again.</p>
 </div>
 </div>
 
@@ -184,7 +179,7 @@ n
       
     </p>
     <p>
-        <a href="https://dataverse.lib.virginia.edu/" target="_blank">LibraData</a>, UVA's Institutional Dataverse developed at Harvard's <a href="http://www.iq.harvard.edu/" target="_blank">IQSS</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse.org" title="Dataverse.org on GitHub" target="_blank"><img src="/dataverse-docs/_static/images/githubicon.png" width="20" alt="Dataverse.org on GitHub"/></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> 1.4.6<br/>Version 4.3 &nbsp;|&nbsp; Last updated on Mar 16, 2018<br/>&copy; Copyright 2018 by the Rector and Visitors of the University of Virginia <br/>
+        <a href="https://dataverse.lib.virginia.edu/" target="_blank">LibraData</a>, UVA's Institutional Dataverse developed at Harvard's <a href="http://www.iq.harvard.edu/" target="_blank">IQSS</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse.org" title="Dataverse.org on GitHub" target="_blank"><img src="/dataverse-docs/_static/images/githubicon.png" width="20" alt="Dataverse.org on GitHub"/></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> 1.4.6<br/>Version 4.3 &nbsp;|&nbsp; Last updated on Jan 25, 2019<br/>&copy; Copyright 2018 by the Rector and Visitors of the University of Virginia <br/>
     </p>
   </div>
 </footer>
