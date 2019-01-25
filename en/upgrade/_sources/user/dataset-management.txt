@@ -421,3 +421,5 @@ If you deaccession the most recently published version of the dataset but not al
 .. |image2| image:: ./img/data-download.png 
 .. |image3| image:: ./img/version_workflow.png
 .. |image4| image:: ./img/publish-popup.png
+.. |prov0|  image:: ./img/prov0.png
+.. |prov1|  image:: ./img/prov1.png
