@@ -18,4 +18,6 @@ Below are the LibraData suite of polices along with best practices for data shar
 
 Best Practices - `LibraData Community Norms <http://www.library.virginia.edu/libra/datasets/libra-data-community-norms/>`_
 
-Best Practices - `Replication Guidelines <http://www.library.virginia.edu/libra/datasets/libra-data-community-norms/>`_
+Best Practices - `Replication Guidelines <http://www.library.virginia.edu/libra/datasets/replication-guidelines/>`_
+
+Best Practices - `Data Management <http://www.library.virginia.edu/libra/datasets/libra-data-management/>`_
