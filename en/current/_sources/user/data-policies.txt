@@ -1,9 +1,10 @@
 .. _data-policies:
 
-LibraData Policies
+
+LibraData Policies and Sharing Norms
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Below are the LibraData suite of polices along with best practices for data sharing "community norms": 
+Below are the LibraData suite of polices along with best practices for data sharing and "community norms": 
 
 `University of Virginia's Privacy Policy <http://www.virginia.edu/siteinfo/privacy>`_
 
@@ -15,4 +16,8 @@ Below are the LibraData suite of polices along with best practices for data shar
 
 `Libra Collections Policy <https://wwwstatic.lib.virginia.edu/files/2018-03/LibraCollectionsPolicy-20180122.pdf>`_
 
-`LibraData Community Norms <http://www.library.virginia.edu/libra/datasets/libra-data-community-norms/>`_
+Best Practices - `LibraData Community Norms <http://www.library.virginia.edu/libra/datasets/libra-data-community-norms/>`_
+
+Best Practices - `Replication Guidelines <http://www.library.virginia.edu/libra/datasets/replication-guidelines/>`_
+
+Best Practices - `Data Management <http://www.library.virginia.edu/libra/datasets/libra-data-management/>`_

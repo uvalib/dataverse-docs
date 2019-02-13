@@ -21,10 +21,14 @@ Note that once a dataset has been published its metadata may be exported. A butt
 Adding a New Dataset
 ============================
 
-#. Navigate to the dataverse in which you want to add a dataset.
-#. Click on the "Add Data" button and select "New Dataset" in the dropdown menu.
-#. To quickly get started, enter at minimum all the required fields with an asterisk to get a Data Citation with a DOI (e.g., the Dataset Title, Author,
-   Description, Contact Email, Subject, and Date Creation Date).
+
+If you are not logged in, you will be prompted to log in before adding a new dataset.
+
+#. Navigate to the home page for LibraData http://dataverse.lib.virginia.edu
+#. From the UVA dataverse home page, in the box “Add your dataset to LibraData”, select the dataverse in which you want to add a dataset. You can create a dataset at the top level (LibraData) or in a sub-dataverse (e.g. Curry School of Education, Department of Biology, etc.). Currently available sub-dataverses are listed in the drop down menu, choose a specific one or select “LibraData - Main”. 
+#. Click on the "Add Data" button.
+#. To quickly get started, enter at minimum all the required fields with an asterisk (e.g., the Dataset Title, Author,
+   Dataset Description, Contact Email, Subject, and Data Creation Date).
 #. Scroll down to the "Files" section and click on "Select Files to Add" to add all the relevant files to your dataset.
    You can also upload your files directly from your Dropbox. **Tip:** You can drag and drop or select multiple files at a time from your desktop,
    directly into the upload widget. Your files will appear below the "Select Files to Add" button where you can add a
@@ -42,8 +46,10 @@ We currently only support the following HTML tags for any of our textbox meatdat
 <strong>, <strike>, <ul>.
 
 
-File Handling + Uploading
+File Upload
 ===============================
+
+You can upload files to a dataset while first creating that dataset. You can also upload files after creating a dataset by clicking the “Edit” button at the top of the dataset page and from the dropdown list selecting “Files (Upload)” or clicking the “Upload Files” button above the files table in the Files tab. From either option you will be brought to the Upload Files page for that dataset.
 
 To upload new files to a dataset, click the “Edit” button at the top of the dataset page and from the dropdown list select “Files (Upload)” or click the “Upload Files” button above the files table in the Files tab. From either option you will be brought to the Upload Files page for that dataset.
 
@@ -56,6 +62,10 @@ All file formats are supported, up to 6GB per file for LibraData Dataverse.
 The file types listed below are supported by additional functionality, which can include downloading in different formats, subsets, file-level metadata preservation, file-level data citation; and exploration through data visualization and analysis. 
 
 .. [#f1] Some Dataverse installations do not allow this feature.
+
+File Handling
+======================
+Certain file types in Dataverse are supported by additional functionality, which can include downloading in different formats, subsets, file-level metadata preservation, file-level data citation; and exploration through data visualization and analysis. See the sections below for information about special functionality for specific file types.
 
 Tabular Data Files
 --------------------
@@ -144,7 +154,7 @@ Compressed files in zip format are unpacked automatically. If it fails to unpack
 is. If the number of files inside are more than a set limit (1,000), you will get an error message and the file will upload as is.
 
 
-Advanced Options
+Other File Types
 ---------------------------------------------
 There are several advanced options available for certain file types.
 
@@ -154,6 +164,7 @@ There are several advanced options available for certain file types.
 
 Edit Files 
 ==================
+
 Edit File Metadata
 --------------------
 Go to the dataset you would like to edit where you will see the listing of files. Select the files you would like to edit by using either the "Select All" checkbox or individually selecting files. Next, click on the "Edit" button above the files and select if you would like to:
@@ -175,11 +186,12 @@ The File Tags are comprised of custom, category (i.e. Documentation, Data, Code)
 
 Replace Files
 ==================
-In cases where you would like to revise an existing file rather than add a new one, you can do so using our Replace File feature. This will allow you to track the history of this file across versions of your dataset, both before and after replacing it. This could be useful for updating your data or fixing mistakes in your data.
 
-Go to the file page for the file you would like to replace, click on the “Edit” button, and from the dropdown list select “Replace”. This will bring you to the Replace File page, where you can see the metadata for the most recently published version of the file and you can upload your replacement file. Once you have uploaded the replacement file, you can edit its name, description, and tags. When you’re finished, click the “Save Changes” button.
+n cases where you would like to revise an existing file rather than add a new one, you can do so using our Replace File feature. This will allow you to track the history of this file across versions of your dataset, both before and after replacing it. This could be useful for updating your data or fixing mistakes in your data. Because replacing a file creates an explicit link between the previous dataset version and the current version, the file replace feature is not available for unpublished dataset drafts. Also note that replacing a file will not automatically carry over that file’s metadata, but once the file is replaced then its original metadata can still be found by referencing the previous version of the file under the “Versions” tab of the file page.
 
-After successfully replacing a file, a new dataset draft version will be created. A summary of your actions will be recorded in the dataset Version Details table in the “Versions” tab on that dataset’s page, and in the file Version Details table on the file’s page. Both tables allow you to access all previous versions of the file across all previous versions of your dataset, including the old version of the file before you replaced it.
+To replace a file, go to the file page for that file, click on the “Edit” button, and from the dropdown list select “Replace”. This will bring you to the Replace File page, where you can see the metadata for the most recently published version of the file and you can upload your replacement file. Once you have uploaded the replacement file, you can edit its name, description, and tags. When you’re finished, click the “Save Changes” button.
+
+After successfully replacing a file, a new dataset draft version will be created. A summary of your actions will be recorded in the “Versions” tab on on both the dataset page and file page. The Versions tab allows you to access all previous versions of the file across all previous versions of your dataset, including the old version of the file before you replaced it.
 
 .. _license-terms:
 
@@ -189,14 +201,20 @@ Terms
 
 In the Terms tab, which can also be found by clicking on the "Edit" dropdown button of a dataset, you can setup how users can use your data once they have downloaded it (CC0 waiver or custom Terms of Use) and how they can access your data if you have files that are restricted (terms of access). These are explained in further detail below:
 
-CC0 Waiver + Dataset Terms of Use 
+CC0 Public Domain Dedication 
 ---------------------------------------------------------------
 
-Starting with Dataverse version 4.0, all new datasets will default to a `CC0 public domain dedication 
-<https://creativecommons.org/publicdomain/zero/1.0/>`_ . CC0 facilitates reuse and extensibility of research data. 
-Our `Community Norms <http://www.library.virginia.edu/libra/datasets/libra-data-community-norms/>`_ as well as good scientific
-practices expect that proper credit is given via citation. If you are unable to give your datasets a CC0 waiver you may enter 
-your own custom Terms of Use for your datasets.
+ll new datasets created through Dataverse’s web UI are given a Creative Commons CC0 Public Domain Dedication.
+
+The Creative Commons organization defines a number of licenses that allow copyright holders to release their intellectual property more openly, with fewer legal restrictions than standard copyright enforces. Each Creative Commons license typically specifies simple terms for how the IP must be used, reused, shared, and attributed. In addition to these licenses, Creative Commons also provides public domain tools that make it easy to dedicate IP to the public domain.
+
+In the context of Dataverse, their CC0 Public Domain Dedication allows you to unambiguously waive all copyright control over your data in all jurisdictions worldwide. Data released with CC0 can be freely copied, modified, and distributed (even for commercial purposes) without violating copyright. In most parts of the world, factual data is exempt from copyright anyway, but applying CC0 removes all ambiguity and makes the legal copyright status of the data as clear as possible. Dataverse applies CC0 to datasets by default because it facilitates reuse, extensibility, and long-term preservation of research data by assuring that the data can be safely handled by anyone without fear of potential copyright pitfalls.
+
+Though CC0 waives a dataset owner’s legal copyright controls over the data, it does not exempt Dataverse users from following ethical and professional norms in scholarly communications. The Dataverse Community Norms * as well as scientific best practices assert that proper credit should be given via citation. Regardless of whether CC0 has been applied or not, Dataverse users are expected to cite the data they use, giving credit to the data’s authors. This expectation applies to both the Dataverse Community and the entire wider scholarly community.
+
+Additionally, users are still expected to respect access restrictions and other terms applied to CC0 files in Dataverse. Additional restrictions, conditions, and terms can still be compatible with CC0, as CC0 only operates in the realm of copyright, which is rather limited when it comes to data.
+
+If a data owner feels that CC0 is not suitable for their data, they are able to enter custom Terms of Use, as detailed in the following section.
 
 \* **Legal Disclaimer:** these `Community Norms <http://www.library.virginia.edu/libra/datasets/libra-data-community-norms/>`_ are not a substitute for the CC0 waiver or custom terms and licenses applicable to each dataset. Please be advised that the Community Norms are not a binding contractual agreement, and that downloading datasets from Dataverse does not create a legal obligation to follow these policies.  
 
@@ -204,7 +222,9 @@ Custom Terms of Use for Datasets
 --------------------------------------------
 
 If you are unable to use a CC0 waiver for your datasets you are able to set your own custom terms of use. To do so, select 
-"No, do not apply CC0 - "Public Domain Dedication" and a Terms of Use textbox will show up allowing you to enter your own custom terms of use for your dataset. To add more information about the Terms of Use, click on "Additional Information \[+]".
+"No, do not apply CC0 - "Public Domain Dedication" and a Terms of Use textbox will show up allowing you to enter your own custom terms of use for your dataset. 
+
+To add more information about the Terms of Use, you can use fields like Special Permissions, Restrictions, Citation Requirements, etc., click on "Additional Information \[+]".
 
 Here is an `example of a Data Usage Agreement <http://best-practices.dataverse.org/harvard-policies/sample-dua.html>`_ for datasets that have de-identified human subject data.
 
@@ -244,6 +264,32 @@ When you access a dataset's file-level permissions page, you will see two sectio
 **Users/Groups:** Here you can see which users or groups have been granted access to which files. You can click the "Grant Access to Users/Groups" button to see a box where you can grant access to specific files within your dataset to specific users or groups. If any users have requested access to a file in your dataset, you can grant or reject their access request here.
 
 **Restricted Files:** In this section, you can see the same information, but broken down by each individual file in your dataset. For each file, you can click the "Assign Access" button to see a box where you can grant access to that file to specific users or groups.
+
+.. _provenance:
+
+Data Provenance
+==================
+Data Provenance is a record of where your data came from and how it reached its current form. It describes the origin of a data file, any transformations that have been made to that file, and any persons or organizations associated with that file. A data file’s provenance can aid in reproducibility and compliance with legal regulations. Dataverse can help you keep track of your data’s provenance. Currently, Dataverse only makes provenance information available to those who have edit permissions on your dataset, but in the near future we plan to expand this feature to make provenance information available to the public. 
+
+Dataverse accepts provenance information in two forms: a Provenance File or a free-text Provenance Description. You can attach this provenance information to your data files in Dataverse as part of the file upload process, by clicking Edit -> Provenance:
+
+|prov0|
+
+This will open a window where you can add your Provenance File and/or Provenance Description:
+
+|prov1|
+
+   **Provenance File** is the preferred way of submitting provenance information to Dataverse because it provides a detailed and trustworthy record. Provenance files are typically generated during the process of data analysis, using provenance capture tools like provR, RDataTracker, NoWorkFlow, recordr, or CamFlow.
+
+Once you upload a provenance file, Dataverse will need some additional information in order to accurately connect it to your data file. Once provenance file upload finishes, an input box labeled "Connect entity" will appear under the file. Provenance files contain a list of "entities", which include your data file as well as any objects associated with it (e.g. a chart, a spellchecker, etc.). You will need to tell Dataverse which entity within the provenance file represents your data file. You may type the name of the entity into the box, or click the arrow next to the box and select the entity from a list of all entities in the provenance file. 
+
+For more information on entities and the contents of provenance files, see `the W3C PROV Model Primer  <https://www.w3.org/TR/prov-primer/#intuitive-overview-of-prov>`_.
+
+Once you've uploaded your Provenance File and connected the proper entity, you can hit the Preview button to view the raw JSON of the Provenance File. This can help you confirm that you've uploaded the right file. Be sure to double-check it, because the Provenance File will made *permanent* once it's finalized. At that point you will not be able to *replace*, *remove*, or otherwise *edit* the Provenance File. This ensures that the Provenance File maintains a stable, immutable record of the data file's history. This finalization of the Provenance File happens at different points depending on the status of your data file. If this is a brand new data file that has never been published before, then its associated Provenance File will be made permanent once you publish the dataset. If this data file *has* been published in a previous version of your dataset, then its associated Provenance File will be made permanent as soon as you upload the Provenance File and click "Save Changes" on the warning popup.
+
+A **Provenance Description** allows you to add more provenance information in addition to or in place of a provenance file. This is a free-text field that allows you to enter any information you feel might be relevant to those interested in learning about the provenance of your data. This might be a good place to describe provenance factors like what operating system you used when working with the data file, what functions or libraries you used, how data was merged into the file, what version of the file you used, etc. The Provenance Description is not as useful or trustworthy as a provenance file, but it can still provide value. Unlike the Provenance File, the Provenance Description is never made permanent: you can always edit, remove, or replace it at any time.
+
+You can return to attach provenance to your data file later on by clicking the "Add + Edit Metadata" button on the file page, and then clicking the "Edit -> Provenance" button.
 
 
 .. _widgets:
@@ -320,6 +366,7 @@ Creating a Private URL for your dataset allows you to share your dataset (for vi
 #. In the pop-up select “Create Private URL”
 #. Copy the Private URL which has been created for this dataset and it can now be shared with anyone you wish to have access to view or download files in your unpublished dataset.
 
+*Note: Once published the private URL will no longer work. You must use the published DOI.*
 
 To disable a Private URL
 ----------------------
@@ -374,3 +421,5 @@ If you deaccession the most recently published version of the dataset but not al
 .. |image2| image:: ./img/data-download.png 
 .. |image3| image:: ./img/version_workflow.png
 .. |image4| image:: ./img/publish-popup.png
+.. |prov0|  image:: ./img/prov0.png
+.. |prov1|  image:: ./img/prov1.png
