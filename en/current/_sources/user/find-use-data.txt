@@ -4,14 +4,13 @@ Finding and Using Data
 Finding Data
 =============
 
-Without logging in, users can browse, search for dataverses, datasets, and files, view dataset descriptions and files for published datasets, and subset, analyze and visualize data for published (restricted & not restricted) data
-files. To view a unpublished dataverse, dataset, or file, a user will need to be given permission from that dataverse’s administrator to access it.
+Without logging in to UVa Dataverse, users can browse UVa Dataverse, search for dataverses, datasets, and files, view dataset descriptions and files for published datasets (restricted & not restricted) data files. To view a unpublished dataverse, dataset, or file, a user will need to be given permission from that dataverse’s administrator to access it.
 
-A user can search the dataverses, datasets, and files within a particular dataverse by using the search bar found on the left side of a dataverse page. For example, if you are in the Environmental Science Dataverse page, you can search that specific dataverse’s contents by using the search bar and/or facets displayed on the page.  
+A user can search dataverses, datasets, and files within a particular dataverse by using the search bar and facets found on the left side of a dataverse page. For example, if you are in the Environmental Science Dataverse page, you can search that specific dataverse’s contents by using the search bar and/or facets displayed on the page.  
 
 Basic Search
 --------------
-From a Dataverse homepage, you can begin searching that dataverse with an exact phrase search or entering a search term or query in the search box (on the left) that says, "Search this dataverse". If you have navigated to a sub-dataverse, to search ALL dataverses, use the search dropdown on the header of every page. 
+From UVa's Dataverse homepage, you can search the entire contents of UVa's Dataverse, which includes sub-dataverses, datasets and files. You can search within a sub-dataverse with an exact phrase search or entering a search term or query in the search box (on the left) that says, "Search this dataverse". If you have navigated to a sub-dataverse, to search ALL dataverses, use the search dropdown on the header of every page. The search bar accepts search terms, queries, or exact phrases (in quotations).
 
 Sorting and Viewing Search Results
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -19,7 +18,7 @@ Sorting and Viewing Search Results
 Facets: to the left of the search results, there are several facets a user can click on to narrow the number of results displayed. 
     - Choosing a facet: to choose a facet, click on the facet to choose it
     - Removing a facet: to remove a facet, click on the X next to a chosen facet in search string above the results OR a chosen facet can be removed by clicking on the X next to it in the facets pane to the left of the results
-    - Viewing more or less: the top five results show in each facet, to view more, click on "More..." in the bottom right of a facet. Once you've chosen to see more, an option to view less will appear in the bottom left of the facet.
+    - Viewing more or less: the top 5 most common facets from that category. To view more, click on "More..." in the bottom right of a facet. Once you've chosen to see more, an option to view less will appear in the bottom left of the facet.
    
 Results: after entering a search term or query, results (dataverses, datasets, or data files) that match your term or query appear underneath the search bar and to the right of the facets.
     - Relevancy of results: each results shows which metadata fields match the search query or term you entered into the search bar with the matching term or query bolded. If the search term or query was found in the title or name of the dataverse, dataset, or file, the search term or query will be bolded within it.
@@ -63,7 +62,7 @@ Once on a dataset page, you will see the title, citation, description, and sever
 View Files
 --------------------
 
-Files in Dataverse each have their own page that can be reached through the search results or through the Files table on their parent dataset’s page. The dataset page and file page offer much the same functionality in terms of viewing and editing files, with a few small exceptions. The file page includes the file’s persistent identifier (DOI or handle), which can be found under the Metadata tab. Also, the file page’s Versions tab gives you a version history that is more focused on the individual file rather than the dataset as a whole.
+Files in Dataverse each have their own page that can be reached through the search results or through the Files table on their parent dataset’s page. The dataset page and file page offer much the same functionality in terms of viewing and editing files, with a few small exceptions. The file page includes the file’s persistent identifier (DOI), which can be found under the Metadata tab. Also, the file page’s Versions tab gives you a version history that is more focused on the individual file rather than the dataset as a whole.
 
 
 Cite Data
@@ -74,7 +73,9 @@ You can find the citation for the dataset at the top of the dataset page in a bl
 Download Files
 -----------------
 
-Within the Files tab on a dataset page, you can download the files in that dataset. To download more than one file at a time, select the files you would like to download and then click the "Download" button above the files. The selected files will download in zip format.
+Within the Files tab on a dataset page, you can download the files in that dataset. To download more than one file at a time, select the files you would like to download and then click the Download button above the files. The selected files will download in .zip format that preserves any folder structure that the dataset owner had set up.
+
+You may also download a file from its file page by clicking the Download button in the upper right corner of the page, or by Downloading via URL under the Metadata tab on the lower half of the page.
 
 Tabular Data
 ^^^^^^^^^^^^^^^
@@ -87,12 +88,10 @@ Ingested files can be downloaded in several different ways.
 - The variable metadata for the file in DDI format
 - A subset of the columns of the data
 
-With tabular data files, a user can download the Original File Format, Tab Delimited Format, Variable Metadata, Data File Citation (RIS Format, EndNote XML, or BibTeX Format), or Subset (options appear depending on file format). 
 
 Downloading via URL
 ^^^^^^^^^^^^^^^^^^^^
 
 Dataverse displays a plaintext URL for the location of the file under the Metadata tab on the dataset page. This Download URL can be used to directly access the file via API (or in a web browser, if needed). 
 
- 
-
+Certain files do not provide Download URLs for technical reasons: those that are restricted, or have terms of use associated with them. 
