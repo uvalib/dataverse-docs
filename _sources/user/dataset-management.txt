@@ -16,11 +16,10 @@ A dataset contains three levels of metadata:
 
 For more details about what Citation and Domain specific metadata is supported please see our `Appendix <../user/appendix.html#metadata-references>`_.
 
-Note that once a dataset has been published its metadata may be exported. A button on the dataset page’s metadata tab will allow a user to export the metadata of the most recently published version of the dataset. Currently supported export formats are DDI, Dublin Core and JSON.
+Note that once a dataset has been published its metadata may be exported. A button on the dataset page’s metadata tab will allow a user to export the metadata of the most recently published version of the dataset. Currently supported export formats are DDI, Dublin Core, Datacite 4, OAI_ORE, Schema.org JSON-LD, and Dataverse’s native JSON format.
 
 Adding a New Dataset
 ============================
-
 
 If you are not logged in, you will be prompted to log in before adding a new dataset.
 
@@ -30,7 +29,7 @@ If you are not logged in, you will be prompted to log in before adding a new dat
 #. To quickly get started, enter at minimum all the required fields with an asterisk (e.g., the Dataset Title, Author,
    Dataset Description, Contact Email, Subject, and Data Creation Date).
 #. Scroll down to the "Files" section and click on "Select Files to Add" to add all the relevant files to your dataset.
-   You can also upload your files directly from your Dropbox. **Tip:** You can drag and drop or select multiple files at a time from your desktop,
+   You can also upload your files directly from Dropbox. **Tip:** You can drag and drop or select multiple files at a time from your desktop,
    directly into the upload widget. Your files will appear below the "Select Files to Add" button where you can add a
    description and tags (via the "Edit Tag" button) for each file. Additionally, an MD5 checksum will be added for each file. If you upload a tabular file a :ref:`Universal Numerical Fingerprint (UNF) <unf>` will be added to this file.
 
@@ -94,8 +93,6 @@ To use the ingest functionality for tabular files, a file can only be up to 2GB 
 
 **For files larger that 6GB, please contact libra@virginia.edu for upload assistance.**
 
-To use the ingest functionality for RData files, a file can only be up to 1MB in size, however, to upload a RData file without using ingest, a file can be up to 2GB in size.
-
 Additional download options available for tabular data (found
 in the same drop-down menu under the "Download" button): 
 
@@ -153,6 +150,12 @@ Compressed Files
 Compressed files in zip format are unpacked automatically. If it fails to unpack, for whatever reason, it will upload as 
 is. If the number of files inside are more than a set limit (1,000), you will get an error message and the file will upload as is.
 
+If the uploaded .zip file contains a folder structure, Dataverse will keep track of this structure. A file’s location within this folder structure is displayed in the file metadata as the File Path. When you download the contents of the dataset, this folder structure will be preserved and files will appear in their original locations.
+
+These folder names are subject to strict validation rules. Only the following characters are allowed: the alphanumerics, ‘_’, ‘-‘, ‘.’ and ‘ ‘ (white space). When a zip archive is uploaded, the folder names are automatically sanitized, with any invalid characters replaced by the ‘.’ character. Any sequences of dots are further replaced with a single dot. For example, the folder name ``data&info/code=@137`` will be converted to ``data.info/code.137``. When uploading through the Web UI, the user can change the values further on the edit form presented, before clicking the ‘Save’ button.
+
+.. note:: If you upload multiple .zip files to one dataset, any subdirectories that are identical across multiple .zips will be merged together when the user downloads the full dataset.
+
 
 Other File Types
 ---------------------------------------------
@@ -179,10 +182,23 @@ You will not have to leave the dataset page to complete these action, except for
 
 If you restrict files, you will also prompted with a popup asking you to fill out the Terms of Access for the files. If Terms of Access already exist, you will be asked to confirm them.
 
+
+File Path
+--------------------------------------------------------------
+The File Path metadata field is Dataverse’s way of representing a file’s location in a folder structure. When a user uploads a .zip file containing a folder structure, Dataverse automatically fills in the File Path information for each file contained in the .zip. If a user downloads the full dataset or a selection of files from it, they will receive a folder structure with each file positioned according to its File Path.
+
+A file’s File Path can be manually added or edited on the Edit Files page. Changing a file’s File Path will change its location in the folder structure that is created when a user downloads the full dataset or a selection of files from it.
+
+If there is more than one file in the dataset, and once at least one of them has a non-empty directory path, the Dataset Page will present an option for switching between the traditional table view, and the tree-like view of the files showing the folder structure, as in the example below:
+
+|image5|
+
+
+
 File Tags
 --------------------------------------------------------------
 
-The File Tags are comprised of custom, category (i.e. Documentation, Data, Code) and tabular data tags (i.e. Event, Genomics, Geospatial, Network, Panel, Survey, Time Series). Use the dropdown select menus as well as the custom file tag input to apply these tags to the selected files. There is also a Delete Tags feature that, if checked, will allow you to delete unused file tags within that dataset.
+File Tags are comprised of custom, category (i.e. Documentation, Data, Code) and tabular data tags (i.e. Event, Genomics, Geospatial, Network, Panel, Survey, Time Series). Use the dropdown select menus as well as the custom file tag input to apply these tags to the selected files. There is also a Delete Tags feature that, if checked, will allow you to delete unused file tags within that dataset.
 
 Replace Files
 ==================
@@ -199,24 +215,25 @@ After successfully replacing a file, a new dataset draft version will be created
 Terms
 =======================
 
-In the Terms tab, which can also be found by clicking on the "Edit" dropdown button of a dataset, you can setup how users can use your data once they have downloaded it (CC0 waiver or custom Terms of Use) and how they can access your data if you have files that are restricted (terms of access). These are explained in further detail below:
+Dataset terms can be viewed and edited from the Terms tab of the dataset page, or under the Edit dropdown button of a Dataset. There, you can set up how users can use your data once they have downloaded it (CC0 waiver or custom Terms of Use), how they can access your data if you have files that are restricted (terms of access), and enable a Guestbook for your dataset so that you can track who is using your data and for what purposes. These are explained in further detail below:
 
 CC0 Public Domain Dedication 
 ---------------------------------------------------------------
 
-ll new datasets created through Dataverse’s web UI are given a Creative Commons CC0 Public Domain Dedication.
+ll new datasets created through Dataverse's web UI are given a `Creative Commons CC0 Public Domain Dedication <https://creativecommons.org/publicdomain/zero/1.0/>`_.
 
-The Creative Commons organization defines a number of licenses that allow copyright holders to release their intellectual property more openly, with fewer legal restrictions than standard copyright enforces. Each Creative Commons license typically specifies simple terms for how the IP must be used, reused, shared, and attributed. In addition to these licenses, Creative Commons also provides public domain tools that make it easy to dedicate IP to the public domain.
+The `Creative Commons <https://creativecommons.org>`_ organization defines a number of `licenses <https://creativecommons.org/licenses/>`_ that allow copyright holders to release their intellectual property more openly, with fewer legal restrictions than standard copyright enforces. Each Creative Commons license typically specifies simple terms for how the IP must be used, reused, shared, and attributed. In addition to these licenses, Creative Commons also provides public domain tools that make it easy to dedicate IP to the public domain. 
 
-In the context of Dataverse, their CC0 Public Domain Dedication allows you to unambiguously waive all copyright control over your data in all jurisdictions worldwide. Data released with CC0 can be freely copied, modified, and distributed (even for commercial purposes) without violating copyright. In most parts of the world, factual data is exempt from copyright anyway, but applying CC0 removes all ambiguity and makes the legal copyright status of the data as clear as possible. Dataverse applies CC0 to datasets by default because it facilitates reuse, extensibility, and long-term preservation of research data by assuring that the data can be safely handled by anyone without fear of potential copyright pitfalls.
+In the context of Dataverse, their `CC0 Public Domain Dedication <https://creativecommons.org/share-your-work/public-domain/cc0>`_ allows you to unambiguously waive all copyright control over your data in all jurisdictions worldwide. Data released with CC0 can be freely copied, modified, and distributed (even for commercial purposes) without violating copyright. In most parts of the world, factual data is exempt from copyright anyway, but applying CC0 removes all ambiguity and makes the legal copyright status of the data as clear as possible. Dataverse applies CC0 to datasets by default because it facilitates reuse, extensibility, and long-term preservation of research data by assuring that the data can be safely handled by anyone without fear of potential copyright pitfalls. 
 
-Though CC0 waives a dataset owner’s legal copyright controls over the data, it does not exempt Dataverse users from following ethical and professional norms in scholarly communications. The Dataverse Community Norms * as well as scientific best practices assert that proper credit should be given via citation. Regardless of whether CC0 has been applied or not, Dataverse users are expected to cite the data they use, giving credit to the data’s authors. This expectation applies to both the Dataverse Community and the entire wider scholarly community.
+Though CC0 waives a dataset owner's legal copyright controls over the data, it does not exempt Dataverse users from following ethical and professional norms in scholarly communications. The `Dataverse Community Norms <https://dataverse.org/best-practices/dataverse-community-norms>`_ * as well as scientific best practices assert that proper credit should be given via citation. Regardless of whether CC0 has been applied or not, Dataverse users are expected to cite the data they use, giving credit to the data's authors. This expectation applies to both the Dataverse Community and the entire wider scholarly community. 
 
 Additionally, users are still expected to respect access restrictions and other terms applied to CC0 files in Dataverse. Additional restrictions, conditions, and terms can still be compatible with CC0, as CC0 only operates in the realm of copyright, which is rather limited when it comes to data.
 
 If a data owner feels that CC0 is not suitable for their data, they are able to enter custom Terms of Use, as detailed in the following section.
 
-\* **Legal Disclaimer:** these `Community Norms <http://www.library.virginia.edu/libra/datasets/libra-data-community-norms/>`_ are not a substitute for the CC0 waiver or custom terms and licenses applicable to each dataset. Please be advised that the Community Norms are not a binding contractual agreement, and that downloading datasets from Dataverse does not create a legal obligation to follow these policies.  
+\* **Legal Disclaimer:** these `Community Norms <https://dataverse.org/best-practices/dataverse-community-norms>`_ are not a substitute for the CC0 waiver or custom terms and licenses applicable to each dataset. The Community Norms are not a binding contractual agreement, and that downloading datasets from Dataverse does not create a legal obligation to follow these policies.  
+
 
 Custom Terms of Use for Datasets
 --------------------------------------------
@@ -244,7 +261,7 @@ Dataverse user accounts can be granted roles that define which actions they are 
 Roles and permissions may also be granted to groups. Groups can be defined as a collection of Dataverse user accounts, a collection of IP addresses (e.g. all users of a library's computers), or a collection of all users who log in using a particular institutional login (e.g. everyone who logs in with a particular university's account credentials).
 
 Dataset-Level 
--------------
+----------------
 
 Admins or curators of a dataset can assign roles and permissions to the users of that dataset. If you are an admin or curator of a dataset, then you can get to the dataset permissions page by clicking the "Edit" button, highlighting "Permissions" from the dropdown list, and clicking "Dataset".
 
@@ -255,7 +272,7 @@ When you access a dataset's permissions page, you will see two sections:
 **Roles:** Here you can reference a full list of roles that can be assigned to users of your dataset. Each role lists the permissions that it offers.
 
 File-Level
-----------
+------------------
 
 If specific files in your dataset are restricted access, then you can grant specific users or groups access to those files while still keeping them restricted to the general public. If you are an admin or curator of a dataset, then you can get to the file-level permissions page by clicking the "Edit" button, highlighting "Permissions" from the dropdown list, and clicking "File".
 
@@ -349,14 +366,14 @@ Note: Prior to publishing your dataset the Data Citation will indicate that this
 will be removed as soon as you Publish.
 
 Submit for Review *(Law School Dataverse Only)*
-====================
+=========================================================
 
 If you have a Contributor role (can edit metadata, upload files, and edit files, edit Terms, Guestbook, and Submit datasets for review) in a Dataverse you can submit your dataset for review when you have finished uploading your files and filling in all of the relevant metadata fields. To Submit for Review, go to your dataset and click on the “Submit for Review” button, which is located next to the “Edit” button on the upper-right. Once Submitted for Review: the Admin or Curator for this Dataverse will be notified to review this dataset before they decide to either “Publish” the dataset or “Return to Author”. If the dataset is published the contributor will be notified that it is now published. If the dataset is returned to the author, the contributor of this dataset will be notified that they need to make modifications before it can be submitted for review again.
 
 Private URL for Reviewing an Unpublished Dataset
-==========================================
+=======================================================
 To share an unpublished dataset using Private URL
-----------------------------------------------
+---------------------------------------------------------
 
 Creating a Private URL for your dataset allows you to share your dataset (for viewing and downloading of files) before it is published to a wide group of individuals who may not have a user account on Dataverse. Anyone you send the Private URL to will not have to log into Dataverse to view the dataset.
 
@@ -369,7 +386,7 @@ Creating a Private URL for your dataset allows you to share your dataset (for vi
 *Note: Once published the private URL will no longer work. You must use the published DOI.*
 
 To disable a Private URL
-----------------------
+------------------------------------
 
 If ever you had shared a Private URL to your dataset and wish to revoke access, follow the same steps as above until step #3 but in the pop-up select “Disable Private URL”.
 
@@ -421,5 +438,6 @@ If you deaccession the most recently published version of the dataset but not al
 .. |image2| image:: ./img/data-download.png 
 .. |image3| image:: ./img/version_workflow.png
 .. |image4| image:: ./img/publish-popup.png
+.. |image5| image:: ./img/file-tree-view.png
 .. |prov0|  image:: ./img/prov0.png
 .. |prov1|  image:: ./img/prov1.png
