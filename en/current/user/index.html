@@ -1,37 +1,27 @@
 
 <!DOCTYPE html>
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
     <title>User Guide &#8212; Dataverse.org</title>
-    
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/docsdataverse_org.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '4.3',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
+    <link rel="stylesheet" type="text/css" href="../_static/docsdataverse_org.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootswatch-3.1.0/""/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="Dataverse.org" href="../index.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="LibraData Account Creation &amp; Management" href="account.html" />
     <link rel="prev" title="Guides" href="../index.html" />
 <meta charset='utf-8'>
@@ -40,8 +30,7 @@
 <rmeta name="apple-mobile-web-app-capable" content="yes">
 <link type="image/png" rel="icon" href="../_static/images/favicondataverse.png" />
 
-  </head>
-  <body role="document">
+  </head><body>
 
 
 
@@ -112,11 +101,18 @@
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="account.html">LibraData Account Creation &amp; Management</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="account.html#login-for-uva-users-required-for-uva-depositors">Login for UVA Users (required for UVA depositors)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="account.html#account-information">Account Information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="account.html#login-for-uva-users-required-for-uva-depositors">Login for UVA Users (required for UVA depositors)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="account.html#account-information">Account Information</a></li>
 <li class="toctree-l3"><a class="reference internal" href="account.html#my-data">My Data</a></li>
 <li class="toctree-l3"><a class="reference internal" href="account.html#notifications-setup-maintenance">Notifications: Setup &amp; Maintenance</a></li>
-<li class="toctree-l3"><a class="reference internal" href="account.html#create-your-api-token">Create Your API Token</a></li>
+<li class="toctree-l3"><a class="reference internal" href="account.html#api-token">API Token</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="account.html#what-apis-are-and-why-they-are-useful">What APIs Are and Why They Are Useful</a></li>
+<li class="toctree-l4"><a class="reference internal" href="account.html#how-your-api-token-is-like-a-password">How Your API Token Is Like a Password</a></li>
+<li class="toctree-l4"><a class="reference internal" href="account.html#how-to-create-your-api-token">How to Create Your API Token</a></li>
+<li class="toctree-l4"><a class="reference internal" href="account.html#how-to-recreate-your-api-token">How to Recreate Your API Token</a></li>
+<li class="toctree-l4"><a class="reference internal" href="account.html#additional-information-about-api-tokens-and-dataverse-apis">Additional Information about API Tokens and Dataverse APIs</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -152,6 +148,8 @@
 <li class="toctree-l2"><a class="reference internal" href="find-use-data.html#using-data">Using Data</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="find-use-data.html#view-dataverses-datasets">View Dataverses + Datasets</a></li>
 <li class="toctree-l3"><a class="reference internal" href="find-use-data.html#view-files">View Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="find-use-data.html#file-search-within-datasets">File Search within Datasets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="find-use-data.html#tree-view">Tree View</a></li>
 <li class="toctree-l3"><a class="reference internal" href="find-use-data.html#cite-data">Cite Data</a></li>
 <li class="toctree-l3"><a class="reference internal" href="find-use-data.html#download-files">Download Files</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="find-use-data.html#tabular-data">Tabular Data</a></li>
@@ -167,13 +165,17 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="dataset-management.html">Dataset + File Management</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="dataset-management.html#supported-metadata">Supported Metadata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataset-management.html#supported-metadata">Supported Metadata</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="dataset-management.html#supported-metadata-export-formats">Supported Metadata Export Formats</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="dataset-management.html#adding-a-new-dataset">Adding a New Dataset</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="dataset-management.html#supported-html-fields">Supported HTML Fields</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="dataset-management.html#file-upload">File Upload</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dataset-management.html#file-handling">File Handling</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="dataset-management.html#file-previews">File Previews</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dataset-management.html#tabular-data-files">Tabular Data Files</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dataset-management.html#geospatial">Geospatial</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dataset-management.html#astronomy-fits">Astronomy (FITS)</a></li>
@@ -226,7 +228,7 @@
 <li class="toctree-l1"><a class="reference internal" href="tabulardataingest/index.html">Tabular Data File Ingest</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="tabulardataingest/supportedformats.html">Supported File Formats</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tabulardataingest/ingestprocess.html">Tabular Data, Representation, Storage and Ingest</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="tabulardataingest/ingestprocess.html#what-happens-during-this-ingest">What Happens During this &#8220;Ingest&#8221;?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tabulardataingest/ingestprocess.html#what-happens-during-this-ingest">What Happens During this “Ingest”?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tabulardataingest/ingestprocess.html#tabular-data-and-metadata">Tabular Data and Metadata</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="tabulardataingest/ingestprocess.html#data-vs-metadata">Data vs. Metadata</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tabulardataingest/ingestprocess.html#tabular-metadata-in-dataverse">Tabular Metadata in Dataverse</a></li>
@@ -287,7 +289,7 @@
       
     </p>
     <p>
-        <a href="https://dataverse.lib.virginia.edu/" target="_blank">LibraData</a>, UVA's Institutional Dataverse developed at Harvard's <a href="http://www.iq.harvard.edu/" target="_blank">IQSS</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse.org" title="Dataverse.org on GitHub" target="_blank"><img src="/dataverse-docs/_static/images/githubicon.png" width="20" alt="Dataverse.org on GitHub"/></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> 1.4.6<br/>Version 4.3 &nbsp;|&nbsp; Last updated on Apr 29, 2019<br/>&copy; Copyright 2018 by the Rector and Visitors of the University of Virginia <br/>
+        <a href="https://dataverse.lib.virginia.edu/" target="_blank">LibraData</a>, UVA's Institutional Dataverse developed at Harvard's <a href="http://www.iq.harvard.edu/" target="_blank">IQSS</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse.org" title="Dataverse.org on GitHub" target="_blank"><img src="/dataverse-docs/_static/images/githubicon.png" width="20" alt="Dataverse.org on GitHub"/></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> 1.8.5<br/>Version 4.3 &nbsp;|&nbsp; Last updated on Apr 14, 2020<br/>&copy; Copyright 2018 by the Rector and Visitors of the University of Virginia <br/>
     </p>
   </div>
 </footer>

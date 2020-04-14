@@ -1,38 +1,27 @@
 
 <!DOCTYPE html>
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
     <title>Appendix &#8212; Dataverse.org</title>
-    
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/docsdataverse_org.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '4.3',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
+    <link rel="stylesheet" type="text/css" href="../_static/docsdataverse_org.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootswatch-3.1.0/""/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="Dataverse.org" href="../index.html" />
-    <link rel="up" title="User Guide" href="index.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="LibraData Policies and Sharing Norms" href="data-policies.html" />
     <link rel="prev" title="CSV/TSV" href="tabulardataingest/csv.html" />
 <meta charset='utf-8'>
@@ -41,8 +30,7 @@
 <rmeta name="apple-mobile-web-app-capable" content="yes">
 <link type="image/png" rel="icon" href="../_static/images/favicondataverse.png" />
 
-  </head>
-  <body role="document">
+  </head><body>
 
 
 
@@ -117,7 +105,7 @@ metadata can be mapped easily to standard metadata schemas and be exported into 
 format (XML for tabular file metadata) for preservation and interoperability.</p>
 <p>Detailed below are what metadata schemas we support for Citation and Domain Specific Metadata in Dataverse:</p>
 <ul class="simple">
-<li><a class="reference external" href="https://docs.google.com/spreadsheet/ccc?key=0AjeLxEN77UZodHFEWGpoa19ia3pldEFyVFR0aFVGa0E#gid=0">Citation Metadata</a>: compliant with <a class="reference external" href="http://www.ddialliance.org/specification/ddi2.1/lite/index.html">DDI Lite</a>, <a class="reference external" href="http://www.ddialliance.org/">DDI 2.5 Codebook</a>, <a class="reference external" href="http://schema.datacite.org/meta/kernel-3.1/doc/DataCite-MetadataKernel_v3.1.pdf">DataCite 3.1</a>, and Dublin Core&#8217;s <a class="reference external" href="http://dublincore.org/documents/dcmi-terms/">DCMI Metadata Terms</a> (<a class="reference external" href="https://github.com/IQSS/dataverse/blob/master/scripts/api/data/metadatablocks/citation.tsv">see .tsv version</a>). Language field uses <a class="reference external" href="http://www.loc.gov/standards/iso639-2/php/code_list.php">ISO 639-2</a> controlled vocabulary.</li>
+<li><a class="reference external" href="https://docs.google.com/spreadsheet/ccc?key=0AjeLxEN77UZodHFEWGpoa19ia3pldEFyVFR0aFVGa0E#gid=0">Citation Metadata</a>: compliant with <a class="reference external" href="http://www.ddialliance.org/specification/ddi2.1/lite/index.html">DDI Lite</a>, <a class="reference external" href="http://www.ddialliance.org/">DDI 2.5 Codebook</a>, <a class="reference external" href="http://schema.datacite.org/meta/kernel-3.1/doc/DataCite-MetadataKernel_v3.1.pdf">DataCite 3.1</a>, and Dublin Core’s <a class="reference external" href="http://dublincore.org/documents/dcmi-terms/">DCMI Metadata Terms</a> (<a class="reference external" href="https://github.com/IQSS/dataverse/blob/master/scripts/api/data/metadatablocks/citation.tsv">see .tsv version</a>). Language field uses <a class="reference external" href="http://www.loc.gov/standards/iso639-2/php/code_list.php">ISO 639-2</a> controlled vocabulary.</li>
 <li><a class="reference external" href="https://docs.google.com/spreadsheet/ccc?key=0AjeLxEN77UZodHFEWGpoa19ia3pldEFyVFR0aFVGa0E#gid=4">Geospatial Metadata</a>: compliant with DDI Lite, DDI 2.5 Codebook, DataCite, and Dublin Core (<a class="reference external" href="https://github.com/IQSS/dataverse/blob/master/scripts/api/data/metadatablocks/geospatial.tsv">see .tsv version</a>). Country / Nation field uses <a class="reference external" href="http://en.wikipedia.org/wiki/ISO_3166-1">ISO 3166-1</a> controlled vocabulary.</li>
 <li><a class="reference external" href="https://docs.google.com/spreadsheet/ccc?key=0AjeLxEN77UZodHFEWGpoa19ia3pldEFyVFR0aFVGa0E#gid=1">Social Science &amp; Humanities Metadata</a>: compliant with DDI Lite, DDI 2.5 Codebook, and Dublin Core (<a class="reference external" href="https://github.com/IQSS/dataverse/blob/master/scripts/api/data/metadatablocks/social_science.tsv">see .tsv version</a>).</li>
 <li><a class="reference external" href="https://docs.google.com/spreadsheet/ccc?key=0AjeLxEN77UZodHFEWGpoa19ia3pldEFyVFR0aFVGa0E#gid=3">Astronomy and Astrophysics Metadata</a>
@@ -143,7 +131,7 @@ format (XML for tabular file metadata) for preservation and interoperability.</p
       
     </p>
     <p>
-        <a href="https://dataverse.lib.virginia.edu/" target="_blank">LibraData</a>, UVA's Institutional Dataverse developed at Harvard's <a href="http://www.iq.harvard.edu/" target="_blank">IQSS</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse.org" title="Dataverse.org on GitHub" target="_blank"><img src="/dataverse-docs/_static/images/githubicon.png" width="20" alt="Dataverse.org on GitHub"/></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> 1.4.6<br/>Version 4.3 &nbsp;|&nbsp; Last updated on Apr 29, 2019<br/>&copy; Copyright 2018 by the Rector and Visitors of the University of Virginia <br/>
+        <a href="https://dataverse.lib.virginia.edu/" target="_blank">LibraData</a>, UVA's Institutional Dataverse developed at Harvard's <a href="http://www.iq.harvard.edu/" target="_blank">IQSS</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse.org" title="Dataverse.org on GitHub" target="_blank"><img src="/dataverse-docs/_static/images/githubicon.png" width="20" alt="Dataverse.org on GitHub"/></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> 1.8.5<br/>Version 4.3 &nbsp;|&nbsp; Last updated on Apr 14, 2020<br/>&copy; Copyright 2018 by the Rector and Visitors of the University of Virginia <br/>
     </p>
   </div>
 </footer>
