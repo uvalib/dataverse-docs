@@ -1,38 +1,27 @@
 
 <!DOCTYPE html>
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
     <title>SPSS &#8212; Dataverse.org</title>
-    
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/docsdataverse_org.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../../',
-        VERSION:     '4.3',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
+    <link rel="stylesheet" type="text/css" href="../../_static/docsdataverse_org.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/bootswatch-3.1.0/""/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
     <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="Dataverse.org" href="../../index.html" />
-    <link rel="up" title="Tabular Data File Ingest" href="index.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Stata" href="stata.html" />
     <link rel="prev" title="Tabular Data, Representation, Storage and Ingest" href="ingestprocess.html" />
 <meta charset='utf-8'>
@@ -41,8 +30,7 @@
 <rmeta name="apple-mobile-web-app-capable" content="yes">
 <link type="image/png" rel="icon" href="../_static/images/favicondataverse.png" />
 
-  </head>
-  <body role="document">
+  </head><body>
 
 
 
@@ -121,25 +109,25 @@
 <p>SPSS data files (POR and SAV formats).</p>
 <div class="section" id="supported-versions">
 <h2>Supported Versions<a class="headerlink" href="#supported-versions" title="Permalink to this headline">¶</a></h2>
-<p>Dataverse supports reading of all SPSS versions 7 to 22. But please see the &#8220;Limitations&#8221; section.</p>
+<p>Dataverse supports reading of all SPSS versions 7 to 22. But please see the “Limitations” section.</p>
 </div>
 <div class="section" id="limitations">
 <h2>Limitations<a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h2>
 <p>SPSS does not openly publish the specifications of their proprietary file formats. Our ability to read and parse their files is based on some documentation online from unofficial sources, and some reverse engineering. Because of that we cannot, unfortunately, guarantee to be able
 to process <em>any</em> SPSS file uploaded.</p>
-<p>However, we&#8217;ve been improving this process for a few years by now, and it should be quite robust in the current version of Dataverse. Thus your chances of success - uploading an SPSS files and having it turned into a fully functional tabular data table in the Dataverse - should be reasonably good.</p>
-<p>If you are having a problem with a particular SPSS file, please contact our support and we&#8217;ll see if it&#8217;s something we could further improve in our SPSS ingest driver.</p>
+<p>However, we’ve been improving this process for a few years by now, and it should be quite robust in the current version of Dataverse. Thus your chances of success - uploading an SPSS files and having it turned into a fully functional tabular data table in the Dataverse - should be reasonably good.</p>
+<p>If you are having a problem with a particular SPSS file, please contact our support and we’ll see if it’s something we could further improve in our SPSS ingest driver.</p>
 </div>
 <div class="section" id="spss-control-cards-not-supported">
 <h2>SPSS Control Cards - not supported<a class="headerlink" href="#spss-control-cards-not-supported" title="Permalink to this headline">¶</a></h2>
-<p>In the past, there have been attempts to support SPSS &#8220;control cards&#8221;, in addition to the .SAV and .POR files; both in the early VDC software, and in some versions of DVN. A &#8220;control card&#8221; is a plain text file with a set of SPSS commands that describe the raw data, provided in a separate, fixed-width-columns or comma-separated-values file. For various reasons, it has never been very successful. We weren&#8217;t seeing too much demand for this ingest feature, so it was dropped from Dataverse 4.0.</p>
+<p>In the past, there have been attempts to support SPSS “control cards”, in addition to the .SAV and .POR files; both in the early VDC software, and in some versions of DVN. A “control card” is a plain text file with a set of SPSS commands that describe the raw data, provided in a separate, fixed-width-columns or comma-separated-values file. For various reasons, it has never been very successful. We weren’t seeing too much demand for this ingest feature, so it was dropped from Dataverse 4.0.</p>
 <p>Please contact us if you have any questions and/or strong feelings on this issue, or if you have serious amounts of data exclusively available in this format that you would like to ingest under Dataverse.</p>
 </div>
 <div class="section" id="support-for-language-encodings-in-spss">
 <h2>Support for Language Encodings in SPSS<a class="headerlink" href="#support-for-language-encodings-in-spss" title="Permalink to this headline">¶</a></h2>
-<p>Historically, there was no support for specifying a particular language/code page encoding for the data stored in an SPSS file. Meaning, text values in none-ASCII encodings, or non-Latin characters could be entered and stored, but there was no setting to unambiguously specify what language, or what character set it was. By default, Dataverse will try to interpret binary characters as UTF8. If that&#8217;s not working - for example, if the descriptive labels and/or categorical values ingest as garbage - and if you know happen to know what encoding was used in the original file, you can now specify it in the Ingest Options.
+<p>Historically, there was no support for specifying a particular language/code page encoding for the data stored in an SPSS file. Meaning, text values in none-ASCII encodings, or non-Latin characters could be entered and stored, but there was no setting to unambiguously specify what language, or what character set it was. By default, Dataverse will try to interpret binary characters as UTF8. If that’s not working - for example, if the descriptive labels and/or categorical values ingest as garbage - and if you know happen to know what encoding was used in the original file, you can now specify it in the Ingest Options.
 For example, if you know that the text in your SAV file is in Mandarin, and is encoded using the GB2312, specify it as follows:</p>
-<p>Upload your file, in the &#8220;Edit Files&#8221; tab of the Dataset page. Once the file is recognized as SPSS/save, and <em>before</em> you click Save, go into the &#8220;Advanced Ingest Options&#8221;, and select &#8220;Simplified Chinese, GB2312&#8221; in the nested menu under &#8220;Language Encoding&#8221; -&gt; &#8220;East Asian&#8221;.</p>
+<p>Upload your file, in the “Edit Files” tab of the Dataset page. Once the file is recognized as SPSS/save, and <em>before</em> you click Save, go into the “Advanced Ingest Options”, and select “Simplified Chinese, GB2312” in the nested menu under “Language Encoding” -&gt; “East Asian”.</p>
 </div>
 </div>
 
@@ -156,7 +144,7 @@ For example, if you know that the text in your SAV file is in Mandarin, and is e
       
     </p>
     <p>
-        <a href="https://dataverse.lib.virginia.edu/" target="_blank">LibraData</a>, UVA's Institutional Dataverse developed at Harvard's <a href="http://www.iq.harvard.edu/" target="_blank">IQSS</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse.org" title="Dataverse.org on GitHub" target="_blank"><img src="/dataverse-docs/_static/images/githubicon.png" width="20" alt="Dataverse.org on GitHub"/></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> 1.4.6<br/>Version 4.3 &nbsp;|&nbsp; Last updated on Apr 29, 2019<br/>&copy; Copyright 2018 by the Rector and Visitors of the University of Virginia <br/>
+        <a href="https://dataverse.lib.virginia.edu/" target="_blank">LibraData</a>, UVA's Institutional Dataverse developed at Harvard's <a href="http://www.iq.harvard.edu/" target="_blank">IQSS</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse.org" title="Dataverse.org on GitHub" target="_blank"><img src="/dataverse-docs/_static/images/githubicon.png" width="20" alt="Dataverse.org on GitHub"/></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> 1.8.5<br/>Version 4.3 &nbsp;|&nbsp; Last updated on Apr 14, 2020<br/>&copy; Copyright 2018 by the Rector and Visitors of the University of Virginia <br/>
     </p>
   </div>
 </footer>
