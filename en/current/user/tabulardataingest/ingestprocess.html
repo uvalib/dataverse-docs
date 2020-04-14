@@ -1,27 +1,38 @@
 
 <!DOCTYPE html>
 
+
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
     <title>Tabular Data, Representation, Storage and Ingest &#8212; Dataverse.org</title>
+    
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/docsdataverse_org.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/bootswatch-3.1.0/""/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <link rel="stylesheet" href="../../_static/docsdataverse_org.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '4.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <script type="text/javascript" src="../../_static/language_data.js"></script>
     <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="Dataverse.org" href="../../index.html" />
+    <link rel="up" title="Tabular Data File Ingest" href="index.html" />
     <link rel="next" title="SPSS" href="spss.html" />
     <link rel="prev" title="Supported File Formats" href="supportedformats.html" />
 <meta charset='utf-8'>
@@ -30,7 +41,8 @@
 <rmeta name="apple-mobile-web-app-capable" content="yes">
 <link type="image/png" rel="icon" href="../_static/images/favicondataverse.png" />
 
-  </head><body>
+  </head>
+  <body role="document">
 
 
 
@@ -111,13 +123,13 @@ the application. And what happens during the ingest process, as the
 files uploaded by the user are processed and converted into the
 archival format in the Dataverse application.</p>
 <div class="section" id="what-happens-during-this-ingest">
-<h2>What Happens During this “Ingest”?<a class="headerlink" href="#what-happens-during-this-ingest" title="Permalink to this headline">¶</a></h2>
+<h2>What Happens During this &#8220;Ingest&#8221;?<a class="headerlink" href="#what-happens-during-this-ingest" title="Permalink to this headline">¶</a></h2>
 <p>The goal of our ingest process is to extract the data content from the
-user’s files and archive it in an application-neutral, easily-readable
+user&#8217;s files and archive it in an application-neutral, easily-readable
 format. What does this mean? - Commercial applications such as SPSS
 and Stata use their own, proprietary formats to encode their
 files. Some companies publish the specifications of their formats
-(Thank you Stata - much appreciated!), some don’t (SPSS - yes, we are
+(Thank you Stata - much appreciated!), some don&#8217;t (SPSS - yes, we are
 still frowning at you here at the Dataverse Project). Either way,
 reading these specially-formatted files requires some extra knowledge
 or special software. For these reasons they are not considered idea
@@ -134,15 +146,15 @@ format. (more info below)</p>
 <h2>Tabular Data and Metadata<a class="headerlink" href="#tabular-data-and-metadata" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="data-vs-metadata">
 <h3>Data vs. Metadata<a class="headerlink" href="#data-vs-metadata" title="Permalink to this headline">¶</a></h3>
-<p>A simple example is a numeric data column in a user’s Stata file that
+<p>A simple example is a numeric data column in a user&#8217;s Stata file that
 contains 0s and 1s. These numeric values will be extracted and stored
-in a TAB-delimited file. By themselves, if you don’t know what these
+in a TAB-delimited file. By themselves, if you don&#8217;t know what these
 values represent, these 1s and 0s are not meaningful data. So the
 Stata file has some additional information that describes this data
 vector: it represents the observation values of a <em>variable</em> with the
-<em>name</em> “party”, with a descriptive <em>label</em> “Party Affiliation”; and
-the 2 numeric values have <em>categorical labels</em> of “Democrat” for 0 and
-“Republican” for 1. This extra information that adds value to the data
+<em>name</em> &#8220;party&#8221;, with a descriptive <em>label</em> &#8220;Party Affiliation&#8221;; and
+the 2 numeric values have <em>categorical labels</em> of &#8220;Democrat&#8221; for 0 and
+&#8220;Republican&#8221; for 1. This extra information that adds value to the data
 is <em>metadata</em>.</p>
 </div>
 <div class="section" id="tabular-metadata-in-dataverse">
@@ -166,7 +178,7 @@ Dataverse was originally based on the <a class="reference external" href="http:/
       
     </p>
     <p>
-        <a href="https://dataverse.lib.virginia.edu/" target="_blank">LibraData</a>, UVA's Institutional Dataverse developed at Harvard's <a href="http://www.iq.harvard.edu/" target="_blank">IQSS</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse.org" title="Dataverse.org on GitHub" target="_blank"><img src="/dataverse-docs/_static/images/githubicon.png" width="20" alt="Dataverse.org on GitHub"/></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> 1.8.5<br/>Version 4.3 &nbsp;|&nbsp; Last updated on Apr 14, 2020<br/>&copy; Copyright 2018 by the Rector and Visitors of the University of Virginia <br/>
+        <a href="https://dataverse.lib.virginia.edu/" target="_blank">LibraData</a>, UVA's Institutional Dataverse developed at Harvard's <a href="http://www.iq.harvard.edu/" target="_blank">IQSS</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse.org" title="Dataverse.org on GitHub" target="_blank"><img src="/dataverse-docs/_static/images/githubicon.png" width="20" alt="Dataverse.org on GitHub"/></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> 1.4.6<br/>Version 4.3 &nbsp;|&nbsp; Last updated on Apr 29, 2019<br/>&copy; Copyright 2018 by the Rector and Visitors of the University of Virginia <br/>
     </p>
   </div>
 </footer>

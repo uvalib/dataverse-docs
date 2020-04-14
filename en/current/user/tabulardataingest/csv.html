@@ -1,27 +1,38 @@
 
 <!DOCTYPE html>
 
+
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
     <title>CSV/TSV &#8212; Dataverse.org</title>
+    
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/docsdataverse_org.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/bootswatch-3.1.0/""/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <link rel="stylesheet" href="../../_static/docsdataverse_org.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '4.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <script type="text/javascript" src="../../_static/language_data.js"></script>
     <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="Dataverse.org" href="../../index.html" />
+    <link rel="up" title="Tabular Data File Ingest" href="index.html" />
     <link rel="next" title="Appendix" href="../appendix.html" />
     <link rel="prev" title="Excel" href="excel.html" />
 <meta charset='utf-8'>
@@ -30,7 +41,8 @@
 <rmeta name="apple-mobile-web-app-capable" content="yes">
 <link type="image/png" rel="icon" href="../_static/images/favicondataverse.png" />
 
-  </head><body>
+  </head>
+  <body role="document">
 
 
 
@@ -112,45 +124,45 @@
 </div>
 <div class="section" id="main-formatting-requirements">
 <h2>Main formatting requirements<a class="headerlink" href="#main-formatting-requirements" title="Permalink to this headline">¶</a></h2>
-<p>The first row in the document will be treated as the CSV’s header, containing variable names for each column.</p>
-<p>Each following row must contain the same number of comma-separated values (“cells”) as that header.</p>
-<p>As of the Dataverse 4.8 release, we allow ingest of CSV files with commas and line breaks within cells. A string with any number of commas and line breaks enclosed within double quotes is recognized as a single cell. Double quotes can be encoded as two double quotes in a row (<code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code>).</p>
+<p>The first row in the document will be treated as the CSV&#8217;s header, containing variable names for each column.</p>
+<p>Each following row must contain the same number of comma-separated values (&#8220;cells&#8221;) as that header.</p>
+<p>As of the Dataverse 4.8 release, we allow ingest of CSV files with commas and line breaks within cells. A string with any number of commas and line breaks enclosed within double quotes is recognized as a single cell. Double quotes can be encoded as two double quotes in a row (<code class="docutils literal"><span class="pre">&quot;&quot;</span></code>).</p>
 <p>For example, the following lines:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>a,b,&quot;c,d
+<div class="highlight-none"><div class="highlight"><pre><span></span>a,b,&quot;c,d
 efgh&quot;&quot;ijk&quot;&quot;l&quot;,m,n
 </pre></div>
 </div>
 <p>are recognized as a <strong>single</strong> row with <strong>5</strong> comma-separated values (cells):</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>a
+<div class="highlight-none"><div class="highlight"><pre><span></span>a
 b
 c,d\nefgh&quot;ijk&quot;l
 m
 n
 </pre></div>
 </div>
-<p>(where <code class="docutils literal notranslate"><span class="pre">\n</span></code> is a new line character)</p>
+<p>(where <code class="docutils literal"><span class="pre">\n</span></code> is a new line character)</p>
 </div>
 <div class="section" id="limitations">
 <h2>Limitations<a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h2>
-<p>Compared to other formats, relatively little information about the data (“variable-level metadata”) can be extracted from a CSV file. Aside from the variable names supplied in the top line, the ingest will make an educated guess about the data type of each comma-separated column. One of the supported rich file formats (Stata, SPSS and R) should be used if you need to provide more descriptive variable-level metadata (variable labels, categorical values and labels, explicitly defined data types, etc.).</p>
+<p>Compared to other formats, relatively little information about the data (&#8220;variable-level metadata&#8221;) can be extracted from a CSV file. Aside from the variable names supplied in the top line, the ingest will make an educated guess about the data type of each comma-separated column. One of the supported rich file formats (Stata, SPSS and R) should be used if you need to provide more descriptive variable-level metadata (variable labels, categorical values and labels, explicitly defined data types, etc.).</p>
 </div>
 <div class="section" id="recognized-data-types-and-formatting">
 <h2>Recognized data types and formatting<a class="headerlink" href="#recognized-data-types-and-formatting" title="Permalink to this headline">¶</a></h2>
 <p>The application will attempt to recognize numeric, string, and date/time values in the individual comma-separated columns.</p>
-<p>For dates, the <code class="docutils literal notranslate"><span class="pre">yyyy-MM-dd</span></code> format is recognized.</p>
+<p>For dates, the <code class="docutils literal"><span class="pre">yyyy-MM-dd</span></code> format is recognized.</p>
 <p>For date-time values, the following 2 formats are recognized:</p>
-<p><code class="docutils literal notranslate"><span class="pre">yyyy-MM-dd</span> <span class="pre">HH:mm:ss</span></code></p>
-<p><code class="docutils literal notranslate"><span class="pre">yyyy-MM-dd</span> <span class="pre">HH:mm:ss</span> <span class="pre">z</span></code> (same format as the above, with the time zone specified)</p>
+<p><code class="docutils literal"><span class="pre">yyyy-MM-dd</span> <span class="pre">HH:mm:ss</span></code></p>
+<p><code class="docutils literal"><span class="pre">yyyy-MM-dd</span> <span class="pre">HH:mm:ss</span> <span class="pre">z</span></code> (same format as the above, with the time zone specified)</p>
 <p>For numeric variables, the following special values are recognized:</p>
-<p><code class="docutils literal notranslate"><span class="pre">inf</span></code>, <code class="docutils literal notranslate"><span class="pre">+inf</span></code> - as a special IEEE 754 “positive infinity” value;</p>
-<p><code class="docutils literal notranslate"><span class="pre">NaN</span></code> - as a special IEEE 754 “not a number” value;</p>
-<p>An empty value (i.e., a comma followed immediately by another comma, or the line end), or <code class="docutils literal notranslate"><span class="pre">NA</span></code> - as a <em>missing value</em>.</p>
-<p><code class="docutils literal notranslate"><span class="pre">null</span></code> - as a numeric <em>zero</em>.</p>
+<p><code class="docutils literal"><span class="pre">inf</span></code>, <code class="docutils literal"><span class="pre">+inf</span></code> - as a special IEEE 754 &#8220;positive infinity&#8221; value;</p>
+<p><code class="docutils literal"><span class="pre">NaN</span></code> - as a special IEEE 754 &#8220;not a number&#8221; value;</p>
+<p>An empty value (i.e., a comma followed immediately by another comma, or the line end), or <code class="docutils literal"><span class="pre">NA</span></code> - as a <em>missing value</em>.</p>
+<p><code class="docutils literal"><span class="pre">null</span></code> - as a numeric <em>zero</em>.</p>
 <p>(any combinations of lower and upper cases are allowed in the notations above).</p>
 <p>In character strings, an empty value (a comma followed by another comma, or the line end) is treated as an empty string (NOT as a <em>missing value</em>).</p>
 <p>Any non-Latin characters are allowed in character string values, <strong>as long as the encoding is UTF8</strong>.</p>
-<p><strong>Note:</strong> When the ingest recognizes a CSV column as a numeric vector, or as a date/time value, this information is reflected and saved in the database as the <em>data variable metadata</em>. To inspect that metadata, click on the <em>Download</em> button next to a tabular data file, and select <em>Variable Metadata</em>. This will export the variable records in the DDI XML format. (Alternatively, this metadata fragment can be downloaded via the Data Access API; for example: <code class="docutils literal notranslate"><span class="pre">http://localhost:8080/api/access/datafile/&lt;FILEID&gt;/metadata/ddi</span></code>).</p>
-<p>The most immediate implication is in the calculation of the UNF signatures for the data vectors, as different normalization rules are applied to numeric, character, and date/time values. (see the <a class="reference external" href="http://guides.dataverse.org/en/latest/developers/unf/index.html">Universal Numerical Fingerprint (UNF)</a> section for more information). If it is important to you that the UNF checksums of your data are accurately calculated, check that the numeric and date/time columns in your file were recognized as such (as <code class="docutils literal notranslate"><span class="pre">type=numeric</span></code> and <code class="docutils literal notranslate"><span class="pre">type=character,</span> <span class="pre">category=date(time)</span></code>, respectively). If, for example, a column that was supposed to be numeric is recognized as a vector of character values (strings), double-check that the formatting of the values is consistent. Remember, a single improperly-formatted value in the column will turn it into a vector of character strings, and result in a different UNF. Fix any formatting errors you find, delete the file from the dataset, and try to ingest it again.</p>
+<p><strong>Note:</strong> When the ingest recognizes a CSV column as a numeric vector, or as a date/time value, this information is reflected and saved in the database as the <em>data variable metadata</em>. To inspect that metadata, click on the <em>Download</em> button next to a tabular data file, and select <em>Variable Metadata</em>. This will export the variable records in the DDI XML format. (Alternatively, this metadata fragment can be downloaded via the Data Access API; for example: <code class="docutils literal"><span class="pre">http://localhost:8080/api/access/datafile/&lt;FILEID&gt;/metadata/ddi</span></code>).</p>
+<p>The most immediate implication is in the calculation of the UNF signatures for the data vectors, as different normalization rules are applied to numeric, character, and date/time values. (see the <a class="reference external" href="http://guides.dataverse.org/en/latest/developers/unf/index.html">Universal Numerical Fingerprint (UNF)</a> section for more information). If it is important to you that the UNF checksums of your data are accurately calculated, check that the numeric and date/time columns in your file were recognized as such (as <code class="docutils literal"><span class="pre">type=numeric</span></code> and <code class="docutils literal"><span class="pre">type=character,</span> <span class="pre">category=date(time)</span></code>, respectively). If, for example, a column that was supposed to be numeric is recognized as a vector of character values (strings), double-check that the formatting of the values is consistent. Remember, a single improperly-formatted value in the column will turn it into a vector of character strings, and result in a different UNF. Fix any formatting errors you find, delete the file from the dataset, and try to ingest it again.</p>
 </div>
 </div>
 
@@ -167,7 +179,7 @@ n
       
     </p>
     <p>
-        <a href="https://dataverse.lib.virginia.edu/" target="_blank">LibraData</a>, UVA's Institutional Dataverse developed at Harvard's <a href="http://www.iq.harvard.edu/" target="_blank">IQSS</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse.org" title="Dataverse.org on GitHub" target="_blank"><img src="/dataverse-docs/_static/images/githubicon.png" width="20" alt="Dataverse.org on GitHub"/></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> 1.8.5<br/>Version 4.3 &nbsp;|&nbsp; Last updated on Apr 14, 2020<br/>&copy; Copyright 2018 by the Rector and Visitors of the University of Virginia <br/>
+        <a href="https://dataverse.lib.virginia.edu/" target="_blank">LibraData</a>, UVA's Institutional Dataverse developed at Harvard's <a href="http://www.iq.harvard.edu/" target="_blank">IQSS</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse.org" title="Dataverse.org on GitHub" target="_blank"><img src="/dataverse-docs/_static/images/githubicon.png" width="20" alt="Dataverse.org on GitHub"/></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> 1.4.6<br/>Version 4.3 &nbsp;|&nbsp; Last updated on Apr 29, 2019<br/>&copy; Copyright 2018 by the Rector and Visitors of the University of Virginia <br/>
     </p>
   </div>
 </footer>
