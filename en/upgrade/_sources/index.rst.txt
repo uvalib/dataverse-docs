@@ -5,10 +5,10 @@
 
 |image1|
 
-THE Guides
+Guides
 ====================
 
-These guides are for the version of Dataverse installed on UVA's LibraData Service. 
+These guides are for the version of Dataverse installed on UVA's LibraData Service.
 
 .. toctree::
   :glob:
@@ -43,3 +43,4 @@ management and citation, and announcements can be found at
 `http://dataverse.org/ <http://dataverse.org/>`__
 
 .. |image1| image:: ./img/LibraData.png
+
