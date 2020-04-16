@@ -1,5 +1,5 @@
 LibraData Account Creation & Management
-+++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++
 
 As a registered UVA user, you can:
 
@@ -8,7 +8,7 @@ As a registered UVA user, you can:
 -  Request and/or access to restricted files, if available.
 
 Login for UVA Users (required for UVA depositors)
-===================
+=================================================
 
 Authenticated UVA users log in through NetBadge:
 
@@ -30,7 +30,7 @@ The My Data section of your account page displays a listing of all the datasets,
 .. note:: The "My Data" portion of LibraData (Dataverse) does not work in the current version. Harvard IQSS, developers of Dataverse, are working on a fix. ALSO note that the "Add Data" button will not work on LibraData. To add a dataset, please start at the `LibraData homepage <http://dataverse.lib.virginia.edu>`_.
 
 Notifications: Setup & Maintenance
------------------------------
+-----------------------------------
 Notifications appear in the notifications tab on your account page and are also displayed as a number next to your account name.
 
 You will receive a notification when:

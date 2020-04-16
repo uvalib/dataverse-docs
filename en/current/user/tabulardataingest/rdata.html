@@ -1,48 +1,38 @@
 
 <!DOCTYPE html>
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
     <title>R Data Format &#8212; Dataverse.org</title>
-    
-    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/docsdataverse_org.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../../',
-        VERSION:     '4.3',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="../../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="Dataverse.org" href="../../index.html" />
-    <link rel="up" title="Tabular Data File Ingest" href="index.html" />
-    <link rel="next" title="Excel" href="excel.html" />
-    <link rel="prev" title="Stata" href="stata.html" />
-<meta charset='utf-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
-<rmeta name="apple-mobile-web-app-capable" content="yes">
-<link type="image/png" rel="icon" href="../_static/images/favicondataverse.png" />
+    <script type="text/javascript" src="../../_static/navbarscroll.js"></script>
+    <script type="text/javascript" src="../../_static/dv_rebind_bootstrap_ui.js"></script>
+<link type="text/css" rel="stylesheet" href="../../_static/fontcustom.css" />
+<link type="text/css" rel="stylesheet" href="../../_static/socicon.css" />
+<link type="text/css" rel="stylesheet" href="../../_static/theme.css" />
+<link type="text/css" rel="stylesheet" href="../../_static/primefaces.css" />
+<link type="text/css" rel="stylesheet" href="../../_static/docsdataverse_org.css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link type="image/png" rel="icon" href="../../_static/images/favicondataverse.png" />
 
-  </head>
-  <body role="document">
+  </head><body>
 
 
 
@@ -63,20 +53,18 @@
             </button>
             <a class="navbar-brand" href="http://dataverse.lib.virginia.edu" id="dataverse-org-homepage-url"">LibraData Dataverse</a>
         </div>
+
+
         <!-- Collect the nav links, forms, and other content for toggling -->
 
-       <div class="collapse navbar-collapse" id="dv-bs-navbar-details"></div><!-- /.navbar-collapse -->
+       <div class="collapse navbar-collapse" id="dv-bs-navbar-details">
+       </div><!-- /.navbar-collapse -->
     </div>
     <!-- /.container -->
+
+
 </nav>
 
-<script type="text/javascript" src="/en/latest/_static/navbar_from_dataverse_org.js"></script>
-<!--<script type="text/javascript" src="/_static/js/navbar_from_dataverse_org.js"></script>-->
-<script>
-    $(document).ready(function () {
-        load_navbar();
-    });
-</script>
 
 <div class="container">
   <div class="row">
@@ -114,7 +102,7 @@
 
         </div>
       </div>
-    <div class="col-md-9">
+    <div class="col-md-9 content">
       
   <div class="section" id="r-data-format">
 <h1>R Data Format<a class="headerlink" href="#r-data-format" title="Permalink to this headline">¶</a></h1>
@@ -145,17 +133,17 @@ from SPSS and Stata.</p>
 Missing Values encoded in R vectors will be recognized and preserved
 in TAB files, counted in the generated summary statistics
 and data analysis. Please note however that the Dataverse notation for
-a missing value, as stored in a TAB file, is an empty string, an not &#8220;NA&#8221; as in R.</p>
-<p>In addition to Missing Values, R recognizes &#8220;Not a Value&#8221; (NaN) and
+a missing value, as stored in a TAB file, is an empty string, an not “NA” as in R.</p>
+<p>In addition to Missing Values, R recognizes “Not a Value” (NaN) and
 positive and negative infinity for floating point variables. These
 are now properly supported by the DVN.</p>
-<p>Also note, that unlike Stata, that does recognize &#8220;float&#8221; and &#8220;double&#8221;
+<p>Also note, that unlike Stata, that does recognize “float” and “double”
 as distinct data types, all floating point values in R are in fact
 doubles.</p>
 </div>
 <div class="section" id="r-factors">
 <h3>R Factors<a class="headerlink" href="#r-factors" title="Permalink to this headline">¶</a></h3>
-<p>These are ingested as &#8220;Categorical Values&#8221; in the DVN.</p>
+<p>These are ingested as “Categorical Values” in the DVN.</p>
 <p>One thing to keep in mind: in both Stata and SPSS, the actual value of
 a categorical variable can be both character and numeric. In R, all
 factor values are strings, even if they are string representations of
@@ -163,21 +151,21 @@ numbers. So the values of the resulting categoricals in the DVN will
 always be of string type too.</p>
 <p>Another thing to note is that R factors have no builtin support for
 SPSS or STATA-like descriptive labels. This is in fact potentially
-confusing, as they also use the word &#8220;label&#8221;, in R parlance. However,
-in the context of a factor in R, it still refers to the &#8220;payload&#8221;, or
+confusing, as they also use the word “label”, in R parlance. However,
+in the context of a factor in R, it still refers to the “payload”, or
 the data content of its value. For example, if you create a factor
-with the &#8220;labels&#8221; of <em>democrat</em>, <em>republican</em> and <em>undecided</em>, these
+with the “labels” of <em>democrat</em>, <em>republican</em> and <em>undecided</em>, these
 strings become the actual values of the resulting vector. Once
 ingested in the Dataverse, these values will be stored in the
 tab-delimited file. The Dataverse DataVariable object representing the
-vector will be of type &#8220;Character&#8221; and have 3 VariableCategory objects
+vector will be of type “Character” and have 3 VariableCategory objects
 with the <em>democrat</em>, etc. for <strong>both</strong> the CategoryValue and
 CategoryLabel.  (In one of the future releases, we are planning to
 make it possible for the user to edit the CategoryLabel, using it for
 its intended purpose - as a descriptive, human-readable text text
 note).</p>
 <div class="line-block">
-<div class="line">To properly handle R vectors that are <em>ordered factors</em> Dataverse (starting with DVN 3.6) supports the concept of an &#8220;Ordered Categorical&#8221; - a categorical value where an explicit order is assigned to the list of value labels.</div>
+<div class="line">To properly handle R vectors that are <em>ordered factors</em> Dataverse (starting with DVN 3.6) supports the concept of an “Ordered Categorical” - a categorical value where an explicit order is assigned to the list of value labels.</div>
 </div>
 </div>
 <div class="section" id="boolean-values">
@@ -191,7 +179,7 @@ labels for the data frame variables.  In the DVN, similarly to
 both Stata and SPSS, variables have distinct names and labels; with
 the latter reserved for longer, descriptive text.
 With variables ingested from R data frames the variable name will be
-used for both the &#8220;name&#8221; and the &#8220;label&#8221;.</p>
+used for both the “name” and the “label”.</p>
 <div class="line-block">
 <div class="line"><em>Optional R packages exist for providing descriptive variable labels;
 in one of the future versions support may be added for such a
@@ -200,14 +188,14 @@ created with such optional packages</em>.</div>
 </div>
 <p>Similarly, R categorical values (factors) lack descriptive labels too.
 <strong>Note:</strong> This is potentially confusing, since R factors do
-actually have &#8220;labels&#8221;.  This is a matter of terminology - an R
-factor&#8217;s label is in fact the same thing as the &#8220;value&#8221; of a
+actually have “labels”.  This is a matter of terminology - an R
+factor’s label is in fact the same thing as the “value” of a
 categorical variable in SPSS or Stata and DVN; it contains the actual
 meaningful data for the given observation. It is NOT a field reserved
 for explanatory, human-readable text, such as the case with the
-SPSS/Stata &#8220;label&#8221;.</p>
-<p>Ingesting an R factor with the level labels &#8220;MALE&#8221; and &#8220;FEMALE&#8221; will
-produce a categorical variable with &#8220;MALE&#8221; and &#8220;FEMALE&#8221; in the
+SPSS/Stata “label”.</p>
+<p>Ingesting an R factor with the level labels “MALE” and “FEMALE” will
+produce a categorical variable with “MALE” and “FEMALE” in the
 values and labels both.</p>
 </div>
 </div>
@@ -217,44 +205,44 @@ values and labels both.</p>
 ways in which time values are handled in R.</p>
 <p>R makes an effort to treat a time value as a real time instance. This
 is in contrast with either SPSS or Stata, where time value
-representations such as &#8220;Sep-23-2013 14:57:21&#8221; are allowed; note that
+representations such as “Sep-23-2013 14:57:21” are allowed; note that
 in the absence of an explicitly defined time zone, this value cannot
 be mapped to an exact point in real time.  R handles times in the
-&#8220;Unix-style&#8221; way: the value is converted to the
-&#8220;seconds-since-the-Epoch&#8221; Greenwich time (GMT or UTC) and the
+“Unix-style” way: the value is converted to the
+“seconds-since-the-Epoch” Greenwich time (GMT or UTC) and the
 resulting numeric value is stored in the data file; time zone
 adjustments are made in real time as needed.</p>
 <p>Things still get ambiguous and confusing when R <strong>displays</strong> this time
 value: unless the time zone was explicitly defined, R will adjust the
 value to the current time zone. The resulting behavior is often
 counter-intuitive: if you create a time value, for example:</p>
-<p><code class="docutils literal"><span class="pre">timevalue&lt;-as.POSIXct(&quot;03/19/2013</span> <span class="pre">12:57:00&quot;,</span> <span class="pre">format</span> <span class="pre">=</span> <span class="pre">&quot;%m/%d/%Y</span> <span class="pre">%H:%M:%OS&quot;);</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">timevalue&lt;-as.POSIXct(&quot;03/19/2013</span> <span class="pre">12:57:00&quot;,</span> <span class="pre">format</span> <span class="pre">=</span> <span class="pre">&quot;%m/%d/%Y</span> <span class="pre">%H:%M:%OS&quot;);</span></code></p>
 <p>on a computer configured for the San Francisco time zone, the value
 will be differently displayed on computers in different time zones;
-for example, as &#8220;12:57 PST&#8221; while still on the West Coast, but as
-&#8220;15:57 EST&#8221; in Boston.</p>
+for example, as “12:57 PST” while still on the West Coast, but as
+“15:57 EST” in Boston.</p>
 <p>If it is important that the values are always displayed the same way,
 regardless of the current time zones, it is recommended that the time
 zone is explicitly defined. For example:</p>
-<p><code class="docutils literal"><span class="pre">attr(timevalue,&quot;tzone&quot;)&lt;-&quot;PST&quot;</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">attr(timevalue,&quot;tzone&quot;)&lt;-&quot;PST&quot;</span></code></p>
 <p>or</p>
-<p><code class="docutils literal"><span class="pre">timevalue&lt;-as.POSIXct(&quot;03/19/2013</span> <span class="pre">12:57:00&quot;,</span> <span class="pre">format</span> <span class="pre">=</span> <span class="pre">&quot;%m/%d/%Y</span> <span class="pre">%H:%M:%OS&quot;,</span> <span class="pre">tz=&quot;PST&quot;);</span></code></p>
-<p>Now the value will always be displayed as &#8220;15:57 PST&#8221;, regardless of
-the time zone that is current for the OS ... <strong>BUT ONLY</strong> if the OS
-where R is installed actually understands the time zone &#8220;PST&#8221;, which
+<p><code class="docutils literal notranslate"><span class="pre">timevalue&lt;-as.POSIXct(&quot;03/19/2013</span> <span class="pre">12:57:00&quot;,</span> <span class="pre">format</span> <span class="pre">=</span> <span class="pre">&quot;%m/%d/%Y</span> <span class="pre">%H:%M:%OS&quot;,</span> <span class="pre">tz=&quot;PST&quot;);</span></code></p>
+<p>Now the value will always be displayed as “15:57 PST”, regardless of
+the time zone that is current for the OS … <strong>BUT ONLY</strong> if the OS
+where R is installed actually understands the time zone “PST”, which
 is not by any means guaranteed! Otherwise, it will <strong>quietly adjust</strong>
 the stored GMT value to <strong>the current time zone</strong>, yet it will still
-display it with the &#8220;PST&#8221; tag attached!** One way to rephrase this is
+display it with the “PST” tag attached!** One way to rephrase this is
 that R does a fairly decent job <strong>storing</strong> time values in a
 non-ambiguous, platform-independent manner - but gives you no guarantee that
 the values will be displayed in any way that is predictable or intuitive.</p>
 <p>In practical terms, it is recommended to use the long/descriptive
 forms of time zones, as they are more likely to be properly recognized
-on most computers. For example, &#8220;Japan&#8221; instead of &#8220;JST&#8221;.  Another possible
+on most computers. For example, “Japan” instead of “JST”.  Another possible
 solution is to explicitly use GMT or UTC (since it is very likely to be
-properly recognized on any system), or the &#8220;UTC+&lt;OFFSET&gt;&#8221; notation. Still, none of the above
+properly recognized on any system), or the “UTC+&lt;OFFSET&gt;” notation. Still, none of the above
 <strong>guarantees</strong> proper, non-ambiguous handling of time values in R data
-sets. The fact that R <strong>quietly</strong> modifies time values when it doesn&#8217;t
+sets. The fact that R <strong>quietly</strong> modifies time values when it doesn’t
 recognize the supplied timezone attribute, yet still appends it to the
 <strong>changed</strong> time value does make it quite difficult. (These issues are
 discussed in depth on R-related forums, and no attempt is made to
@@ -262,7 +250,7 @@ summarize it all in any depth here; this is just to made you aware of
 this being a potentially complex issue!)</p>
 <p>An important thing to keep in mind, in connection with the DVN ingest
 of R files, is that it will <strong>reject</strong> an R data file with any time
-values that have time zones that we can&#8217;t recognize. This is done in
+values that have time zones that we can’t recognize. This is done in
 order to avoid (some) of the potential issues outlined above.</p>
 <p>It is also recommended that any vectors containing time values
 ingested into the DVN are reviewed, and the resulting entries in the
@@ -270,18 +258,18 @@ TAB files are compared against the original values in the R data
 frame, to make sure they have been ingested as expected.</p>
 <p>Another <strong>potential issue</strong> here is the <strong>UNF</strong>. The way the UNF
 algorithm works, the same date/time values with and without the
-timezone (e.g. &#8220;12:45&#8221; vs. &#8220;12:45 EST&#8221;) <strong>produce different
+timezone (e.g. “12:45” vs. “12:45 EST”) <strong>produce different
 UNFs</strong>. Considering that time values in Stata/SPSS do not have time
 zones, but ALL time values in R do (yes, they all do - if the timezone
-wasn&#8217;t defined explicitly, it implicitly becomes a time value in the
-&#8220;UTC&#8221; zone!), this means that it is <strong>impossible</strong> to have 2 time
+wasn’t defined explicitly, it implicitly becomes a time value in the
+“UTC” zone!), this means that it is <strong>impossible</strong> to have 2 time
 value vectors, in Stata/SPSS and R, that produce the same UNF.</p>
 <div class="line-block">
 <div class="line"><strong>A pro tip:</strong> if it is important to produce SPSS/Stata and R versions of</div>
 </div>
 <p>the same data set that result in the same UNF when ingested, you may
 define the time variables as <strong>strings</strong> in the R data frame, and use
-the &#8220;YYYY-MM-DD HH:mm:ss&#8221; formatting notation. This is the formatting used by the UNF
+the “YYYY-MM-DD HH:mm:ss” formatting notation. This is the formatting used by the UNF
 algorithm to normalize time values, so doing the above will result in
 the same UNF as the vector of the same time values in Stata.</p>
 <p>Note: date values (dates only, without time) should be handled the
@@ -302,12 +290,16 @@ UNFs.</p>
       <a href="#">Back to top</a>
       
     </p>
-    <p>
-        <a href="https://dataverse.lib.virginia.edu/" target="_blank">LibraData</a>, UVA's Institutional Dataverse developed at Harvard's <a href="http://www.iq.harvard.edu/" target="_blank">IQSS</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse.org" title="Dataverse.org on GitHub" target="_blank"><img src="/dataverse-docs/_static/images/githubicon.png" width="20" alt="Dataverse.org on GitHub"/></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> 1.4.6<br/>Version 4.3 &nbsp;|&nbsp; Last updated on Apr 29, 2019<br/>&copy; Copyright 2018 by the Rector and Visitors of the University of Virginia <br/>
-    </p>
+      <p>Developed at the <a href="http://www.iq.harvard.edu/" title="Institute for Quantitative Social Science" target="_blank">Institute for Quantitative Social Science</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse" title="Dataverse on GitHub" target="_blank"><span class="socicon socicon-github"></span></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" title="Sphinx" target="_blank">Sphinx</a> 1.8.5<br/>Last updated on Apr 15, 2020 &nbsp;|&nbsp; Dataverse v. 4.19 &nbsp;|&nbsp; View the <a href="http://guides.dataverse.org/en/latest/" title="Dataverse Guides">latest version of Dataverse Guides</a></p>
+        <p>Copyright &#169; 2020, The President &amp; Fellows of Harvard College</p> 
   </div>
 </footer>
-
+<script>
+    $jqTheme(document).ready(function () {
+        // Rebind bootstrap UI components
+        bind_bsui_components();
+    });
+</script>
 
   </body>
 </html>
