@@ -90,7 +90,7 @@ Certain file types in Dataverse are supported by additional functionality, which
 File Previews
 -------------
 
-Installations of Dataverse can install previewers for common file types uploaded by their research communities. The previews appear on the file page. If a preview tool for a specific file type is available, the preview will be created and will display automatically. File previews are not available for restricted files.
+UVa's Dataverse has installed Previewers for several common file types: ASCII Text (txt, html), audio (mp3, wav, ogg), image (gif, jpeg, png), pdf, video (mp4, ogg, quicktime), csv, tsv, stata syntax, and r syntax. The preview appears on the file page. If the file type is one of the above preview tools, the preview will be created and will display automatically. File previews are not available for restricted files.
 
 Tabular Data Files
 --------------------
