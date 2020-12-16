@@ -1,0 +1,11 @@
+Dataverse Tips
++++++++++++++++++++++++++++++
+
++----------+-----------------+
+| |image1| | Getting Help    |
++----------+-----------------+
+| |image2| | Logging in      |
++----------+-----------------+
+
+.. |image1| image:: ./img/thumbnail1.png
+.. |image2| image:: ./img/thumbnail2.png

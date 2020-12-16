@@ -64,7 +64,7 @@ View Files
 
 Files in Dataverse each have their own landing page that can be reached through the search results or through the Files table on their parent dataset's page. The dataset page and file page offer much the same functionality in terms of viewing and editing files, with a few small exceptions.
 
-- Previewers for several common file types are available and can be added by installation administrators.
+- UVa's Dataverse has installed Previewers for several common file types: ASCII Text (txt, html), audio (mp3, wav, ogg), image (gif, jpeg, png), pdf, video (mp4, ogg, quicktime), csv, tsv, stata syntax, and r syntax. 
 - The file page's Versions tab gives you a version history that is more focused on the individual file rather than the dataset as a whole.
 
 File Search within Datasets
