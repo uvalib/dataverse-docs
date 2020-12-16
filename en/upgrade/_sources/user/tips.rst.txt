@@ -1,11 +1,17 @@
 Dataverse Tips
 +++++++++++++++++++++++++++++
 
-+----------+-----------------+
-| |image1| | Getting Help    |
-+----------+-----------------+
-| |image2| | Logging in      |
-+----------+-----------------+
+Click on the image for full view:
++------------+------------+------------+
+|  |image1|  |  |image2|  |  |image3|  |
++------------+------------+------------+
+|  |image4|  |  |image5|  |  |image6|  | 
++----------+--------------+------------+
 
 .. |image1| image:: ./img/thumbnail1.png
 .. |image2| image:: ./img/thumbnail2.png
+.. |image3| image:: ./img/thumbnail3.png
+.. |image4| image:: ./img/thumbnail4.png
+.. |image5| image:: ./img/thumbnail5.png
+.. |image6| image:: ./img/thumbnail6.png
+
