@@ -45,7 +45,7 @@ Adding a New Dataset
 If you are not logged in, you will be prompted to log in before adding a new dataset.
 
 #. Navigate to the home page for LibraData http://dataverse.lib.virginia.edu
-#. From the UVA dataverse home page, in the box “Add your dataset to LibraData”, select the dataverse in which you want to add a dataset. You can create a dataset at the top level (LibraData) or in a sub-dataverse (e.g. Curry School of Education, Department of Biology, etc.). Currently available sub-dataverses are listed in the drop down menu, choose a specific one or select “LibraData - Main”. 
+#. From the UVA Dataverse repository home page, in the box “Add your dataset to LibraData”, select the collection in which you want to add a dataset. You can create a dataset at the top level (LibraData) or in a sub-collection (e.g. School of Education & Human Development, Department of Biology, etc.). Currently available sub-collections are listed in the drop down menu, choose a specific one or select “LibraData - Main”. 
 #. Click on the "Add Data" button.
 #. To quickly get started, enter at minimum all the required fields with an asterisk (e.g., the Dataset Title, Author,
    Dataset Description, Contact Email, Subject, and Data Creation Date).
@@ -56,24 +56,24 @@ If you are not logged in, you will be prompted to log in before adding a new dat
 
 #. Click the "Save Dataset" button when you are done. Your unpublished dataset is now created.
 
-Note: You can add additional metadata once you have completed the initial dataset creation by clicking **Edit** and selecting **Metadata**.
+Note: You can add additional metadata once you have completed the initial dataset creation by clicking **Edit Dataset** and selecting **Metadata**.
 
 Supported HTML Fields
 ------------------------
 
 We currently only support the following HTML tags for any of our textbox meatdata fields (i.e., Description) : <a>, <b>, <blockquote>,
 <br>, <code>, <del>, <dd>, <dl>, <dt>, <em>, <hr>, <h1>-<h3>, <i>, <img>, <kbd>, <li>, <ol>, <p>, <pre>, <s>, <sup>, <sub>,
-<strong>, <strike>, <ul>.
+<strong>, <strike>, <u>, <ul>.
 
 
 File Upload
 ===============================
 
-You can upload files to a dataset while first creating that dataset. You can also upload files after creating a dataset by clicking the “Edit” button at the top of the dataset page and from the dropdown list selecting “Files (Upload)” or clicking the “Upload Files” button above the files table in the Files tab. From either option you will be brought to the Upload Files page for that dataset.
+You can upload files to a dataset while first creating that dataset. You can also upload files after creating a dataset by clicking the “Edit Dataset” button at the top of the dataset page and from the dropdown list selecting “Files (Upload)” or clicking the “Upload Files” button above the files table in the Files tab. From either option you will be brought to the Upload Files page for that dataset.
 
 To upload new files to a dataset, click the “Edit” button at the top of the dataset page and from the dropdown list select “Files (Upload)” or click the “Upload Files” button above the files table in the Files tab. From either option you will be brought to the Upload Files page for that dataset.
 
-Once you have uploaded files, you will be able to edit the file name, add a description, restrict access [#f1]_ , add tags. Click “Save Changes” to complete the upload. If you uploaded a file by mistake, you can delete it before saving by clicking the checkbox to select the file, and then clicking the “Delete” button above the files table.
+Once you have uploaded files, you will be able to edit the file name, add a description, restrict access [#f1]_ , add tags. Click “Save Changes” to complete the upload. If you uploaded a file by mistake, you can delete it before saving by clicking the checkbox to select the file, click "Edit Files" button above the files table, and then select "Delete”.
 
 All file formats are supported, up to 6GB per file for LibraData Dataverse.  
 
@@ -86,12 +86,32 @@ The file types listed below are supported by additional functionality, which can
 Command-line DVUploader
 -----------------------
 
-The open-source DVUploader tool is a stand-alone command-line Java application that uses the Dataverse API to upload files to a specified Dataset. It is intended as an alternative to uploading files through the Dataverse web interface in situations where the web interface is inconvenient due to the number of files or file locations (spread across multiple directories, mixed with files that have already been uploaded or file types that should be excluded) or the need to automate uploads. Since it uses the Dataverse API, transfers are limited in the same ways as HTTP uploads through the Dataverse web interface in terms of size and performance. The DVUploader logs its activity and can be killed and restarted as desired. If stopped and resumed, it will continue processing from where it left off.
+The open-source DVUploader tool is a stand-alone command-line Java application that uses the Dataverse API to upload files to a specified Dataset. Since it can be installed by users, and requires no server-side configuration, it can be used with any Dataverse installation. It is intended as an alternative to uploading files through the Dataverse web interface in situations where the web interface is inconvenient due to the number of files or file locations (spread across multiple directories, mixed with files that have already been uploaded or file types that should be excluded) or the need to automate uploads. Since it uses the Dataverse API, transfers are limited in the same ways as HTTP uploads through the Dataverse web interface in terms of size and performance. The DVUploader logs its activity and can be killed and restarted as desired. If stopped and resumed, it will continue processing from where it left off.
 
 Usage
 *********************
 
-The DVUploader is open source and is available as source, as a Java jar, and with documentation at https://github.com/IQSS/dataverse-uploader. Please email libra@virginia.edu for further information or questions.
+The DVUploader is open source and is available as source, as a Java jar, and with documentation at https://github.com/IQSS/dataverse-uploader. The DVUploader requires Java 1.8+. Users will need to install Java if they don't already have it and then download the DVUploader-v1.0.0.jar file. Users will need to know the URL of the Dataverse server, the DOI of their existing Dataverse Dataset, and have generated a Dataverse API Key (an option in the user's profile menu).
+
+Basic usage is to run the command: ::
+
+    java -jar DVUploader-v1.0.0.jar -server=<Dataverse server URL> -did=<Dataset DOI> -key=<User's API Key> <file or directory list>
+
+Additional command line arguments are available to make the DVUploader list what it would do without uploading, limit the number of files it uploads, recurse through sub-directories, verify fixity, exclude files with specific extensions or name patterns, and/or wait longer than 60 seconds for any Dataverse ingest lock to clear (e.g. while the previously uploaded file is processed, as discussed in the :ref:`File Handling <file-handling>` section below).
+
+DVUploader is a community-developed tool, and its creation was primarily supported by the Texas Digital Library. Further information and support for DVUploader can be sought at `the project's GitHub repository <https://github.com/IQSS/dataverse-uploader>`_ .
+
+Duplicate Files
+---------------
+
+Beginning with Dataverse 5.0, the way Dataverse handles duplicate files (filename and checksums) is changing to be more flexible. Specifically:
+
+- Files with the same checksum can be included in a dataset, even if the files are in the same directory.
+- Files with the same filename can be included in a dataset as long as the files are in different directories.
+- If a user uploads a file to a directory where a file already exists with that directory/filename combination, Dataverse will adjust the file path and names by adding "-1" or "-2" as applicable. This change will be visible in the list of files being uploaded.
+- If the directory or name of an existing or newly uploaded file is edited in such a way that would create a directory/filename combination that already exists, Dataverse will display an error.
+- If a user attempts to replace a file with another file that has the same checksum, an error message will be displayed and the file will not be able to be replaced.
+- If a user attempts to replace a file with a file that has the same checksum as a different file in the dataset, a warning will be displayed.
 
 File Handling
 ======================
@@ -132,8 +152,8 @@ To use the ingest functionality for tabular files, a file can only be up to 2GB 
 Additional download options available for tabular data (found
 in the same drop-down menu under the "Download" button): 
 
-- As tab-delimited data (with the variable names in the first row); 
 - The original file uploaded by the user; 
+- As tab-delimited data (with the variable names in the first row); 
 - Saved as R data (if the original file was not in R format); 
 - Variable Metadata (as a `DDI Codebook <http://www.ddialliance.org/Specification/DDI-Codebook/>`_ XML file);
 - Data File Citation (currently in either RIS, EndNote XML format, or BibTeX format);
@@ -143,9 +163,7 @@ in the same drop-down menu under the "Download" button):
 Geospatial
 --------------------
 
-Geospatial `shapefiles <http://en.wikipedia.org/wiki/Shapefile>`_ can be further explored and manipulated through our integration
-with `WorldMap <http://guides.dataverse.org/en/latest/user/data-exploration/worldmap.html>`_, a geospatial data visualization
-and analysis tool developed by the `Center for Geographic Analysis <http://gis.harvard.edu/>`_ at Harvard University. A shapefile is a set of files, often uploaded/transferred in .zip format.  This set may contain up to 15 files.  A minimum of 3 specific files (.shp, .shx, .dbf) are needed to be a valid shapefile and a 4th file (.prj) is required for WorldMap--or any type of meaningful visualization.
+Geospatial `shapefiles <http://en.wikipedia.org/wiki/Shapefile>`_ can be further explored and manipulated through an optional integration with `WorldMap <../user/data-exploration/worldmap.html>`_, a geospatial data visualization and analysis tool developed by the `Center for Geographic Analysis <http://gis.harvard.edu/>`_ at Harvard University. A shapefile is a set of files, often uploaded/transferred in .zip format.  This set may contain up to 15 files.  A minimum of 3 specific files (.shp, .shx, .dbf) are needed to be a valid shapefile and a 4th file (.prj) is required for WorldMap--or any type of meaningful visualization.
 
 For ingest into Dataverse and connecting to WorldMap, these 4 files are the minimum required:
 
@@ -154,24 +172,21 @@ For ingest into Dataverse and connecting to WorldMap, these 4 files are the mini
 * .dbf - attribute format; columnar attributes for each shape, in dBase IV format
 * .prj - projection format; the coordinate system and projection information, a plain text file describing the projection using well-known text format
 
-For a zipped shapefile, we require 4 files with these extensions. Other files may be included within the zipped shapefile, but they are not required: 
+For a zipped shapefile, we require 4 files with these extensions. Other files may be included within the zipped shapefile, but they are not required:
 
 * .shp
-* .shx 
-* .prj 
-* .dbf 
+* .shx
+* .prj
+* .dbf
 
-For example, if these files were included within a .zip, the “Map Data” button would appear: 
+For example, if these files were included within a .zip, the Geoconnect configure tool option is displayed:
 
-* subway_line.shp 
-* subway_line.shx 
-* subway_line.prj 
+* subway_line.shp
+* subway_line.shx
+* subway_line.prj
 * subway_line.dbf
 
-Once you publish your dataset with your shape files, you will be able to use the "Map Data" button using `GeoConnect <https://github.com/IQSS/geoconnect>`_ to visualize and manipulate these files
-for users to Explore this geospatial data using the `WorldMap <http://worldmap.harvard.edu/>`_ interface.
-Please note: In order to map your data file, a copy will be sent to Harvard's `WorldMap <http://worldmap.harvard.edu/>`_ platform. You have the ability to delete any maps, and associated data, from the Harvard WorldMap platform, at any time.
-
+Once you publish your dataset with your shape files, you will be able to use the configure tool `Geoconnect <https://github.com/IQSS/geoconnect>`_ to visualize and manipulate these files for users to explore this geospatial data on `WorldMap <http://worldmap.harvard.edu/>`__. Please note: In order to map your data file, a copy will be sent to Harvard's `WorldMap <http://worldmap.harvard.edu/>`__ platform. You have the ability to delete any maps, and associated data, from the Harvard WorldMap platform, at any time.
 
 Astronomy (FITS)
 --------------------
@@ -183,15 +198,13 @@ and browsable (facets) at the Dataset-level.
 Compressed Files
 ----------------------------------------
 
-Compressed files in zip format are unpacked automatically. If it fails to unpack, for whatever reason, it will upload as 
-is. If the number of files inside are more than a set limit (1,000), you will get an error message and the file will upload as is.
+Compressed files in .zip format are unpacked automatically. If a .zip file fails to unpack for whatever reason, it will upload as is. If the number of files inside are more than a set limit (1,000 by default, configurable by the Administrator), you will get an error message and the .zip file will upload as is.
 
-If the uploaded .zip file contains a folder structure, Dataverse will keep track of this structure. A file’s location within this folder structure is displayed in the file metadata as the File Path. When you download the contents of the dataset, this folder structure will be preserved and files will appear in their original locations.
+If the uploaded .zip file contains a folder structure, Dataverse will keep track of this structure. A file's location within this folder structure is displayed in the file metadata as the File Path. When you download the contents of the dataset, this folder structure will be preserved and files will appear in their original locations.
 
-These folder names are subject to strict validation rules. Only the following characters are allowed: the alphanumerics, ‘_’, ‘-‘, ‘.’ and ‘ ‘ (white space). When a zip archive is uploaded, the folder names are automatically sanitized, with any invalid characters replaced by the ‘.’ character. Any sequences of dots are further replaced with a single dot. For example, the folder name ``data&info/code=@137`` will be converted to ``data.info/code.137``. When uploading through the Web UI, the user can change the values further on the edit form presented, before clicking the ‘Save’ button.
+These folder names are subject to strict validation rules. Only the following characters are allowed: the alphanumerics, '_', '-', '.' and ' ' (white space). When a zip archive is uploaded, the folder names are automatically sanitized, with any invalid characters replaced by the '.' character. Any sequences of dots are further replaced with a single dot. For example, the folder name ``data&info/code=@137`` will be converted to ``data.info/code.137``. When uploading through the Web UI, the user can change the values further on the edit form presented, before clicking the 'Save' button.
 
 .. note:: If you upload multiple .zip files to one dataset, any subdirectories that are identical across multiple .zips will be merged together when the user downloads the full dataset.
-
 
 Other File Types
 ---------------------------------------------
@@ -206,7 +219,7 @@ Edit Files
 
 Edit File Metadata
 --------------------
-Go to the dataset you would like to edit where you will see the listing of files. Select the files you would like to edit by using either the "Select All" checkbox or individually selecting files. Next, click on the "Edit" button above the files and select if you would like to:
+Go to the dataset you would like to edit where you will see the listing of files. Select the files you would like to edit by using either the "Select All" checkbox or individually selecting files. Next, click on the "Edit Files" button above the filetable and from the dropdown menu select if you would like to:
 
 - Delete the selected files
 - Edit the file metadata (file name, description) for the selected files
@@ -228,7 +241,6 @@ A file’s File Path can be manually added or edited on the Edit Files page. Cha
 If there is more than one file in the dataset, and once at least one of them has a non-empty directory path, the Dataset Page will present an option for switching between the traditional table view, and the tree-like view of the files showing the folder structure, as in the example below:
 
 |image5|
-
 
 
 File Tags
@@ -317,32 +329,6 @@ When you access a dataset's file-level permissions page, you will see two sectio
 **Users/Groups:** Here you can see which users or groups have been granted access to which files. You can click the "Grant Access to Users/Groups" button to see a box where you can grant access to specific files within your dataset to specific users or groups. If any users have requested access to a file in your dataset, you can grant or reject their access request here.
 
 **Restricted Files:** In this section, you can see the same information, but broken down by each individual file in your dataset. For each file, you can click the "Assign Access" button to see a box where you can grant access to that file to specific users or groups.
-
-.. _provenance:
-
-Data Provenance
-==================
-Data Provenance is a record of where your data came from and how it reached its current form. It describes the origin of a data file, any transformations that have been made to that file, and any persons or organizations associated with that file. A data file’s provenance can aid in reproducibility and compliance with legal regulations. Dataverse can help you keep track of your data’s provenance. Currently, Dataverse only makes provenance information available to those who have edit permissions on your dataset, but in the near future we plan to expand this feature to make provenance information available to the public. 
-
-Dataverse accepts provenance information in two forms: a Provenance File or a free-text Provenance Description. You can attach this provenance information to your data files in Dataverse as part of the file upload process, by clicking Edit -> Provenance:
-
-|prov0|
-
-This will open a window where you can add your Provenance File and/or Provenance Description:
-
-|prov1|
-
-A **Provenance File** is the preferred way of submitting provenance information to Dataverse because it provides a detailed and trustworthy record. Provenance files are typically generated during the process of data analysis, using provenance capture tools like provR, RDataTracker, NoWorkFlow, recordr, or CamFlow.
-
-Once you upload a provenance file, Dataverse will need some additional information in order to accurately connect it to your data file. Once provenance file upload finishes, an input box labeled "Connect entity" will appear under the file. Provenance files contain a list of "entities", which include your data file as well as any objects associated with it (e.g. a chart, a spellchecker, etc.). You will need to tell Dataverse which entity within the provenance file represents your data file. You may type the name of the entity into the box, or click the arrow next to the box and select the entity from a list of all entities in the provenance file. 
-
-For more information on entities and the contents of provenance files, see `the W3C PROV Model Primer  <https://www.w3.org/TR/prov-primer/#intuitive-overview-of-prov>`_.
-
-Once you've uploaded your Provenance File and connected the proper entity, you can hit the Preview button to view the raw JSON of the Provenance File. This can help you confirm that you've uploaded the right file. Be sure to double-check it, because the Provenance File will made *permanent* once it's finalized. At that point you will not be able to *replace*, *remove*, or otherwise *edit* the Provenance File. This ensures that the Provenance File maintains a stable, immutable record of the data file's history. This finalization of the Provenance File happens at different points depending on the status of your data file. If this is a brand new data file that has never been published before, then its associated Provenance File will be made permanent once you publish the dataset. If this data file *has* been published in a previous version of your dataset, then its associated Provenance File will be made permanent as soon as you upload the Provenance File and click "Save Changes" on the warning popup.
-
-A **Provenance Description** allows you to add more provenance information in addition to or in place of a provenance file. This is a free-text field that allows you to enter any information you feel might be relevant to those interested in learning about the provenance of your data. This might be a good place to describe provenance factors like what operating system you used when working with the data file, what functions or libraries you used, how data was merged into the file, what version of the file you used, etc. The Provenance Description is not as useful or trustworthy as a provenance file, but it can still provide value. Unlike the Provenance File, the Provenance Description is never made permanent: you can always edit, remove, or replace it at any time.
-
-You can return to attach provenance to your data file later on by clicking the "Add + Edit Metadata" button on the file page, and then clicking the "Edit -> Provenance" button.
 
 
 .. _widgets:

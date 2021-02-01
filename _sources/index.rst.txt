@@ -8,7 +8,7 @@
 Guides
 ====================
 
-These guides are for the version of Dataverse installed on UVA's LibraData Service.
+These guides are for the version of Dataverse repository installed on UVA's LibraData Service.
 
 .. toctree::
   :glob:
@@ -20,16 +20,16 @@ These guides are for the version of Dataverse installed on UVA's LibraData Servi
 How the Guides Are Organized
 =============================
 
-The Guides are reference documents that explain how to use LibraData, the local instance of Dataverse installed at UVA.
+The Guides are reference documents that explain how to use LibraData, the local instance of Dataverse software installed at UVA.
 The User Guide is divided into primary activities: finding & using
-data, adding Datasets, administering dataverses or Datasets, and Dataset exploration/visualizations. Details
+data, adding Datasets, managing dataverse collections and datasets, and Dataset exploration/visualizations. Details
 on all of the above tasks can be found in the Users Guide.
 
 LibraData Support
 ==================
 To start depositing in LibraData, check out the `LibraData Deposit Checklist <http://www.library.virginia.edu/libra/datasets/libra-data-deposit-checklist/>`_.
 
-If you have any questions or problems with LibraData, UVA's Dataverse implementation, please email
+If you have any questions or problems with LibraData, UVA's Dataverse repository implementation, please email
 `libra@virginia.edu <mailto:libra@virginia.edu>`_.
 
 Other Resources

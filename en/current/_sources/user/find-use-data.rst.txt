@@ -10,7 +10,7 @@ A user can search dataverses, datasets, and files within a particular dataverse 
 
 Basic Search
 --------------
-From UVa's Dataverse homepage, you can search the entire contents of UVa's Dataverse, which includes sub-dataverses, datasets and files. You can search within a sub-dataverse with an exact phrase search or entering a search term or query in the search box (on the left) that says, "Search this dataverse". If you have navigated to a sub-dataverse, to search ALL dataverses, use the search dropdown on the header of every page. The search bar accepts search terms, queries, or exact phrases (in quotations).
+From UVa's Dataverse repository homepage, you can search the entire contents of UVa's Dataverse repository, which includes sub-collections, datasets and files. You can search within a sub-collection with an exact phrase search or entering a search term or query in the search box (on the left) that says, "Search this dataverse". If you have navigated to a sub-collection, to search ALL dataverses, use the search dropdown on the header of every page. The search bar accepts search terms, queries, or exact phrases (in quotations).
 
 Sorting and Viewing Search Results
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -30,11 +30,6 @@ Other basic search features:
 
 Advanced Search 
 -----------------
-
-In an advanced search, you can refine your criteria by choosing which metadata fields to search. You can perform an 
-advanced search on Citation metadata fields as well as domain specific metadata fields depending on the metadata
-selected for your Dataverse (Social Sciences & Humanities, Geospatial
-Astronomy & Astrophysics, and Life Sciences). Additionally, you can perform an advanced search for dataverses and files.
 
 To perform an advanced search, click the "Advanced Search" link next to the search bar. There you will have the ability to 
 enter search terms for Dataverses, Dataset Metadata (citation and domain-specific), and file-level 
@@ -56,8 +51,7 @@ View Dataverses + Datasets
 
 After performing a search and finding the dataverse or dataset you are looking for, click on the name of the dataverse or dataset or on the thumbnail image to be taken to the page for that dataverse or dataset. Once on a dataverse page, you can view the dataverses, datasets, and files within that dataverse.
 
-Once on a dataset page, you will see the title, citation, description, and several other fields as well as a button to email the dataset contact. Below that information, the files, metadata, and version information for the dataset are available. 
-
+Once on a dataset page, you will see the title, citation, description, and several other fields, as well as a button to email the dataset contact and a button to share the dataset on social media. Below that information, the files, metadata, terms of use, and version information for the dataset are available.
 
 View Files
 --------------------
@@ -92,9 +86,13 @@ You can find the citation for the dataset at the top of the dataset page in a bl
 Download Files
 -----------------
 
-Within the Files tab on a dataset page, you can download the files in that dataset. To download more than one file at a time, select the files you would like to download and then click the Download button above the files. The selected files will download in .zip format that preserves any folder structure that the dataset owner had set up.
+If you want to download all files in a dataset, you can click the Access Dataset dropdown on the dataset page and select one of the download options. The dataset's files will download in .zip format and will preserve any folder structure that the dataset owner had set up.
 
-You may also download a file from its file page by clicking the Download button in the upper right corner of the page, or by Downloading via URL under the Metadata tab on the lower half of the page.
+If you'd like to download a single file or some subset of the dataset's files, you can use the Files tab. To download more than one file at a time, select the files you would like to download and then click the Download button above the files. The dataset's files will download in .zip format and will preserve any folder structure that the dataset owner had set up.
+
+You may also download a file from the Access File button on its file page or by :ref:`url_download` under the Metadata tab.
+
+Tabular data files offer additional options: You can explore using any data exploration or visualization (if they have been enabled), or choose from a number of tabular-data-specific download options available.
 
 Tabular Data
 ^^^^^^^^^^^^^^^
@@ -111,7 +109,7 @@ Ingested files can be downloaded in several different ways.
 Downloading via URL
 ^^^^^^^^^^^^^^^^^^^^
 
-Dataverse displays a plaintext URL for the location of the file under the Metadata tab on the dataset page. This Download URL can be used to directly access the file via API (or in a web browser, if needed). 
+Dataverse displays a plaintext URL for the location of the file under the Metadata tab on the file page. This Download URL can be used to directly access the file via API (or in a web browser, if needed). When downloading larger files, in order to ensure a reliable, resumable download, we recommend using `GNU Wget <https://www.gnu.org/software/wget/>`_ in a command line terminal or using a download manager software of your choice.
 
 Certain files do not provide Download URLs for technical reasons: those that are restricted, or have terms of use associated with them. 
 

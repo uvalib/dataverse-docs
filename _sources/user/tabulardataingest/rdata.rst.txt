@@ -198,6 +198,7 @@ the "YYYY-MM-DD HH:mm:ss" formatting notation. This is the formatting used by th
 algorithm to normalize time values, so doing the above will result in
 the same UNF as the vector of the same time values in Stata.
 
+
 Note: date values (dates only, without time) should be handled the
 exact same way as those in SPSS and Stata, and should produce the same
 UNFs.

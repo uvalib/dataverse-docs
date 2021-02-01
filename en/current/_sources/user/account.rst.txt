@@ -3,7 +3,7 @@ LibraData Account Creation & Management
 
 As a registered UVA user, you can:
 
--  Add datasets to dataverses.
+-  Add datasets to dataverse collections.
 -  Contribute to existing datasets, if available.
 -  Request and/or access to restricted files, if available.
 
@@ -25,9 +25,8 @@ To access your account page, click on your name in the header on the right hand 
 
 My Data
 ---------------------------
-The My Data section of your account page displays a listing of all the dataverses, datasets, and files you have either created, uploaded or that you have a role assigned on. You are able to filter through all the dataverses, datasets, and files listed on your My Data page using the filter box. You may also use the facets on the left side to only view a specific Publication Status or Role.
+The My Data section of your account page displays a listing of all the datasets and files you have either created, uploaded or that you have a role assigned on. You are able to filter through all the datasets, and files listed on your My Data page using the filter box. You may also use the facets on the left side to only view a specific Publication Status or Role.
 
-.. note:: The "Add Data" button at the top menu bar or on the "My Data" page will not work on LibraData. To add a dataset, please start at the `LibraData homepage <http://dataverse.lib.virginia.edu>`_.
 
 Notifications: Setup & Maintenance
 -----------------------------------
@@ -37,10 +36,10 @@ You will receive a notification when:
 
 - You've created your account
 - You've added a dataset
-- Another Dataverse user has requested access to a restricted file in one of your datasets
+- Another LibraData user has requested access to a restricted file in one of your datasets
 - A file in one of your datasets has finished the ingest process
 
-Notifications will only be emailed one time even if you haven't read the notification on the Dataverse site.
+Notifications will only be emailed one time even if you haven't read the notification on LibraData.
 
 API Token
 -------------
