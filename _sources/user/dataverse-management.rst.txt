@@ -1,14 +1,14 @@
-Dataverse Management
-++++++++++++++++++++++++++++
+Dataverse Collection Management
+++++++++++++++++++++++++++++++++
 
-A dataverse is a container for datasets (research data and other products of research, code, documentation, and metadata) and other dataverses, 
+A dataverse collection is a container for datasets (research data and other products of research, code, documentation, and metadata) and other Dataverse collections, 
 which can be setup for individual researchers, departments, journals and organizations.
 
 |image1|
 
 
-Request to create a dataverse
-===============================
-Submit a request to create a lab, department or center dataverse. Please email libra@virginia.edu.
+Request to create a dataverse collection
+===========================================
+Submit a request to create a dataverse collection for your lab, department or center . Please email libra@virginia.edu.
 
 .. |image1| image:: ./img/Dataverse-Diagram.png

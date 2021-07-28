@@ -4,24 +4,24 @@ Finding and Using Data
 Finding Data
 =============
 
-Without logging in to UVa Dataverse, users can browse UVa Dataverse, search for dataverses, datasets, and files, view dataset descriptions and files for published datasets (restricted & not restricted) data files. To view a unpublished dataverse, dataset, or file, a user will need to be given permission from that dataverse’s administrator to access it.
+Without logging in to UVa Dataverse Repository, users can browse UVa Dataverse content, search for dataverse collections, datasets, and files, view dataset descriptions and files for published datasets (restricted & not restricted) data files. 
 
-A user can search dataverses, datasets, and files within a particular dataverse by using the search bar and facets found on the left side of a dataverse page. For example, if you are in the Environmental Science Dataverse page, you can search that specific dataverse’s contents by using the search bar and/or facets displayed on the page.  
+A user can search within a specific Dataverse collection for the Dataverse collections, datasets, and files it contains by using the search bar and facets displayed on that Dataverse collection’s page. For example, if you are in the Environmental Science dataverse collection, you can search that specific collection contents by using the search bar and/or facets displayed on the page.  
 
 Basic Search
 --------------
-From UVa's Dataverse repository homepage, you can search the entire contents of UVa's Dataverse repository, which includes sub-collections, datasets and files. You can search within a sub-collection with an exact phrase search or entering a search term or query in the search box (on the left) that says, "Search this dataverse". If you have navigated to a sub-collection, to search ALL dataverses, use the search dropdown on the header of every page. The search bar accepts search terms, queries, or exact phrases (in quotations).
+From UVa's Dataverse repository homepage, you can search the entire contents of UVa's Dataverse repository, which includes sub-collections, datasets and files. You can search within a sub-collection with an exact phrase search or entering a search term or query in the search box (on the left) that says, "Search this dataverse". If you have navigated to a sub-collection, to search ALL dataverse collections, use the search dropdown on the header of every page. The search bar accepts search terms, queries, or exact phrases (in quotations).
 
 Sorting and Viewing Search Results
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Facets: to the left of the search results, there are several facets a user can click on to narrow the number of results displayed. 
-    - Choosing a facet: to choose a facet, click on the facet to choose it
-    - Removing a facet: to remove a facet, click on the X next to a chosen facet in search string above the results OR a chosen facet can be removed by clicking on the X next to it in the facets pane to the left of the results
-    - Viewing more or less: the top 5 most common facets from that category. To view more, click on "More..." in the bottom right of a facet. Once you've chosen to see more, an option to view less will appear in the bottom left of the facet.
+    - Choosing a facet: to choose a facet to narrow your results by, click on that facet.
+    - Removing a facet: A chosen facet can be removed by clicking on the X on it, either in the facets panel to the left, or above the results.
+    - Viewing more or fewer facets: Each category in the facets panel lists the top 5 most common facets from that category. To view more, click on “More…” in the bottom right of that category. Once you’ve chosen to see more, an option to view less will appear in the bottom left of the facet.
    
-Results: after entering a search term or query, results (dataverses, datasets, or data files) that match your term or query appear underneath the search bar and to the right of the facets.
-    - Relevancy of results: each results shows which metadata fields match the search query or term you entered into the search bar with the matching term or query bolded. If the search term or query was found in the title or name of the dataverse, dataset, or file, the search term or query will be bolded within it.
+Results: after entering a search term or query, results (dataverse collections, datasets, or data files) that match your term or query appear underneath the search bar and to the right of the facets.
+    - Relevancy of results: each results shows which metadata fields match the search query or term you entered into the search bar with the matching term or query bolded. If the search term or query was found in the title or name of the dataverse collection, dataset, or file, the search term or query will be bolded within it.
 
 Other basic search features: 
     - Sorting results: search results can be sorted by name (A-Z or Z-A), newest or oldest, or relevancy of results. The sort button can be found above the search results, in the top right.
@@ -32,7 +32,7 @@ Advanced Search
 -----------------
 
 To perform an advanced search, click the "Advanced Search" link next to the search bar. There you will have the ability to 
-enter search terms for Dataverses, Dataset Metadata (citation and domain-specific), and file-level 
+enter search terms for Dataverse collections, Dataset Metadata (citation and domain-specific), and file-level 
 metadata. If you are searching for tabular data files you can also search at the variable level for name and label. To find 
 out more about what each field searches, hover over the field name for a detailed description of the field.
 
@@ -40,7 +40,7 @@ out more about what each field searches, hover over the field name for a detaile
 Browsing Dataverse
 --------------------
 
-You can browse selected dataverses or all of LibraData from the home page by clicking on a dataverse at the bottom of the page, or select “Browse all LibraData Datasets” to browse all of LibraData. Browsing is the default for a user when they are on a specific dataverse's page. When browsing, only dataverses and datasets appear in the results list and the results can be sorted by Name (A-Z or Z-A) and by Newest or Oldest. You can toggle the "Files" facet on the left to include files in the results list.
+You can browse selected dataverse collections or all of LibraData from the home page by clicking on a dataverse collection at the bottom of the page, or select “Browse all LibraData Datasets” to browse all of LibraData. Browsing is the default for a user when they are on a specific dataverse collection's page. When browsing, only dataverse collections and datasets appear in the results list and the results can be sorted by Name (A-Z or Z-A) and by Newest or Oldest. You can toggle the "Files" facet on the left to include files in the results list.
 
 
 Using Data
@@ -49,16 +49,16 @@ Using Data
 View Dataverses + Datasets
 ------------------------------
 
-After performing a search and finding the dataverse or dataset you are looking for, click on the name of the dataverse or dataset or on the thumbnail image to be taken to the page for that dataverse or dataset. Once on a dataverse page, you can view the dataverses, datasets, and files within that dataverse.
+After performing a search and finding the dataverse collection or dataset you are looking for, click on the name of the dataverse collection or dataset or on the thumbnail image to be taken to the page for that dataverse collection or dataset. Once on a dataverse collection page, you can view the dataverses, datasets, and files within that dataverse.
 
 Once on a dataset page, you will see the title, citation, description, and several other fields, as well as a button to email the dataset contact and a button to share the dataset on social media. Below that information, the files, metadata, terms of use, and version information for the dataset are available.
 
 View Files
 --------------------
 
-Files in Dataverse each have their own landing page that can be reached through the search results or through the Files table on their parent dataset's page. The dataset page and file page offer much the same functionality in terms of viewing and editing files, with a few small exceptions.
+Files in Dataverse installation each have their own landing page that can be reached through the search results or through the Files table on their parent dataset's page. The dataset page and file page offer much the same functionality in terms of viewing and editing files, with a few small exceptions.
 
-- UVa's Dataverse has installed Previewers for several common file types: ASCII Text (txt, html), audio (mp3, wav, ogg), image (gif, jpeg, png), pdf, video (mp4, ogg, quicktime), csv, tsv, stata syntax, and r syntax. 
+- UVa's Dataverse installaion has installed Previewers for several common file types: ASCII Text (txt, html), audio (mp3, wav, ogg), image (gif, jpeg, png), pdf, video (mp4, ogg, quicktime), csv, tsv, stata syntax, and r syntax. 
 - The file page's Versions tab gives you a version history that is more focused on the individual file rather than the dataset as a whole.
 
 File Search within Datasets
@@ -103,13 +103,13 @@ Ingested files can be downloaded in several different ways.
 - The original file, which may be in a proprietary format which requires special software
 - Rdata format if the installation has configured this
 - The variable metadata for the file in DDI format
-- A subset of the columns of the data
 
+.. _url_download:
 
 Downloading via URL
 ^^^^^^^^^^^^^^^^^^^^
 
-Dataverse displays a plaintext URL for the location of the file under the Metadata tab on the file page. This Download URL can be used to directly access the file via API (or in a web browser, if needed). When downloading larger files, in order to ensure a reliable, resumable download, we recommend using `GNU Wget <https://www.gnu.org/software/wget/>`_ in a command line terminal or using a download manager software of your choice.
+The Dataverse installation displays a plaintext URL for the location of the file under the Metadata tab on the file page. This Download URL can be used to directly access the file via API (or in a web browser, if needed). When downloading larger files, in order to ensure a reliable, resumable download, we recommend using `GNU Wget <https://www.gnu.org/software/wget/>`_ in a command line terminal or using a download manager software of your choice.
 
 Certain files do not provide Download URLs for technical reasons: those that are restricted, or have terms of use associated with them. 
 

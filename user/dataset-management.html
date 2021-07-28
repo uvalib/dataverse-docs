@@ -75,7 +75,7 @@
 <li class="toctree-l2"><a class="reference internal" href="glossary.html">Glossary of Terms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="icon-glossary.html">Glossary of Icons &amp; Symbols</a></li>
 <li class="toctree-l2"><a class="reference internal" href="find-use-data.html">Finding and Using Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dataverse-management.html">Dataverse Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataverse-management.html">Dataverse Collection Management</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Dataset + File Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tabulardataingest/index.html">Tabular Data File Ingest</a></li>
 <li class="toctree-l2"><a class="reference internal" href="appendix.html">Appendix</a></li>
@@ -90,84 +90,85 @@
       
   <div class="section" id="dataset-file-management">
 <h1>Dataset + File Management<a class="headerlink" href="#dataset-file-management" title="Permalink to this headline">¶</a></h1>
-<p>A dataset in Dataverse is a container for your data, documentation, code, and other products of research in addition to metadata describing this “dataset”.</p>
+<p>A dataset in Dataverse installation is a container for your data, documentation, code, and other products of research in addition to metadata describing this “dataset”.</p>
 <p><img alt="image1" src="../_images/DatasetDiagramV2.png" /></p>
 <div class="contents local topic" id="toctitle">
 <p class="topic-title first">Contents:</p>
 <ul class="simple">
-<li><a class="reference internal" href="#supported-metadata" id="id5">Supported Metadata</a><ul>
-<li><a class="reference internal" href="#supported-metadata-export-formats" id="id6">Supported Metadata Export Formats</a></li>
+<li><a class="reference internal" href="#supported-metadata" id="id6">Supported Metadata</a><ul>
+<li><a class="reference internal" href="#supported-metadata-export-formats" id="id7">Supported Metadata Export Formats</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#adding-a-new-dataset" id="id7">Adding a New Dataset</a><ul>
-<li><a class="reference internal" href="#supported-html-fields" id="id8">Supported HTML Fields</a></li>
+<li><a class="reference internal" href="#adding-a-new-dataset" id="id8">Adding a New Dataset</a><ul>
+<li><a class="reference internal" href="#supported-html-fields" id="id9">Supported HTML Fields</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#file-upload" id="id9">File Upload</a><ul>
-<li><a class="reference internal" href="#command-line-dvuploader" id="id10">Command-line DVUploader</a><ul>
-<li><a class="reference internal" href="#usage" id="id11">Usage</a></li>
+<li><a class="reference internal" href="#file-upload" id="id10">File Upload</a><ul>
+<li><a class="reference internal" href="#command-line-dvuploader" id="id11">Command-line DVUploader</a><ul>
+<li><a class="reference internal" href="#usage" id="id12">Usage</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#duplicate-files" id="id12">Duplicate Files</a></li>
+<li><a class="reference internal" href="#duplicate-files" id="id13">Duplicate Files</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#file-handling" id="id13">File Handling</a><ul>
-<li><a class="reference internal" href="#file-previews" id="id14">File Previews</a></li>
-<li><a class="reference internal" href="#tabular-data-files" id="id15">Tabular Data Files</a></li>
-<li><a class="reference internal" href="#geospatial" id="id16">Geospatial</a></li>
-<li><a class="reference internal" href="#astronomy-fits" id="id17">Astronomy (FITS)</a></li>
-<li><a class="reference internal" href="#compressed-files" id="id18">Compressed Files</a></li>
-<li><a class="reference internal" href="#other-file-types" id="id19">Other File Types</a></li>
+<li><a class="reference internal" href="#file-handling" id="id14">File Handling</a><ul>
+<li><a class="reference internal" href="#file-previews" id="id15">File Previews</a></li>
+<li><a class="reference internal" href="#tabular-data-files" id="id16">Tabular Data Files</a></li>
+<li><a class="reference internal" href="#research-code" id="id17">Research Code</a></li>
+<li><a class="reference internal" href="#astronomy-fits" id="id18">Astronomy (FITS)</a></li>
+<li><a class="reference internal" href="#compressed-files" id="id19">Compressed Files</a></li>
+<li><a class="reference internal" href="#other-file-types" id="id20">Other File Types</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#edit-files" id="id20">Edit Files</a><ul>
-<li><a class="reference internal" href="#edit-file-metadata" id="id21">Edit File Metadata</a></li>
-<li><a class="reference internal" href="#file-path" id="id22">File Path</a></li>
-<li><a class="reference internal" href="#file-tags" id="id23">File Tags</a></li>
+<li><a class="reference internal" href="#edit-files" id="id21">Edit Files</a><ul>
+<li><a class="reference internal" href="#edit-file-metadata" id="id22">Edit File Metadata</a></li>
+<li><a class="reference internal" href="#file-path" id="id23">File Path</a></li>
+<li><a class="reference internal" href="#file-tags" id="id24">File Tags</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#replace-files" id="id24">Replace Files</a></li>
-<li><a class="reference internal" href="#terms" id="id25">Terms</a><ul>
-<li><a class="reference internal" href="#cc0-public-domain-dedication" id="id26">CC0 Public Domain Dedication</a></li>
-<li><a class="reference internal" href="#custom-terms-of-use-for-datasets" id="id27">Custom Terms of Use for Datasets</a></li>
-<li><a class="reference internal" href="#restricted-files-terms-of-access" id="id28">Restricted Files + Terms of Access</a></li>
+<li><a class="reference internal" href="#replace-files" id="id25">Replace Files</a></li>
+<li><a class="reference internal" href="#terms" id="id26">Terms</a><ul>
+<li><a class="reference internal" href="#cc0-public-domain-dedication" id="id27">CC0 Public Domain Dedication</a></li>
+<li><a class="reference internal" href="#custom-terms-of-use-for-datasets" id="id28">Custom Terms of Use for Datasets</a></li>
+<li><a class="reference internal" href="#restricted-files-terms-of-access" id="id29">Restricted Files + Terms of Access</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#roles-permissions" id="id29">Roles &amp; Permissions</a><ul>
-<li><a class="reference internal" href="#dataset-level" id="id30">Dataset-Level</a></li>
-<li><a class="reference internal" href="#file-level" id="id31">File-Level</a></li>
+<li><a class="reference internal" href="#roles-permissions" id="id30">Roles &amp; Permissions</a><ul>
+<li><a class="reference internal" href="#dataset-level" id="id31">Dataset-Level</a></li>
+<li><a class="reference internal" href="#file-level" id="id32">File-Level</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#thumbnails-widgets" id="id32">Thumbnails + Widgets</a><ul>
-<li><a class="reference internal" href="#thumbnails" id="id33">Thumbnails</a></li>
-<li><a class="reference internal" href="#id4" id="id34">Widgets</a></li>
+<li><a class="reference internal" href="#data-provenance" id="id33">Data Provenance</a></li>
+<li><a class="reference internal" href="#thumbnails-widgets" id="id34">Thumbnails + Widgets</a><ul>
+<li><a class="reference internal" href="#thumbnails" id="id35">Thumbnails</a></li>
+<li><a class="reference internal" href="#id5" id="id36">Widgets</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#publish-dataset" id="id35">Publish Dataset</a></li>
-<li><a class="reference internal" href="#submit-for-review-law-school-dataverse-only" id="id36">Submit for Review <em>(Law School Dataverse Only)</em></a></li>
-<li><a class="reference internal" href="#private-url-for-reviewing-an-unpublished-dataset" id="id37">Private URL for Reviewing an Unpublished Dataset</a><ul>
-<li><a class="reference internal" href="#to-share-an-unpublished-dataset-using-private-url" id="id38">To share an unpublished dataset using Private URL</a></li>
-<li><a class="reference internal" href="#to-disable-a-private-url" id="id39">To disable a Private URL</a></li>
+<li><a class="reference internal" href="#publish-dataset" id="id37">Publish Dataset</a></li>
+<li><a class="reference internal" href="#submit-for-review-law-school-dataverse-collection-only" id="id38">Submit for Review <em>(Law School Dataverse Collection Only)</em></a></li>
+<li><a class="reference internal" href="#private-url-for-reviewing-an-unpublished-dataset" id="id39">Private URL for Reviewing an Unpublished Dataset</a><ul>
+<li><a class="reference internal" href="#to-share-an-unpublished-dataset-using-private-url" id="id40">To share an unpublished dataset using Private URL</a></li>
+<li><a class="reference internal" href="#to-disable-a-private-url" id="id41">To disable a Private URL</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#dataset-versioning" id="id40">Dataset Versioning</a><ul>
-<li><a class="reference internal" href="#version-details" id="id41">Version Details</a></li>
+<li><a class="reference internal" href="#dataset-versioning" id="id42">Dataset Versioning</a><ul>
+<li><a class="reference internal" href="#version-details" id="id43">Version Details</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#deaccession-your-dataset-not-recommended" id="id42">Deaccession Your Dataset [not recommended]</a></li>
+<li><a class="reference internal" href="#deaccession-your-dataset-not-recommended" id="id44">Deaccession Your Dataset [not recommended]</a></li>
 </ul>
 </div>
 <div class="section" id="supported-metadata">
-<h2><a class="toc-backref" href="#id5">Supported Metadata</a><a class="headerlink" href="#supported-metadata" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id6">Supported Metadata</a><a class="headerlink" href="#supported-metadata" title="Permalink to this headline">¶</a></h2>
 <p>A dataset contains three levels of metadata:</p>
 <ol class="arabic simple">
 <li><strong>Citation Metadata</strong>: any metadata that would be needed for generating a data citation and other general metadata that could be applied to any dataset;</li>
 <li><strong>Domain specific Metadata</strong>: with specific support currently for Social Science, Life Science, Geospatial, and Astronomy datasets; and</li>
-<li><strong>File-level Metadata</strong>: varies depending on the type of data file - see <em>File Handling and Uploading</em> section below for more details).</li>
+<li><strong>File-level Metadata</strong>: varies depending on the type of data file - see <a class="reference internal" href="#file-handling"><span class="std std-ref">File Handling</span></a> section below).</li>
 </ol>
 <p>For more details about what Citation and Domain specific metadata is supported please see our <a class="reference external" href="../user/appendix.html#metadata-references">Appendix</a>.</p>
 <div class="section" id="supported-metadata-export-formats">
-<h3><a class="toc-backref" href="#id6">Supported Metadata Export Formats</a><a class="headerlink" href="#supported-metadata-export-formats" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id7">Supported Metadata Export Formats</a><a class="headerlink" href="#supported-metadata-export-formats" title="Permalink to this headline">¶</a></h3>
 <p>Once a dataset has been published, its metadata can be exported in a variety of other metadata standards and formats, which help make datasets more discoverable and usable in other systems, such as other data repositories. On each dataset page’s metadata tab, the following exports are available:</p>
 <ul class="simple">
 <li>Dublin Core</li>
@@ -180,11 +181,10 @@
 <li>Schema.org JSON-LD</li>
 </ul>
 <p>Each of these metadata exports contains the metadata of the most recently published version of the dataset.</p>
-<p>Note that once a dataset has been published its metadata may be exported. A button on the dataset page’s metadata tab will allow a user to export the metadata of the most recently published version of the dataset. Currently supported export formats are DDI, Dublin Core, Datacite 4, OAI_ORE, Schema.org JSON-LD, and Dataverse’s native JSON format.</p>
 </div>
 </div>
 <div class="section" id="adding-a-new-dataset">
-<h2><a class="toc-backref" href="#id7">Adding a New Dataset</a><a class="headerlink" href="#adding-a-new-dataset" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id8">Adding a New Dataset</a><a class="headerlink" href="#adding-a-new-dataset" title="Permalink to this headline">¶</a></h2>
 <p>If you are not logged in, you will be prompted to log in before adding a new dataset.</p>
 <ol class="arabic simple">
 <li>Navigate to the home page for LibraData <a class="reference external" href="http://dataverse.lib.virginia.edu">http://dataverse.lib.virginia.edu</a></li>
@@ -200,20 +200,20 @@ description and tags (via the “Edit Tag” button) for each file. Additionally
 </ol>
 <p>Note: You can add additional metadata once you have completed the initial dataset creation by clicking <strong>Edit Dataset</strong> and selecting <strong>Metadata</strong>.</p>
 <div class="section" id="supported-html-fields">
-<h3><a class="toc-backref" href="#id8">Supported HTML Fields</a><a class="headerlink" href="#supported-html-fields" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id9">Supported HTML Fields</a><a class="headerlink" href="#supported-html-fields" title="Permalink to this headline">¶</a></h3>
 <p>We currently only support the following HTML tags for any of our textbox meatdata fields (i.e., Description) : &lt;a&gt;, &lt;b&gt;, &lt;blockquote&gt;,
 &lt;br&gt;, &lt;code&gt;, &lt;del&gt;, &lt;dd&gt;, &lt;dl&gt;, &lt;dt&gt;, &lt;em&gt;, &lt;hr&gt;, &lt;h1&gt;-&lt;h3&gt;, &lt;i&gt;, &lt;img&gt;, &lt;kbd&gt;, &lt;li&gt;, &lt;ol&gt;, &lt;p&gt;, &lt;pre&gt;, &lt;s&gt;, &lt;sup&gt;, &lt;sub&gt;,
 &lt;strong&gt;, &lt;strike&gt;, &lt;u&gt;, &lt;ul&gt;.</p>
 </div>
 </div>
 <div class="section" id="file-upload">
-<h2><a class="toc-backref" href="#id9">File Upload</a><a class="headerlink" href="#file-upload" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id10">File Upload</a><a class="headerlink" href="#file-upload" title="Permalink to this headline">¶</a></h2>
 <p>You can upload files to a dataset while first creating that dataset. You can also upload files after creating a dataset by clicking the “Edit Dataset” button at the top of the dataset page and from the dropdown list selecting “Files (Upload)” or clicking the “Upload Files” button above the files table in the Files tab. From either option you will be brought to the Upload Files page for that dataset.</p>
 <p>To upload new files to a dataset, click the “Edit” button at the top of the dataset page and from the dropdown list select “Files (Upload)” or click the “Upload Files” button above the files table in the Files tab. From either option you will be brought to the Upload Files page for that dataset.</p>
 <p>Once you have uploaded files, you will be able to edit the file name, add a description, restrict access <a class="footnote-reference" href="#f1" id="id1">[1]</a> , add tags. Click “Save Changes” to complete the upload. If you uploaded a file by mistake, you can delete it before saving by clicking the checkbox to select the file, click “Edit Files” button above the files table, and then select “Delete”.</p>
-<p>All file formats are supported, up to 6GB per file for LibraData Dataverse.</p>
+<p>All file formats are supported, up to 6GB per file for LibraData Dataverse Repository.</p>
 <p><strong>Please contact libra&#64;virginia.edu if you need to upload a file that is larger than 6GB.</strong></p>
-<p>The file types listed below are supported by additional functionality, which can include downloading in different formats, subsets, file-level metadata preservation, file-level data citation; and exploration through data visualization and analysis.</p>
+<p>Certain file types in a Dataverse installation are supported by additional functionality, which can include downloading in different formats, previews, file-level metadata preservation, file-level data citation with UNFs, and exploration through data visualization and analysis. See the <a class="reference internal" href="#file-handling"><span class="std std-ref">File Handling</span></a> section of this page for more information.</p>
 <table class="docutils footnote" frame="void" id="f1" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
@@ -221,48 +221,48 @@ description and tags (via the “Edit Tag” button) for each file. Additionally
 </tbody>
 </table>
 <div class="section" id="command-line-dvuploader">
-<h3><a class="toc-backref" href="#id10">Command-line DVUploader</a><a class="headerlink" href="#command-line-dvuploader" title="Permalink to this headline">¶</a></h3>
-<p>The open-source DVUploader tool is a stand-alone command-line Java application that uses the Dataverse API to upload files to a specified Dataset. Since it can be installed by users, and requires no server-side configuration, it can be used with any Dataverse installation. It is intended as an alternative to uploading files through the Dataverse web interface in situations where the web interface is inconvenient due to the number of files or file locations (spread across multiple directories, mixed with files that have already been uploaded or file types that should be excluded) or the need to automate uploads. Since it uses the Dataverse API, transfers are limited in the same ways as HTTP uploads through the Dataverse web interface in terms of size and performance. The DVUploader logs its activity and can be killed and restarted as desired. If stopped and resumed, it will continue processing from where it left off.</p>
+<h3><a class="toc-backref" href="#id11">Command-line DVUploader</a><a class="headerlink" href="#command-line-dvuploader" title="Permalink to this headline">¶</a></h3>
+<p>The open-source DVUploader tool is a stand-alone command-line Java application that uses the Dataverse software API to upload files to a specified Dataset. Since it can be installed by users, and requires no server-side configuration, it can be used with any Dataverse installation. It is intended as an alternative to uploading files through the Dataverse web interface in situations where the web interface is inconvenient due to the number of files or file locations (spread across multiple directories, mixed with files that have already been uploaded or file types that should be excluded) or the need to automate uploads. Since it uses the Dataverse software API, transfers are limited in the same ways as HTTP uploads through the Dataverse web interface in terms of size and performance. The DVUploader logs its activity and can be killed and restarted as desired. If stopped and resumed, it will continue processing from where it left off.</p>
 <div class="section" id="usage">
-<h4><a class="toc-backref" href="#id11">Usage</a><a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h4>
-<p>The DVUploader is open source and is available as source, as a Java jar, and with documentation at <a class="reference external" href="https://github.com/IQSS/dataverse-uploader">https://github.com/IQSS/dataverse-uploader</a>. The DVUploader requires Java 1.8+. Users will need to install Java if they don’t already have it and then download the DVUploader-v1.0.0.jar file. Users will need to know the URL of the Dataverse server, the DOI of their existing Dataverse Dataset, and have generated a Dataverse API Key (an option in the user’s profile menu).</p>
+<h4><a class="toc-backref" href="#id12">Usage</a><a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h4>
+<p>The DVUploader is open source and is available as source, as a Java jar, and with documentation at <a class="reference external" href="https://github.com/IQSS/dataverse-uploader">https://github.com/IQSS/dataverse-uploader</a>. The DVUploader requires Java 1.8+. Users will need to install Java if they don’t already have it and then download the DVUploader-v1.0.0.jar file. Users will need to know the URL of the Dataverse Repository, the DOI of their existing Dataverse Dataset, and have generated a Dataverse software API Key (an option in the user’s profile menu).</p>
 <p>Basic usage is to run the command:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">java</span> <span class="o">-</span><span class="n">jar</span> <span class="n">DVUploader</span><span class="o">-</span><span class="n">v1</span><span class="o">.</span><span class="mf">0.0</span><span class="o">.</span><span class="n">jar</span> <span class="o">-</span><span class="n">server</span><span class="o">=&lt;</span><span class="n">Dataverse</span> <span class="n">server</span> <span class="n">URL</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">did</span><span class="o">=&lt;</span><span class="n">Dataset</span> <span class="n">DOI</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">key</span><span class="o">=&lt;</span><span class="n">User</span><span class="s1">&#39;s API Key&gt; &lt;file or directory list&gt;</span>
 </pre></div>
 </div>
-<p>Additional command line arguments are available to make the DVUploader list what it would do without uploading, limit the number of files it uploads, recurse through sub-directories, verify fixity, exclude files with specific extensions or name patterns, and/or wait longer than 60 seconds for any Dataverse ingest lock to clear (e.g. while the previously uploaded file is processed, as discussed in the <span class="xref std std-ref">File Handling</span> section below).</p>
+<p>Additional command line arguments are available to make the DVUploader list what it would do without uploading, limit the number of files it uploads, recurse through sub-directories, verify fixity, exclude files with specific extensions or name patterns, and/or wait longer than 60 seconds for any Dataverse software ingest lock to clear (e.g. while the previously uploaded file is processed, as discussed in the <a class="reference internal" href="#file-handling"><span class="std std-ref">File Handling</span></a> section below).</p>
 <p>DVUploader is a community-developed tool, and its creation was primarily supported by the Texas Digital Library. Further information and support for DVUploader can be sought at <a class="reference external" href="https://github.com/IQSS/dataverse-uploader">the project’s GitHub repository</a> .</p>
 </div>
 </div>
 <div class="section" id="duplicate-files">
-<h3><a class="toc-backref" href="#id12">Duplicate Files</a><a class="headerlink" href="#duplicate-files" title="Permalink to this headline">¶</a></h3>
-<p>Beginning with Dataverse 5.0, the way Dataverse handles duplicate files (filename and checksums) is changing to be more flexible. Specifically:</p>
+<h3><a class="toc-backref" href="#id13">Duplicate Files</a><a class="headerlink" href="#duplicate-files" title="Permalink to this headline">¶</a></h3>
+<p>The Dataverse software handles duplicate files (filename and checksums) in a more flexible way.</p>
 <ul class="simple">
 <li>Files with the same checksum can be included in a dataset, even if the files are in the same directory.</li>
 <li>Files with the same filename can be included in a dataset as long as the files are in different directories.</li>
-<li>If a user uploads a file to a directory where a file already exists with that directory/filename combination, Dataverse will adjust the file path and names by adding “-1” or “-2” as applicable. This change will be visible in the list of files being uploaded.</li>
-<li>If the directory or name of an existing or newly uploaded file is edited in such a way that would create a directory/filename combination that already exists, Dataverse will display an error.</li>
+<li>If a user uploads a file to a directory where a file already exists with that directory/filename combination, the Dataverse software will adjust the file path and names by adding “-1” or “-2” as applicable. This change will be visible in the list of files being uploaded.</li>
+<li>If the directory or name of an existing or newly uploaded file is edited in such a way that would create a directory/filename combination that already exists, the Dataverse software will display an error.</li>
 <li>If a user attempts to replace a file with another file that has the same checksum, an error message will be displayed and the file will not be able to be replaced.</li>
 <li>If a user attempts to replace a file with a file that has the same checksum as a different file in the dataset, a warning will be displayed.</li>
 </ul>
 </div>
 </div>
 <div class="section" id="file-handling">
-<h2><a class="toc-backref" href="#id13">File Handling</a><a class="headerlink" href="#file-handling" title="Permalink to this headline">¶</a></h2>
-<p>Certain file types in Dataverse are supported by additional functionality, which can include downloading in different formats, subsets, file-level metadata preservation, file-level data citation; and exploration through data visualization and analysis. See the sections below for information about special functionality for specific file types.</p>
+<span id="id2"></span><h2><a class="toc-backref" href="#id14">File Handling</a><a class="headerlink" href="#file-handling" title="Permalink to this headline">¶</a></h2>
+<p>Certain file types in the Dataverse software are supported by additional functionality, which can include downloading in different formats, subsets, file-level metadata preservation, file-level data citation; and exploration through data visualization and analysis. See the sections below for information about special functionality for specific file types.</p>
 <div class="section" id="file-previews">
-<h3><a class="toc-backref" href="#id14">File Previews</a><a class="headerlink" href="#file-previews" title="Permalink to this headline">¶</a></h3>
-<p>UVa’s Dataverse has installed Previewers for several common file types: ASCII Text (txt, html), audio (mp3, wav, ogg), image (gif, jpeg, png), pdf, video (mp4, ogg, quicktime), csv, tsv, stata syntax, and r syntax. The preview appears on the file page. If the file type is one of the above preview tools, the preview will be created and will display automatically. File previews are not available for restricted files.</p>
+<h3><a class="toc-backref" href="#id15">File Previews</a><a class="headerlink" href="#file-previews" title="Permalink to this headline">¶</a></h3>
+<p>UVa’s Dataverse Repository has installed Previewers for several common file types: ASCII Text (txt, html), audio (mp3, wav, ogg), image (gif, jpeg, png), pdf, video (mp4, ogg, quicktime), csv, tsv, stata syntax, and r syntax. The preview appears on the file page. If the file type is one of the above preview tools, the preview will be created and will display automatically. File previews are not available for restricted files.</p>
 </div>
 <div class="section" id="tabular-data-files">
-<h3><a class="toc-backref" href="#id15">Tabular Data Files</a><a class="headerlink" href="#tabular-data-files" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id16">Tabular Data Files</a><a class="headerlink" href="#tabular-data-files" title="Permalink to this headline">¶</a></h3>
 <p>Files in certain formats - Stata, SPSS, R, Excel(xlsx) and CSV - may
 be ingested as tabular data (see “Tabular Data Ingest” section for
 details).</p>
 <p>COMING SOON:
 Tabular data files can be further explored and manipulated
 with <a class="reference external" href="http://guides.dataverse.org/en/latest/user/data-exploration/tworavens.html">TwoRavens</a> - a
-statistical data exploration application integrated with Dataverse. It
+statistical data exploration application integrated with the Dataverse software. It
 allows the user to run statistical models, view summary statistics,
 download subsets of variable vectors and more. To start, click on the “Explore”
 button, found next to each relevant tabular file (the application
@@ -286,42 +286,29 @@ in the same drop-down menu under the “Download” button):</p>
 </ul>
 <p><img alt="image2" src="../_images/data-download.png" /></p>
 </div>
-<div class="section" id="geospatial">
-<h3><a class="toc-backref" href="#id16">Geospatial</a><a class="headerlink" href="#geospatial" title="Permalink to this headline">¶</a></h3>
-<p>Geospatial <a class="reference external" href="http://en.wikipedia.org/wiki/Shapefile">shapefiles</a> can be further explored and manipulated through an optional integration with <a class="reference external" href="../user/data-exploration/worldmap.html">WorldMap</a>, a geospatial data visualization and analysis tool developed by the <a class="reference external" href="http://gis.harvard.edu/">Center for Geographic Analysis</a> at Harvard University. A shapefile is a set of files, often uploaded/transferred in .zip format.  This set may contain up to 15 files.  A minimum of 3 specific files (.shp, .shx, .dbf) are needed to be a valid shapefile and a 4th file (.prj) is required for WorldMap–or any type of meaningful visualization.</p>
-<p>For ingest into Dataverse and connecting to WorldMap, these 4 files are the minimum required:</p>
+<div class="section" id="research-code">
+<h3><a class="toc-backref" href="#id17">Research Code</a><a class="headerlink" href="#research-code" title="Permalink to this headline">¶</a></h3>
+<p>Code files - such as Stata, R, MATLAB, or Python files or scripts - have become a frequent addition to the research data deposited in Dataverse repositories. Research code is typically developed by few researchers with the primary goal of obtaining results, while its reproducibility and reuse aspects are sometimes overlooked. Because several independent studies reported issues trying to rerun research code, please consider the following guidelines if your dataset contains code.</p>
+<p>The following are general guidelines applicable to all programming languages.</p>
 <ul class="simple">
-<li>.shp - shape format; the feature geometry itself</li>
-<li>.shx - shape index format; a positional index of the feature geometry to allow seeking forwards and backwards quickly</li>
-<li>.dbf - attribute format; columnar attributes for each shape, in dBase IV format</li>
-<li>.prj - projection format; the coordinate system and projection information, a plain text file describing the projection using well-known text format</li>
+<li>Create a README text file in the top-level directory to introduce your project. It should answer questions that reviewers or reusers would likely have, such as how to install and use your code. If in doubt, consider using existing templates such as <a class="reference external" href="https://social-science-data-editors.github.io/template_README/template-README.html">a  README template for social science replication packages</a>.</li>
+<li>Depending on the number of files in your dataset, consider having data and code in distinct directories, each of which should have some documentation like a README.</li>
+<li>Consider adding a license to your source code. You can do that by creating a LICENSE file in the dataset or by specifying the license(s) in the README or directly in the code. Find out more about code licenses at <a class="reference external" href="https://opensource.org/licenses">the Open Source Initiative webpage</a>.</li>
+<li>If possible, use free and open-source file formats and software to make your research outputs more reusable and accessible.</li>
+<li>Consider testing your code in a clean environment before sharing it, as it could help you identify missing files or other errors. For example, your code should use relative file paths instead of absolute (or full) file paths, as they can cause an execution error.</li>
+<li>Consider providing notes (in the README) on the expected code outputs or adding tests in the code, which would ensure that its functionality is intact.</li>
 </ul>
-<p>For a zipped shapefile, we require 4 files with these extensions. Other files may be included within the zipped shapefile, but they are not required:</p>
-<ul class="simple">
-<li>.shp</li>
-<li>.shx</li>
-<li>.prj</li>
-<li>.dbf</li>
-</ul>
-<p>For example, if these files were included within a .zip, the Geoconnect configure tool option is displayed:</p>
-<ul class="simple">
-<li>subway_line.shp</li>
-<li>subway_line.shx</li>
-<li>subway_line.prj</li>
-<li>subway_line.dbf</li>
-</ul>
-<p>Once you publish your dataset with your shape files, you will be able to use the configure tool <a class="reference external" href="https://github.com/IQSS/geoconnect">Geoconnect</a> to visualize and manipulate these files for users to explore this geospatial data on <a class="reference external" href="http://worldmap.harvard.edu/">WorldMap</a>. Please note: In order to map your data file, a copy will be sent to Harvard’s <a class="reference external" href="http://worldmap.harvard.edu/">WorldMap</a> platform. You have the ability to delete any maps, and associated data, from the Harvard WorldMap platform, at any time.</p>
 </div>
 <div class="section" id="astronomy-fits">
-<h3><a class="toc-backref" href="#id17">Astronomy (FITS)</a><a class="headerlink" href="#astronomy-fits" title="Permalink to this headline">¶</a></h3>
-<p>Metadata found in the header section of <a class="reference external" href="http://fits.gsfc.nasa.gov/fits_primer.html">Flexible Image Transport System (FITS) files</a> are automatically extracted by Dataverse,
+<h3><a class="toc-backref" href="#id18">Astronomy (FITS)</a><a class="headerlink" href="#astronomy-fits" title="Permalink to this headline">¶</a></h3>
+<p>Metadata found in the header section of <a class="reference external" href="http://fits.gsfc.nasa.gov/fits_primer.html">Flexible Image Transport System (FITS) files</a> are automatically extracted by the Dataverse software,
 aggregated and displayed in the Astronomy Domain-Specific metadata of the dataset that the file belongs to. This FITS file metadata, is therefore searchable
 and browsable (facets) at the Dataset-level.</p>
 </div>
 <div class="section" id="compressed-files">
-<h3><a class="toc-backref" href="#id18">Compressed Files</a><a class="headerlink" href="#compressed-files" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id19">Compressed Files</a><a class="headerlink" href="#compressed-files" title="Permalink to this headline">¶</a></h3>
 <p>Compressed files in .zip format are unpacked automatically. If a .zip file fails to unpack for whatever reason, it will upload as is. If the number of files inside are more than a set limit (1,000 by default, configurable by the Administrator), you will get an error message and the .zip file will upload as is.</p>
-<p>If the uploaded .zip file contains a folder structure, Dataverse will keep track of this structure. A file’s location within this folder structure is displayed in the file metadata as the File Path. When you download the contents of the dataset, this folder structure will be preserved and files will appear in their original locations.</p>
+<p>If the uploaded .zip file contains a folder structure, the Dataverse software will keep track of this structure. A file’s location within this folder structure is displayed in the file metadata as the File Path. When you download the contents of the dataset, this folder structure will be preserved and files will appear in their original locations.</p>
 <p>These folder names are subject to strict validation rules. Only the following characters are allowed: the alphanumerics, ‘_’, ‘-‘, ‘.’ and ‘ ‘ (white space). When a zip archive is uploaded, the folder names are automatically sanitized, with any invalid characters replaced by the ‘.’ character. Any sequences of dots are further replaced with a single dot. For example, the folder name <code class="docutils literal notranslate"><span class="pre">data&amp;info/code=&#64;137</span></code> will be converted to <code class="docutils literal notranslate"><span class="pre">data.info/code.137</span></code>. When uploading through the Web UI, the user can change the values further on the edit form presented, before clicking the ‘Save’ button.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -329,7 +316,7 @@ and browsable (facets) at the Dataset-level.</p>
 </div>
 </div>
 <div class="section" id="other-file-types">
-<h3><a class="toc-backref" href="#id19">Other File Types</a><a class="headerlink" href="#other-file-types" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id20">Other File Types</a><a class="headerlink" href="#other-file-types" title="Permalink to this headline">¶</a></h3>
 <p>There are several advanced options available for certain file types.</p>
 <ul class="simple">
 <li>Image files: jpgs, pngs, and tiff files are able to be selected as the default thumbnail for a dataset. The selected thumbnail will appear on the search result card for that dataset.</li>
@@ -338,9 +325,9 @@ and browsable (facets) at the Dataset-level.</p>
 </div>
 </div>
 <div class="section" id="edit-files">
-<h2><a class="toc-backref" href="#id20">Edit Files</a><a class="headerlink" href="#edit-files" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id21">Edit Files</a><a class="headerlink" href="#edit-files" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="edit-file-metadata">
-<h3><a class="toc-backref" href="#id21">Edit File Metadata</a><a class="headerlink" href="#edit-file-metadata" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id22">Edit File Metadata</a><a class="headerlink" href="#edit-file-metadata" title="Permalink to this headline">¶</a></h3>
 <p>Go to the dataset you would like to edit where you will see the listing of files. Select the files you would like to edit by using either the “Select All” checkbox or individually selecting files. Next, click on the “Edit Files” button above the filetable and from the dropdown menu select if you would like to:</p>
 <ul class="simple">
 <li>Delete the selected files</li>
@@ -353,72 +340,86 @@ and browsable (facets) at the Dataset-level.</p>
 <p>If you restrict files, you will also prompted with a popup asking you to fill out the Terms of Access for the files. If Terms of Access already exist, you will be asked to confirm them.</p>
 </div>
 <div class="section" id="file-path">
-<h3><a class="toc-backref" href="#id22">File Path</a><a class="headerlink" href="#file-path" title="Permalink to this headline">¶</a></h3>
-<p>The File Path metadata field is Dataverse’s way of representing a file’s location in a folder structure. When a user uploads a .zip file containing a folder structure, Dataverse automatically fills in the File Path information for each file contained in the .zip. If a user downloads the full dataset or a selection of files from it, they will receive a folder structure with each file positioned according to its File Path.</p>
+<h3><a class="toc-backref" href="#id23">File Path</a><a class="headerlink" href="#file-path" title="Permalink to this headline">¶</a></h3>
+<p>The File Path metadata field is a Dataverse installation’s way of representing a file’s location in a folder structure. When a user uploads a .zip file containing a folder structure, the Dataverse installation automatically fills in the File Path information for each file contained in the .zip. If a user downloads the full dataset or a selection of files from it, they will receive a folder structure with each file positioned according to its File Path. Only one file with a given path and name may exist in a dataset. Editing a file to give it the same path and name as another file already existing in the dataset will cause an error.</p>
 <p>A file’s File Path can be manually added or edited on the Edit Files page. Changing a file’s File Path will change its location in the folder structure that is created when a user downloads the full dataset or a selection of files from it.</p>
 <p>If there is more than one file in the dataset, and once at least one of them has a non-empty directory path, the Dataset Page will present an option for switching between the traditional table view, and the tree-like view of the files showing the folder structure, as in the example below:</p>
 <p><img alt="image5" src="../_images/file-tree-view.png" /></p>
 </div>
 <div class="section" id="file-tags">
-<h3><a class="toc-backref" href="#id23">File Tags</a><a class="headerlink" href="#file-tags" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id24">File Tags</a><a class="headerlink" href="#file-tags" title="Permalink to this headline">¶</a></h3>
 <p>File Tags are comprised of custom, category (i.e. Documentation, Data, Code) and tabular data tags (i.e. Event, Genomics, Geospatial, Network, Panel, Survey, Time Series). Use the dropdown select menus as well as the custom file tag input to apply these tags to the selected files. There is also a Delete Tags feature that, if checked, will allow you to delete unused file tags within that dataset.</p>
 </div>
 </div>
 <div class="section" id="replace-files">
-<h2><a class="toc-backref" href="#id24">Replace Files</a><a class="headerlink" href="#replace-files" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id25">Replace Files</a><a class="headerlink" href="#replace-files" title="Permalink to this headline">¶</a></h2>
 <p>In cases where you would like to revise an existing file rather than add a new one, you can do so using our Replace File feature. This will allow you to track the history of this file across versions of your dataset, both before and after replacing it. This could be useful for updating your data or fixing mistakes in your data. Because replacing a file creates an explicit link between the previous dataset version and the current version, the file replace feature is not available for unpublished dataset drafts. Also note that replacing a file will not automatically carry over that file’s metadata, but once the file is replaced then its original metadata can still be found by referencing the previous version of the file under the “Versions” tab of the file page.</p>
 <p>To replace a file, go to the file page for that file, click on the “Edit” button, and from the dropdown list select “Replace”. This will bring you to the Replace File page, where you can see the metadata for the most recently published version of the file and you can upload your replacement file. Once you have uploaded the replacement file, you can edit its name, description, and tags. When you’re finished, click the “Save Changes” button.</p>
 <p>After successfully replacing a file, a new dataset draft version will be created. A summary of your actions will be recorded in the “Versions” tab on on both the dataset page and file page. The Versions tab allows you to access all previous versions of the file across all previous versions of your dataset, including the old version of the file before you replaced it.</p>
 </div>
 <div class="section" id="terms">
-<span id="license-terms"></span><h2><a class="toc-backref" href="#id25">Terms</a><a class="headerlink" href="#terms" title="Permalink to this headline">¶</a></h2>
+<span id="license-terms"></span><h2><a class="toc-backref" href="#id26">Terms</a><a class="headerlink" href="#terms" title="Permalink to this headline">¶</a></h2>
 <p>Dataset terms can be viewed and edited from the Terms tab of the dataset page, or under the Edit dropdown button of a Dataset. There, you can set up how users can use your data once they have downloaded it (CC0 waiver or custom Terms of Use), how they can access your data if you have files that are restricted (terms of access), and enable a Guestbook for your dataset so that you can track who is using your data and for what purposes. These are explained in further detail below:</p>
 <div class="section" id="cc0-public-domain-dedication">
-<h3><a class="toc-backref" href="#id26">CC0 Public Domain Dedication</a><a class="headerlink" href="#cc0-public-domain-dedication" title="Permalink to this headline">¶</a></h3>
-<p>By default, all new datasets created through Dataverse’s web UI are given a <a class="reference external" href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons CC0 Public Domain Dedication</a>.</p>
+<h3><a class="toc-backref" href="#id27">CC0 Public Domain Dedication</a><a class="headerlink" href="#cc0-public-domain-dedication" title="Permalink to this headline">¶</a></h3>
+<p>By default, all new datasets created through Dataverse software web UI are given a <a class="reference external" href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons CC0 Public Domain Dedication</a>.</p>
 <p>The <a class="reference external" href="https://creativecommons.org">Creative Commons</a> organization defines a number of <a class="reference external" href="https://creativecommons.org/licenses/">licenses</a> that allow copyright holders to release their intellectual property more openly, with fewer legal restrictions than standard copyright enforces. Each Creative Commons license typically specifies simple terms for how the IP must be used, reused, shared, and attributed. In addition to these licenses, Creative Commons also provides public domain tools that make it easy to dedicate IP to the public domain.</p>
-<p>In the context of Dataverse, their <a class="reference external" href="https://creativecommons.org/share-your-work/public-domain/cc0">CC0 Public Domain Dedication</a> allows you to unambiguously waive all copyright control over your data in all jurisdictions worldwide. Data released with CC0 can be freely copied, modified, and distributed (even for commercial purposes) without violating copyright. In most parts of the world, factual data is exempt from copyright anyway, but applying CC0 removes all ambiguity and makes the legal copyright status of the data as clear as possible. Dataverse applies CC0 to datasets by default because it facilitates reuse, extensibility, and long-term preservation of research data by assuring that the data can be safely handled by anyone without fear of potential copyright pitfalls.</p>
-<p>Though CC0 waives a dataset owner’s legal copyright controls over the data, it does not exempt Dataverse users from following ethical and professional norms in scholarly communications. The <a class="reference external" href="https://dataverse.org/best-practices/dataverse-community-norms">Dataverse Community Norms</a> * as well as scientific best practices assert that proper credit should be given via citation. Regardless of whether CC0 has been applied or not, Dataverse users are expected to cite the data they use, giving credit to the data’s authors. This expectation applies to both the Dataverse Community and the entire wider scholarly community.</p>
-<p>Additionally, users are still expected to respect access restrictions and other terms applied to CC0 files in Dataverse. Additional restrictions, conditions, and terms can still be compatible with CC0, as CC0 only operates in the realm of copyright, which is rather limited when it comes to data.</p>
+<p>In the context of Dataverse software, their <a class="reference external" href="https://creativecommons.org/share-your-work/public-domain/cc0">CC0 Public Domain Dedication</a> allows you to unambiguously waive all copyright control over your data in all jurisdictions worldwide. Data released with CC0 can be freely copied, modified, and distributed (even for commercial purposes) without violating copyright. In most parts of the world, factual data is exempt from copyright anyway, but applying CC0 removes all ambiguity and makes the legal copyright status of the data as clear as possible. The Dataverse software applies CC0 to datasets by default because it facilitates reuse, extensibility, and long-term preservation of research data by assuring that the data can be safely handled by anyone without fear of potential copyright pitfalls.</p>
+<p>Though CC0 waives a dataset owner’s legal copyright controls over the data, it does not exempt Dataverse repository users from following ethical and professional norms in scholarly communications. The <a class="reference external" href="https://dataverse.org/best-practices/dataverse-community-norms">Dataverse Community Norms</a> * as well as scientific best practices assert that proper credit should be given via citation. Regardless of whether CC0 has been applied or not, Dataverse repository users are expected to cite the data they use, giving credit to the data’s authors. This expectation applies to both the Dataverse Community and the entire wider scholarly community.</p>
+<p>Additionally, users are still expected to respect access restrictions and other terms applied to CC0 files in a Dataverse installation. Additional restrictions, conditions, and terms can still be compatible with CC0, as CC0 only operates in the realm of copyright, which is rather limited when it comes to data.</p>
 <p>If a data owner feels that CC0 is not suitable for their data, they are able to enter custom Terms of Use, as detailed in the following section.</p>
-<p>* <strong>Legal Disclaimer:</strong> these <a class="reference external" href="https://dataverse.org/best-practices/dataverse-community-norms">Community Norms</a> are not a substitute for the CC0 waiver or custom terms and licenses applicable to each dataset. The Community Norms are not a binding contractual agreement, and that downloading datasets from Dataverse does not create a legal obligation to follow these policies.</p>
+<p>* <strong>Legal Disclaimer:</strong> these <a class="reference external" href="https://dataverse.org/best-practices/dataverse-community-norms">Community Norms</a> are not a substitute for the CC0 waiver or custom terms and licenses applicable to each dataset. The Community Norms are not a binding contractual agreement, and that downloading datasets from the Dataverse software does not create a legal obligation to follow these policies.</p>
 </div>
 <div class="section" id="custom-terms-of-use-for-datasets">
-<h3><a class="toc-backref" href="#id27">Custom Terms of Use for Datasets</a><a class="headerlink" href="#custom-terms-of-use-for-datasets" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id28">Custom Terms of Use for Datasets</a><a class="headerlink" href="#custom-terms-of-use-for-datasets" title="Permalink to this headline">¶</a></h3>
 <p>If you are unable to use a CC0 waiver for your datasets you are able to set your own custom terms of use. To do so, select
 “No, do not apply CC0 - “Public Domain Dedication” and a Terms of Use textbox will show up allowing you to enter your own custom terms of use for your dataset.</p>
 <p>To add more information about the Terms of Use, you can use fields like Special Permissions, Restrictions, Citation Requirements, etc., click on “Additional Information [+]”.</p>
 <p>Here is an <a class="reference external" href="http://best-practices.dataverse.org/harvard-policies/sample-dua.html">example of a Data Usage Agreement</a> for datasets that have de-identified human subject data.</p>
 </div>
 <div class="section" id="restricted-files-terms-of-access">
-<h3><a class="toc-backref" href="#id28">Restricted Files + Terms of Access</a><a class="headerlink" href="#restricted-files-terms-of-access" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id29">Restricted Files + Terms of Access</a><a class="headerlink" href="#restricted-files-terms-of-access" title="Permalink to this headline">¶</a></h3>
 <p>If you restrict any files in your dataset, you will be prompted by a pop-up to enter Terms of Access for the data. This can also be edited in the Terms tab or selecting Terms in the “Edit” dropdown button in the dataset. You may also allow users to request access for your restricted files by enabling “Request Access”. To add more information about the Terms of Access, click on “Additional Information [+]”. The University of Virginia does not recommend restricting files as the purpose of LibraData is to share “Openly” your scholarship. If you do restrict files, pleae note that <strong>only UVa affiliated users will be able to login and request access</strong>.</p>
 </div>
 </div>
 <div class="section" id="roles-permissions">
-<span id="permissions"></span><h2><a class="toc-backref" href="#id29">Roles &amp; Permissions</a><a class="headerlink" href="#roles-permissions" title="Permalink to this headline">¶</a></h2>
-<p>Dataverse user accounts can be granted roles that define which actions they are allowed to take on specific dataverses, datasets, and/or files. Each role comes with a set of permissions, which define the specific actions that users may take.</p>
-<p>Roles and permissions may also be granted to groups. Groups can be defined as a collection of Dataverse user accounts, a collection of IP addresses (e.g. all users of a library’s computers), or a collection of all users who log in using a particular institutional login (e.g. everyone who logs in with a particular university’s account credentials).</p>
+<span id="permissions"></span><h2><a class="toc-backref" href="#id30">Roles &amp; Permissions</a><a class="headerlink" href="#roles-permissions" title="Permalink to this headline">¶</a></h2>
+<p>Dataverse installation user accounts can be granted roles that define which actions they are allowed to take on specific dataverse collections, datasets, and/or files. Each role comes with a set of permissions, which define the specific actions that users may take.</p>
+<p>Roles and permissions may also be granted to groups. Groups can be defined as a collection of Dataverse installation user accounts, a collection of IP addresses (e.g. all users of a library’s computers), or a collection of all users who log in using a particular institutional login (e.g. everyone who logs in with a particular university’s account credentials).</p>
 <div class="section" id="dataset-level">
-<h3><a class="toc-backref" href="#id30">Dataset-Level</a><a class="headerlink" href="#dataset-level" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id31">Dataset-Level</a><a class="headerlink" href="#dataset-level" title="Permalink to this headline">¶</a></h3>
 <p>Admins or curators of a dataset can assign roles and permissions to the users of that dataset. If you are an admin or curator of a dataset, then you can get to the dataset permissions page by clicking the “Edit” button, highlighting “Permissions” from the dropdown list, and clicking “Dataset”.</p>
 <p>When you access a dataset’s permissions page, you will see two sections:</p>
-<p><strong>Users/Groups:</strong> Here you can assign roles to specific users or groups, determining which actions they are permitted to take on your dataset. You can also reference a list of all users who have roles assigned to them for your dataset and remove their roles if you please. Some of the users listed may have roles assigned at the dataverse level, in which case those roles can only be removed from the dataverse permissions page.</p>
+<p><strong>Users/Groups:</strong> Here you can assign roles to specific users or groups, determining which actions they are permitted to take on your dataset. You can also reference a list of all users who have roles assigned to them for your dataset and remove their roles if you please. Some of the users listed may have roles assigned at the dataverse collection level, in which case those roles can only be removed from the dataverse collection permissions page.</p>
 <p><strong>Roles:</strong> Here you can reference a full list of roles that can be assigned to users of your dataset. Each role lists the permissions that it offers.</p>
 </div>
 <div class="section" id="file-level">
-<h3><a class="toc-backref" href="#id31">File-Level</a><a class="headerlink" href="#file-level" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id32">File-Level</a><a class="headerlink" href="#file-level" title="Permalink to this headline">¶</a></h3>
 <p>If specific files in your dataset are restricted access, then you can grant specific users or groups access to those files while still keeping them restricted to the general public. If you are an admin or curator of a dataset, then you can get to the file-level permissions page by clicking the “Edit” button, highlighting “Permissions” from the dropdown list, and clicking “File”.</p>
 <p>When you access a dataset’s file-level permissions page, you will see two sections:</p>
 <p><strong>Users/Groups:</strong> Here you can see which users or groups have been granted access to which files. You can click the “Grant Access to Users/Groups” button to see a box where you can grant access to specific files within your dataset to specific users or groups. If any users have requested access to a file in your dataset, you can grant or reject their access request here.</p>
 <p><strong>Restricted Files:</strong> In this section, you can see the same information, but broken down by each individual file in your dataset. For each file, you can click the “Assign Access” button to see a box where you can grant access to that file to specific users or groups.</p>
 </div>
 </div>
+<div class="section" id="data-provenance">
+<h2><a class="toc-backref" href="#id33">Data Provenance</a><a class="headerlink" href="#data-provenance" title="Permalink to this headline">¶</a></h2>
+<p>Data Provenance is a record of where your data came from and how it reached its current form. It describes the origin of a data file, any transformations that have been made to that file, and any persons or organizations associated with that file. A data file’s provenance can aid in reproducibility and compliance with legal regulations. The Dataverse Software can help you keep track of your data’s provenance. Currently, the Dataverse Software only makes provenance information available to those who have edit permissions on your dataset, but in the future we plan to expand this feature to make provenance information available to the public.</p>
+<p>A Dataverse installation accepts provenance information in two forms: a <em>Provenance File</em> or a free-text <em>Provenance Description</em>. You can attach this provenance information to your data files in a Dataverse installation as part of the file upload process, by clicking Edit -&gt; Provenance:</p>
+<p><img alt="prov0" src="../_images/prov0.png" /></p>
+<p>This will open a window where you can add your Provenance File and/or Provenance Description:</p>
+<p><img alt="prov1" src="../_images/prov1.png" /></p>
+<p>A <strong>Provenance File</strong> is the preferred way of submitting provenance information to a Dataverse installation because it provides a detailed and trustworthy record. Provenance files are typically generated during the process of data analysis, using provenance capture tools like provR, RDataTracker, NoWorkFlow, recordr, or CamFlow.</p>
+<p>Once you upload a provenance file, the Dataverse installation will need some additional information in order to accurately connect it to your data file. Once provenance file upload finishes, an input box labeled “Connect entity” will appear under the file. Provenance files contain a list of “entities”, which include your data file as well as any objects associated with it (e.g. a chart, a spellchecker, etc.). You will need to tell the Dataverse installation which entity within the provenance file represents your data file. You may type the name of the entity into the box, or click the arrow next to the box and select the entity from a list of all entities in the provenance file.</p>
+<p>For more information on entities and the contents of provenance files, see <a class="reference external" href="https://www.w3.org/TR/prov-primer/#intuitive-overview-of-prov">the W3C PROV Model Primer</a>.</p>
+<p>Once you’ve uploaded your Provenance File and connected the proper entity, you can hit the Preview button to view the raw JSON of the Provenance File. This can help you confirm that you’ve uploaded the right file. Be sure to double-check it, because the Provenance File will made <em>permanent</em> once it’s finalized. At that point you will not be able to <em>replace</em>, <em>remove</em>, or otherwise <em>edit</em> the Provenance File. This ensures that the Provenance File maintains a stable, immutable record of the data file’s history. This finalization of the Provenance File happens at different points depending on the status of your data file. If this is a brand new data file that has never been published before, then its associated Provenance File will be made permanent once you publish the dataset. If this data file <em>has</em> been published in a previous version of your dataset, then its associated Provenance File will be made permanent as soon as you upload the Provenance File and click “Save Changes” on the warning popup.</p>
+<p>A <strong>Provenance Description</strong> allows you to add more provenance information in addition to or in place of a provenance file. This is a free-text field that allows you to enter any information you feel might be relevant to those interested in learning about the provenance of your data. This might be a good place to describe provenance factors like what operating system you used when working with the data file, what functions or libraries you used, how data was merged into the file, what version of the file you used, etc. The Provenance Description is not as useful or trustworthy as a provenance file, but it can still provide value. Unlike the Provenance File, the Provenance Description is never made permanent: you can always edit, remove, or replace it at any time.</p>
+<p>You can return to attach provenance to your data file later on by clicking the “Add + Edit Metadata” button on the file page, and then clicking the “Edit -&gt; Provenance” button.</p>
+</div>
 <div class="section" id="thumbnails-widgets">
-<span id="widgets"></span><h2><a class="toc-backref" href="#id32">Thumbnails + Widgets</a><a class="headerlink" href="#thumbnails-widgets" title="Permalink to this headline">¶</a></h2>
+<span id="widgets"></span><h2><a class="toc-backref" href="#id34">Thumbnails + Widgets</a><a class="headerlink" href="#thumbnails-widgets" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="thumbnails">
-<h3><a class="toc-backref" href="#id33">Thumbnails</a><a class="headerlink" href="#thumbnails" title="Permalink to this headline">¶</a></h3>
-<p>Thumbnail images can be assigned to a dataset manually or automatically. The thumbnail for a dataset appears on the search result card for that dataset and on the dataset page itself. If a dataset contains one or more data files that Dataverse recognizes as an image, then one of those images is automatically selected as the dataset thumbnail.</p>
+<h3><a class="toc-backref" href="#id35">Thumbnails</a><a class="headerlink" href="#thumbnails" title="Permalink to this headline">¶</a></h3>
+<p>Thumbnail images can be assigned to a dataset manually or automatically. The thumbnail for a dataset appears on the search result card for that dataset and on the dataset page itself. If a dataset contains one or more data files that Dataverse installation recognizes as an image, then one of those images is automatically selected as the dataset thumbnail.</p>
 <p>If you would like to manually select your dataset’s thumbnail, you can do so by clicking the “Edit” button on your dataset, and selecting “Thumbnails + Widgets” from the dropdown menu.</p>
 <p>On this page, under the Thumbnail tab you will see three possible actions.</p>
 <p><strong>Select Available File:</strong> Click the “Select Thumbnail” button to choose an image from your dataset to use as the dataset thumbnail.</p>
@@ -427,32 +428,32 @@ and browsable (facets) at the Dataset-level.</p>
 <p>When you’re finished on this page, be sure to click “Save Changes” to save what you’ve done.</p>
 <p>Note: If you prefer, it is also possible to set an image file in your dataset as your thumbnail by selecting the file, going to Edit Files -&gt; Metadata, and using the “Set Thumbnail” button.</p>
 </div>
-<div class="section" id="id4">
-<h3><a class="toc-backref" href="#id34">Widgets</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id5">
+<h3><a class="toc-backref" href="#id36">Widgets</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <p>The Widgets feature provides you with code for your personal website so your dataset can be displayed. There are two types of Widgets for a dataset: the Dataset Widget and the Dataset Citation Widget. The Widgets are found by going to your dataset page, clicking the Edit button (the one with the pencil icon) and selecting Widgets from the dropdown menu.</p>
 <p>In the Widgets tab, you can copy and paste the code snippets for the widget you would like to add to your website. If you need to adjust the height of the widget on your website, you may do so by editing the <cite>heightPx=500</cite> parameter in the code snippet.</p>
-<p>The Dataset Widget allows the citation, metadata, files and terms of your dataset to be displayed on your website. When someone downloads a data file in the widget, it will download directly from the datasets on your website. If a file is restricted, they will be directed to your dataverse to log in, instead of logging in through the widget on your site.</p>
+<p>The Dataset Widget allows the citation, metadata, files and terms of your dataset to be displayed on your website. When someone downloads a data file in the widget, it will download directly from the datasets on your website. If a file is restricted, they will be directed to your dataverse collection to log in, instead of logging in through the widget on your site.</p>
 <p>To edit your dataset, you will need to return to the Dataverse repository where the dataset is stored. You can easily do this by clicking on the link that says “Data Stored in (Name) Dataverse” found in the bottom of the widget.</p>
 <p>The Dataset Citation Widget will provide a citation for your dataset on your personal or project website. Users can download the citation in various formats by using the Cite Data button. The persistent URL in the citation will send users directly to the dataset.</p>
 </div>
 </div>
 <div class="section" id="publish-dataset">
-<h2><a class="toc-backref" href="#id35">Publish Dataset</a><a class="headerlink" href="#publish-dataset" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id37">Publish Dataset</a><a class="headerlink" href="#publish-dataset" title="Permalink to this headline">¶</a></h2>
 <p>When you publish a dataset (available to an Admin, Curator, or any custom role which has this level of permission assigned), you make it available to the public so that other users can browse or search for it. Once your dataset is ready to go public, go to your dataset page and click on the “Publish” button on the right hand side of the page. A pop-up will appear (see below)  to confirm that you are ready to actually Publish since <strong>once a dataset is made public it can no longer be unpublished or deleted</strong>.</p>
 <p><img alt="image4" src="../_images/publish-popup.png" /></p>
 <p>Whenever you edit your dataset, you are able to publish a new version of the dataset. The publish dataset button will reappear whenever you edit the metadata of the dataset or add a file.</p>
 <p>Note: Prior to publishing your dataset the Data Citation will indicate that this is a draft but the “DRAFT VERSION” text
 will be removed as soon as you Publish.</p>
 </div>
-<div class="section" id="submit-for-review-law-school-dataverse-only">
-<h2><a class="toc-backref" href="#id36">Submit for Review <em>(Law School Dataverse Only)</em></a><a class="headerlink" href="#submit-for-review-law-school-dataverse-only" title="Permalink to this headline">¶</a></h2>
-<p>If you have a Contributor role (can edit metadata, upload files, and edit files, edit Terms, Guestbook, and Submit datasets for review) in a Dataverse you can submit your dataset for review when you have finished uploading your files and filling in all of the relevant metadata fields. To Submit for Review, go to your dataset and click on the “Submit for Review” button, which is located next to the “Edit” button on the upper-right. Once Submitted for Review: the Admin or Curator for this Dataverse will be notified to review this dataset before they decide to either “Publish” the dataset or “Return to Author”. If the dataset is published the contributor will be notified that it is now published. If the dataset is returned to the author, the contributor of this dataset will be notified that they need to make modifications before it can be submitted for review again.</p>
+<div class="section" id="submit-for-review-law-school-dataverse-collection-only">
+<h2><a class="toc-backref" href="#id38">Submit for Review <em>(Law School Dataverse Collection Only)</em></a><a class="headerlink" href="#submit-for-review-law-school-dataverse-collection-only" title="Permalink to this headline">¶</a></h2>
+<p>If you have a Contributor role (can edit metadata, upload files, and edit files, edit Terms, Guestbook, and Submit datasets for review) in a Dataverse collection you can submit your dataset for review when you have finished uploading your files and filling in all of the relevant metadata fields. To Submit for Review, go to your dataset and click on the “Submit for Review” button, which is located next to the “Edit” button on the upper-right. Once Submitted for Review: the Admin or Curator for this Dataverse collection will be notified to review this dataset before they decide to either “Publish” the dataset or “Return to Author”. If the dataset is published the contributor will be notified that it is now published. If the dataset is returned to the author, the contributor of this dataset will be notified that they need to make modifications before it can be submitted for review again.</p>
 </div>
 <div class="section" id="private-url-for-reviewing-an-unpublished-dataset">
-<h2><a class="toc-backref" href="#id37">Private URL for Reviewing an Unpublished Dataset</a><a class="headerlink" href="#private-url-for-reviewing-an-unpublished-dataset" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id39">Private URL for Reviewing an Unpublished Dataset</a><a class="headerlink" href="#private-url-for-reviewing-an-unpublished-dataset" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="to-share-an-unpublished-dataset-using-private-url">
-<h3><a class="toc-backref" href="#id38">To share an unpublished dataset using Private URL</a><a class="headerlink" href="#to-share-an-unpublished-dataset-using-private-url" title="Permalink to this headline">¶</a></h3>
-<p>Creating a Private URL for your dataset allows you to share your dataset (for viewing and downloading of files) before it is published to a wide group of individuals who may not have a user account on Dataverse. Anyone you send the Private URL to will not have to log into Dataverse to view the dataset.</p>
+<h3><a class="toc-backref" href="#id40">To share an unpublished dataset using Private URL</a><a class="headerlink" href="#to-share-an-unpublished-dataset-using-private-url" title="Permalink to this headline">¶</a></h3>
+<p>Creating a Private URL for your dataset allows you to share your dataset (for viewing and downloading of files) before it is published to a wide group of individuals who may not have a user account on UVa’s Dataverse Repository. Anyone you send the Private URL to will not have to log into UVa’s Dataverse Repository to view the dataset.</p>
 <ol class="arabic simple">
 <li>Go to your unpublished dataset</li>
 <li>Select the “Edit” button</li>
@@ -463,12 +464,12 @@ will be removed as soon as you Publish.</p>
 <p><em>Note: Once published the private URL will no longer work. You must use the published DOI.</em></p>
 </div>
 <div class="section" id="to-disable-a-private-url">
-<h3><a class="toc-backref" href="#id39">To disable a Private URL</a><a class="headerlink" href="#to-disable-a-private-url" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id41">To disable a Private URL</a><a class="headerlink" href="#to-disable-a-private-url" title="Permalink to this headline">¶</a></h3>
 <p>If ever you had shared a Private URL to your dataset and wish to revoke access, follow the same steps as above until step #3 but in the pop-up select “Disable Private URL”.</p>
 </div>
 </div>
 <div class="section" id="dataset-versioning">
-<h2><a class="toc-backref" href="#id40">Dataset Versioning</a><a class="headerlink" href="#dataset-versioning" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id42">Dataset Versioning</a><a class="headerlink" href="#dataset-versioning" title="Permalink to this headline">¶</a></h2>
 <p>Versioning is important for long term-research data management where metadata and/or files are updated over time. It is used to track any metadata or file changes (e.g., by uploading a new file, changing file metadata, adding or editing metadata) once you have published your dataset.</p>
 <p><img alt="image3" src="../_images/version_workflow.png" /></p>
 <p>Once you edit your published dataset a new draft version of this dataset will be created. To publish this new version of your dataset, select the “Publish Dataset” button on the top right side of the page. If you were at version 1 of your dataset, depending on the types of changes you had made, you would be asked to publish your draft as either version 1.1 or version 2.0.</p>
@@ -476,13 +477,13 @@ will be removed as soon as you Publish.</p>
 <p>On the Versions tab of a dataset page, there is a versions table that displays the version history of the dataset. You can use the version number links in this table to navigate between the different versions of the dataset, including the unpublished draft version, if you have permission to access it.</p>
 <p>There is also a Versions tab on the file page. The versions table for a file displays the same information as the dataset, but the summaries are filtered down to only show the actions related to that file. If a new dataset version were created without any changes to an individual file, that file’s version summary for that dataset version would read “No changes associated with this version”.</p>
 <div class="section" id="version-details">
-<h3><a class="toc-backref" href="#id41">Version Details</a><a class="headerlink" href="#version-details" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id43">Version Details</a><a class="headerlink" href="#version-details" title="Permalink to this headline">¶</a></h3>
 <p>To view what has exactly changed starting from the originally published version to any subsequent published versions: click the Versions tab on the dataset page to see all versions and changes made for that particular dataset.</p>
 <p>Once you have more than one version (can be version 1 and a draft), you can click the “View Details” link next to each summary to learn more about the metadata fields and files that were either added or edited. You can also click the checkboxes to select any two dataset versions, then click the “View Differences” button to open the Version Differences Details popup and compare the differences between them.</p>
 </div>
 </div>
 <div class="section" id="deaccession-your-dataset-not-recommended">
-<span id="deaccession"></span><h2><a class="toc-backref" href="#id42">Deaccession Your Dataset [not recommended]</a><a class="headerlink" href="#deaccession-your-dataset-not-recommended" title="Permalink to this headline">¶</a></h2>
+<span id="deaccession"></span><h2><a class="toc-backref" href="#id44">Deaccession Your Dataset [not recommended]</a><a class="headerlink" href="#deaccession-your-dataset-not-recommended" title="Permalink to this headline">¶</a></h2>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">It is not recommended that you deaccession a dataset or a version of a dataset. This is a very serious action that should only occur if there is a legal or valid reason for the dataset to no longer be accessible to the public. If you absolutely must deaccession, you can deaccession a version of a dataset or an entire dataset.</p>
@@ -507,7 +508,7 @@ will be removed as soon as you Publish.</p>
       <a href="#">Back to top</a>
       
     </p>
-      <p>LibraData, UVa’s Institutional Dataverse Repository, Software Developed at <a href="http://www.iq.harvard.edu/" title="Institute for Quantitative Social Science" target="_blank">Harvard's IQSS</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse" title="Dataverse on GitHub" target="_blank"><span class="socicon socicon-github"></span></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" title="Sphinx" target="_blank">Sphinx</a> 1.8.5<br/>Last updated on Feb 01, 2021 &nbsp;|&nbsp; Dataverse Software v. 5.2 &nbsp;
+      <p>LibraData, UVa’s Institutional Dataverse Repository, Software Developed at <a href="http://www.iq.harvard.edu/" title="Institute for Quantitative Social Science" target="_blank">Harvard's IQSS</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse" title="Dataverse on GitHub" target="_blank"><span class="socicon socicon-github"></span></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" title="Sphinx" target="_blank">Sphinx</a> 1.8.5<br/>Last updated on Jul 28, 2021 &nbsp;|&nbsp; Dataverse Software v. 5.2 &nbsp;
 </p>
         <p>Copyright &#169; 2021 by the Rector and Visitors of the University of Virginia</p> 
   </div>

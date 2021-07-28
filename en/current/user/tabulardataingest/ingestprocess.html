@@ -75,7 +75,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../glossary.html">Glossary of Terms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../icon-glossary.html">Glossary of Icons &amp; Symbols</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../find-use-data.html">Finding and Using Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../dataverse-management.html">Dataverse Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dataverse-management.html">Dataverse Collection Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../dataset-management.html">Dataset + File Management</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Tabular Data File Ingest</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="supportedformats.html">Supported File Formats</a></li>
@@ -103,6 +103,7 @@
 the application. And what happens during the ingest process, as the
 files uploaded by the user are processed and converted into the
 archival format in the Dataverse application.</p>
+<p><strong>NOTE:</strong> Excel files with multiple sheets: ONLY THE FIRST SHEET IS INGESTED as tabular data. Best to NOT create excel files with multiple sheets.</p>
 <div class="section" id="what-happens-during-this-ingest">
 <h2>What Happens During this “Ingest”?<a class="headerlink" href="#what-happens-during-this-ingest" title="Permalink to this headline">¶</a></h2>
 <p>The goal of our ingest process is to extract the data content from the
@@ -142,6 +143,7 @@ is <em>metadata</em>.</p>
 <h3>Tabular Metadata in Dataverse<a class="headerlink" href="#tabular-metadata-in-dataverse" title="Permalink to this headline">¶</a></h3>
 <p>The structure of the metadata defining tabular data variables used in
 Dataverse was originally based on the <a class="reference external" href="http://www.ddialliance.org/Specification/DDI-Codebook/">DDI Codebook</a> format.</p>
+<p>You can see an example of DDI output under the <a class="reference external" href="https://guides.dataverse.org/en/latest/api/dataaccess.html#data-variable-metadata-access">Data Variable Metadata Access</a> section of Harvard’s API Guide.</p>
 </div>
 </div>
 </div>
@@ -158,7 +160,7 @@ Dataverse was originally based on the <a class="reference external" href="http:/
       <a href="#">Back to top</a>
       
     </p>
-      <p>LibraData, UVa’s Institutional Dataverse Repository, Software Developed at <a href="http://www.iq.harvard.edu/" title="Institute for Quantitative Social Science" target="_blank">Harvard's IQSS</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse" title="Dataverse on GitHub" target="_blank"><span class="socicon socicon-github"></span></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" title="Sphinx" target="_blank">Sphinx</a> 1.8.5<br/>Last updated on Feb 01, 2021 &nbsp;|&nbsp; Dataverse Software v. 5.2 &nbsp;
+      <p>LibraData, UVa’s Institutional Dataverse Repository, Software Developed at <a href="http://www.iq.harvard.edu/" title="Institute for Quantitative Social Science" target="_blank">Harvard's IQSS</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse" title="Dataverse on GitHub" target="_blank"><span class="socicon socicon-github"></span></a> &nbsp;|&nbsp; Created using <a href="http://sphinx.pocoo.org/" title="Sphinx" target="_blank">Sphinx</a> 1.8.5<br/>Last updated on Jul 28, 2021 &nbsp;|&nbsp; Dataverse Software v. 5.2 &nbsp;
 </p>
         <p>Copyright &#169; 2021 by the Rector and Visitors of the University of Virginia</p> 
   </div>
