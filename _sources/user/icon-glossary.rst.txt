@@ -21,6 +21,7 @@ Metadata fields that are required have an asterisk next to the field name.
 
 Question Marks
 --------------
+|image17|
 Display labels for various Dataverse Repository labels and metadata fields. Gives you detailed information, when your cursor hovers over this Question Mark symbol.
 
 Dataverse & Dataset Symbols
@@ -28,7 +29,7 @@ Dataverse & Dataset Symbols
 When looking at search results, you will find the following symbols:
 
 |image3|
-Dataverse collection symbol - Dataverse collections display this symbol inclosed in a "red" box.
+Dataverse collection symbol - Dataverse collections display this symbol enclosed in a "red" box.
 
 |image4|
 Dataset symbol - Datasets display this symbol enclosed in a "blue" box.
@@ -42,18 +43,18 @@ Harvested Dataset - Metadata records that have been harvested from other Dataver
 File Symbols
 ------------
 
-When you see this symbol next to a file |image16| you can view it before downloading. You can only view certain filetypes: ASCII Text (txt, html), audio (mp3, wav, ogg), image (gif, jpeg, png), pdf, video (mp4, ogg, quicktime), csv, tsv, stata syntax, and r syntax.
+When you see this symbol next to a file |image18| you can view the file before downloading. You can only view certain filetypes: ASCII Text (txt, html), audio (mp3, wav, ogg), image (gif, jpeg, png), pdf, video (mp4, ogg, quicktime), csv, tsv, stata syntax, and r syntax.
 
-On the dataset page, all files have this symbol |image20|. Clicking the Access File symbol you can
+On the dataset page, all files have the Access File symbol |image20|. Clicking the Access File symbol you can
 download the file (and if applicable other formats),
 download the metadata - file citation and/or variable metadata, 
 or explore the file with installed previewers for the following filetypes: ASCII Text (txt, html), audio (mp3, wav, ogg), image (gif, jpeg, png), pdf, video (mp4, ogg, quicktime), csv, tsv, stata syntax, and r syntax.
  
 The File Option symbol |image16| appears on all dataset pages that you either own or have permission to edit.
 
-On the dataset page, the file options (to modify a file) are: edit metadata, restrict files, replace a file, or delete a fiel.
+On the dataset page, the file options (to modify a file) are: edit metadata, restrict files, replace a file, or delete a file.
 
-On the dataset creation page, just after upload of files, the File Options are to add/edit the "Provenance" and/or "tags".
+On the dataset creation page, just after upload of files, the file options are to add/edit the "Provenance" and/or "tags".
 
 
 Sharing Datasets
@@ -77,9 +78,9 @@ When you publish a dataset, you make it available to the public so that other us
 
 Tabular Data Ingest
 -------------------
-Files in certain formats - Stata, SPSS, R, Excel(xlsx) and CSV - may be ingested as tabular data. Files that are recognized as tabular data and not flagged can be used in applications integrated with Dataverse.
+Files in certain formats - Stata, SPSS, R, Excel(xlsx) and CSV - may be ingested as tabular data. Files that are recognized as tabular data and not flagged can be used in applications integrated with your Dataverse Repository.
 
-If dataverse considers your file “tabular” it will try to  convert the raw data content extracted from such files in plain text, TAB-delimited files. If there is a problem, your files will still be uploaded, but you will see the following icon next to those files:
+If the dataverse software considers your file “tabular” it will try to  convert the raw data content extracted from such files in plain text, TAB-delimited files. If there is a problem, your files will still be uploaded, but you will see the following icon next to those files:
 |image11|
 
 Hovering over the warning icon displays detailed information, such as: 
