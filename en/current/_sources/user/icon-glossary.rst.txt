@@ -5,9 +5,8 @@ Email - Envelope Icon
 ----------------------
 |image1|
 
-Email recipient depends on context of where the envelope appears. On Dataverse pages, the email goes to UVA LibraData Support (libra@virginia.edu)
+Appears on Dataverse collection pages, the email goes to UVA LibraData Support (libra@virginia.edu).
 
-If you are viewing a personal dataset, then the email will go to the dataset contact, in many cases, the dataset creator.
 
 Plus sign
 ----------
@@ -15,47 +14,54 @@ Plus sign
 
 The plus sign displays in metadata for fields that are repeatable.
 
-Dataverse & Dataset Symbols
-----------------------------
-When looking at search results, you will find the following symbols:
-
-|image3|
-Dataverse symbol - Dataverses display this symbol inclosed in a "red" box.
-
-|image4|
-Dataset symbol - Datasets display this symbol enclosed in a "blue" box.
-
-|image14|
-Linked Dataset - Datasets that are linked from another local dataverse display this symbol. Linked datasets can be found when searching either of the dataverses (one published in and one that it is linked to).
-
-|image15|
-Harvested Dataset - Metadata records that have been harvested from other Dataverses, such as Harvard, Odum Institute, plus others. Harvested metadata records are searchable as other records in LibraData. Clicking on a harvested dataset takes the user to the original repository. 
-
-Search Icons
--------------
-|image5|
-Search icon at the top of the page. Use to search within all dataverses.
-
-There are other search boxes that are context dependent.
- 
-|image6|
-
-If you are in a dataverse, the search box with the "Find" icon, will search within the current dataverse and its sub dataverses.  If the current dataverse is the top-level, then all sub dataverses will be searched.
-
-If you are in a dataset, the search box with the "Find" icon, will search within the current dataset.
-
 Asterisks
 ---------
 |image7|
 Metadata fields that are required have an asterisk next to the field name.
 
+Question Marks
+--------------
+Display labels for various Dataverse Repository labels and metadata fields. Gives you detailed information, when your cursor hovers over this Question Mark symbol.
+
+Dataverse & Dataset Symbols
+----------------------------
+When looking at search results, you will find the following symbols:
+
+|image3|
+Dataverse collection symbol - Dataverse collections display this symbol inclosed in a "red" box.
+
+|image4|
+Dataset symbol - Datasets display this symbol enclosed in a "blue" box.
+
+|image14|
+Linked Dataset - Datasets that are linked from another local dataverse collection display this symbol. Linked datasets can be found when searching either of the dataverse collections (one published in and one that it is linked to).
+
+|image15|
+Harvested Dataset - Metadata records that have been harvested from other Dataverse Repositories, such as Harvard, Odum Institute, plus others. Harvested metadata records are searchable as other records in LibraData. Clicking on a harvested dataset takes the user to the original repository. 
+
+File Symbols
+------------
+
+When you see this symbol next to a file |image16| you can view it before downloading. You can only view certain filetypes: ASCII Text (txt, html), audio (mp3, wav, ogg), image (gif, jpeg, png), pdf, video (mp4, ogg, quicktime), csv, tsv, stata syntax, and r syntax.
+
+On the dataset page, all files have this symbol |image20|. Clicking the Access File symbol you can
+download the file (and if applicable other formats),
+download the metadata - file citation and/or variable metadata, 
+or explore the file with installed previewers for the following filetypes: ASCII Text (txt, html), audio (mp3, wav, ogg), image (gif, jpeg, png), pdf, video (mp4, ogg, quicktime), csv, tsv, stata syntax, and r syntax.
+ 
+The File Option symbol |image16| appears on all dataset pages that you either own or have permission to edit.
+
+On the dataset page, the file options (to modify a file) are: edit metadata, restrict files, replace a file, or delete a fiel.
+
+On the dataset creation page, just after upload of files, the File Options are to add/edit the "Provenance" and/or "tags".
+
+
 Sharing Datasets
 ----------------
 |image8|
 
-To share a dataset on your favorite social media networks. Click the "share" icon (seen above). You can only share datasets that have been published. You can share on Facebook, Twitter or Google+ by clicking on the following icons respectively |image13|
+To share a dataset on your favorite social media networks. Click the "share" icon (seen above). You can only share datasets that have been published. You can share on Facebook, Twitter or LinkedIn by clicking on the following icons respectively. |image19|
 
-Depending on browser configuration and add ons, you may only see the color icons like the following: |image9|. These color icons correspond to the colors in the previous image.
 
 Publish Datasets
 ----------------
@@ -97,3 +103,8 @@ Once the dataset is published, this symbol is not seen by the public. The owner 
 .. |image13| image:: ./img/ShareDataverseIcons.png
 .. |image14| image:: ./img/link.png
 .. |image15| image:: ./img/harvested-dataset.png
+.. |image16| image:: ./img/FileOptions.png
+.. |image17| image:: ./img/Metadata_Help.png
+.. |image18| image:: ./img/PreviewFile.png
+.. |image19| image:: ./img/Share.png
+.. |image20| image:: ./img/AccessFile.png
