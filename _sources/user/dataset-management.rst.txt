@@ -74,7 +74,7 @@ Once you have uploaded files, you will be able to edit the file name, add a desc
 
 All file formats are supported, up to 6GB per file for LibraData Dataverse Repository.  
 
-**Please contact libra@virginia.edu if you need to upload a file that is larger than 6GB.**
+**Please contact `libra@virginia.edu <mailto:libra@virginia.edu>`_ if you need to upload a file that is larger than 6GB.**
 
 Certain file types in a Dataverse installation are supported by additional functionality, which can include downloading in different formats, previews, file-level metadata preservation, file-level data citation with UNFs, and exploration through data visualization and analysis. See the :ref:`File Handling <file-handling>` section of this page for more information.
 
@@ -147,7 +147,7 @@ more information.
 
 To use the ingest functionality for tabular files, a file can only be up to 2GB in size, however, to upload a tabular file without using ingest, a file can be up to 6GB in size.
 
-**For files larger that 6GB, please contact libra@virginia.edu for upload assistance.**
+**For files larger that 6GB, please contact `libra@virginia.edu <mailto:libra@virginia.edu>`_ for upload assistance.**
 
 Additional download options available for tabular data (found
 in the same drop-down menu under the "Download" button): 
@@ -174,7 +174,7 @@ The following are general guidelines applicable to all programming languages.
 - Consider testing your code in a clean environment before sharing it, as it could help you identify missing files or other errors. For example, your code should use relative file paths instead of absolute (or full) file paths, as they can cause an execution error.
 - Consider providing notes (in the README) on the expected code outputs or adding tests in the code, which would ensure that its functionality is intact.
 
-Capturing code dependencies will help other researchers recreate the necessary runtime environment. Without it, your code will not be able to run correctly (or at all). Please contact `libra@virginia.edu <mailto:libra@virginia.edu>_` or your subject liaison for help with packaging your data and software for reproducibility on LibraData.
+Capturing code dependencies will help other researchers recreate the necessary runtime environment. Without it, your code will not be able to run correctly (or at all). Please contact `libra@virginia.edu <mailto:libra@virginia.edu>`_ or your subject liaison for help with packaging your data and software for reproducibility on LibraData.
 
 Astronomy (FITS)
 --------------------
@@ -193,7 +193,7 @@ If the uploaded .zip file contains a folder structure, the Dataverse software wi
 These folder names are subject to strict validation rules. Only the following characters are allowed: the alphanumerics, '_', '-', '.' and ' ' (white space). When a zip archive is uploaded, the folder names are automatically sanitized, with any invalid characters replaced by the '.' character. Any sequences of dots are further replaced with a single dot. For example, the folder name ``data&info/code=@137`` will be converted to ``data.info/code.137``. When uploading through the Web UI, the user can change the values further on the edit form presented, before clicking the 'Save' button.
 
 .. note:: If you upload multiple .zip files to one dataset, any subdirectories that are identical across multiple .zips will be merged together when the user downloads the full dataset.
-.. note:: To keep a "zip" file zipped on upload, you need to "zip" the .zip file (double zip). Contact `libra@virginia.edu<mailto:libra@virginia.edu>_` if you need help with zip files.
+.. note:: To keep a "zip" file zipped on upload, you need to "zip" the .zip file (double zip). Contact `libra@virginia.edu<mailto:libra@virginia.edu>`_ if you need help with zip files.
 
 Other File Types
 ---------------------------------------------
@@ -242,7 +242,7 @@ Replace Files
 
 In cases where you would like to revise an existing file rather than add a new one, you can do so using our Replace File feature. This will allow you to track the history of this file across versions of your dataset, both before and after replacing it. This could be useful for updating your data or fixing mistakes in your data. Because replacing a file creates an explicit link between the previous dataset version and the current version, the file replace feature is not available for unpublished dataset drafts. Also note that replacing a file will not automatically carry over that file’s metadata, but once the file is replaced then its original metadata can still be found by referencing the previous version of the file under the “Versions” tab of the file page.
 
-To replace a file, go to the file page for that file, click on the “Edit” button, and from the dropdown list select “Replace”. This will bring you to the Replace File page, where you can see the metadata for the most recently published version of the file and you can upload your replacement file. Once you have uploaded the replacement file, you can edit its name, description, and tags. When you’re finished, click the “Save Changes” button.
+To replace a file, go to the file page for that file, click on the “Edit File” button, and from the dropdown list select “Replace”. This will bring you to the Replace File page, where you can see the metadata for the most recently published version of the file and you can upload your replacement file. Once you have uploaded the replacement file, you can edit its name, description, and tags. When you’re finished, click the “Save Changes” button.
 
 After successfully replacing a file, a new dataset draft version will be created. A summary of your actions will be recorded in the “Versions” tab on on both the dataset page and file page. The Versions tab allows you to access all previous versions of the file across all previous versions of your dataset, including the old version of the file before you replaced it.
 
@@ -285,7 +285,7 @@ Here is an `example of a Data Usage Agreement <http://best-practices.dataverse.o
 Restricted Files + Terms of Access 
 -----------------------------------------------
 
-If you restrict any files in your dataset, you will be prompted by a pop-up to enter Terms of Access for the data. This can also be edited in the Terms tab or selecting Terms in the "Edit" dropdown button in the dataset. You may also allow users to request access for your restricted files by enabling "Request Access". To add more information about the Terms of Access, click on "Additional Information \[+]". The University of Virginia does not recommend restricting files as the purpose of LibraData is to share "Openly" your scholarship. If you do restrict files, please note that **only UVa affiliated users will be able to login and request access**.
+If you restrict any files in your dataset, you will be prompted by a pop-up to enter Terms of Access for the data. This can also be edited in the Terms tab or selecting Terms in the "Edit Dataset" dropdown button in the dataset. You may also allow users to request access for your restricted files by enabling "Request Access". To add more information about the Terms of Access, click on "Additional Information \[+]". The University of Virginia does not recommend restricting files as the purpose of LibraData is to share "Openly" your scholarship. If you do restrict files, please note that **only UVa affiliated users will be able to login and request access**.
 
 
 .. _permissions:
@@ -295,12 +295,12 @@ Roles & Permissions
 
 Dataverse installation user accounts can be granted roles that define which actions they are allowed to take on specific dataverse collections, datasets, and/or files. Each role comes with a set of permissions, which define the specific actions that users may take.
 
-Roles and permissions may also be granted to groups. Groups can be defined as a collection of Dataverse installation user accounts, a collection of IP addresses (e.g. all users of a library's computers), or a collection of all users who log in using a particular institutional login (e.g. everyone who logs in with a particular university's account credentials). Groups can only be created by LibraData administrator, please contact `libra@virginia.edu<mailto:libra.virginia.edu>_` if you need a group set up.
+Roles and permissions may also be granted to groups. Groups can be defined as a collection of Dataverse installation user accounts, a collection of IP addresses (e.g. all users of a library's computers), or a collection of all users who log in using a particular institutional login (e.g. everyone who logs in with a particular university's account credentials). Groups can only be created by LibraData administrator, please contact `libra@virginia.edu<mailto:libra.virginia.edu>`_ if you need a group set up.
 
 Dataset-Level 
 ----------------
 
-Admins or curators of a dataset can assign roles and permissions to the users of that dataset. If you are an admin or curator of a dataset, then you can get to the dataset permissions page by clicking the "Edit" button, highlighting "Permissions" from the dropdown list, and clicking "Dataset".
+Admins or curators of a dataset can assign roles and permissions to the users of that dataset. If you are an admin or curator of a dataset, then you can get to the dataset permissions page by clicking the "Edit Dataset" button, highlighting "Permissions" from the dropdown list, and clicking "Dataset".
 
 When you access a dataset's permissions page, you will see two sections:
 
@@ -311,7 +311,7 @@ When you access a dataset's permissions page, you will see two sections:
 File-Level
 ------------------
 
-If specific files in your dataset are restricted access, then you can grant specific users or groups access to those files while still keeping them restricted to the general public. If you are an admin or curator of a dataset, then you can get to the file-level permissions page by clicking the "Edit" button, highlighting "Permissions" from the dropdown list, and clicking "File".
+If specific files in your dataset are restricted access, then you can grant specific users or groups access to those files while still keeping them restricted to the general public. If you are an admin or curator of a dataset, then you can get to the file-level permissions page by clicking the "Edit Dataset" button, highlighting "Permissions" from the dropdown list, and clicking "File".
 
 When you access a dataset's file-level permissions page, you will see two sections:
 
@@ -326,7 +326,7 @@ Data Provenance is a record of where your data came from and how it reached its 
 
 .. COMMENTED OUT UNTIL PROV FILE DOWNLOAD IS ADDED: , and make it available to those who need it.
 
-A Dataverse installation accepts provenance information in two forms: a *Provenance File* or a free-text *Provenance Description*. You can attach this provenance information to your data files in a Dataverse installation as part of the file upload process, by clicking Edit -> Provenance:
+A Dataverse installation accepts provenance information in two forms: a *Provenance File* or a free-text *Provenance Description*. You can attach this provenance information to your data files in a Dataverse installation as part of the file upload process, by clicking Edit File -> Provenance:
 
 |prov0|
 
@@ -346,7 +346,7 @@ Once you've uploaded your Provenance File and connected the proper entity, you c
 
 A **Provenance Description** allows you to add more provenance information in addition to or in place of a provenance file. This is a free-text field that allows you to enter any information you feel might be relevant to those interested in learning about the provenance of your data. This might be a good place to describe provenance factors like what operating system you used when working with the data file, what functions or libraries you used, how data was merged into the file, what version of the file you used, etc. The Provenance Description is not as useful or trustworthy as a provenance file, but it can still provide value. Unlike the Provenance File, the Provenance Description is never made permanent: you can always edit, remove, or replace it at any time.
 
-You can return to attach provenance to your data file later on by clicking the "Add + Edit Metadata" button on the file page, and then clicking the "Edit -> Provenance" button.
+You can return to attach provenance to your data file later on by clicking the "Add + Edit Metadata" button on the file page, and then clicking the "Edit File -> Provenance" button.
 
 .. _widgets:
 
@@ -358,7 +358,7 @@ Thumbnails
 
 Thumbnail images can be assigned to a dataset manually or automatically. The thumbnail for a dataset appears on the search result card for that dataset and on the dataset page itself. If a dataset contains one or more data files that Dataverse installation recognizes as an image, then one of those images is automatically selected as the dataset thumbnail.
 
-If you would like to manually select your dataset’s thumbnail, you can do so by clicking the “Edit” button on your dataset, and selecting “Thumbnails + Widgets” from the dropdown menu.
+If you would like to manually select your dataset’s thumbnail, you can do so by clicking the “Edit Dataset” button on your dataset, and selecting “Thumbnails + Widgets” from the dropdown menu.
 
 On this page, under the Thumbnail tab you will see three possible actions.
 
@@ -370,12 +370,12 @@ On this page, under the Thumbnail tab you will see three possible actions.
 
 When you’re finished on this page, be sure to click “Save Changes” to save what you’ve done.
 
-Note: If you prefer, it is also possible to set an image file in your dataset as your thumbnail by selecting the file, going to Edit Files -> Metadata, and using the “Set Thumbnail” button.
+Note: If you prefer, it is also possible to set an image file in your dataset as your thumbnail by selecting the file, going to Edit File -> Metadata, and using the “Set Thumbnail” button.
 
 Widgets
 ------------
 
-The Widgets feature provides you with code for your personal website so your dataset can be displayed. There are two types of Widgets for a dataset: the Dataset Widget and the Dataset Citation Widget. The Widgets are found by going to your dataset page, clicking the Edit button (the one with the pencil icon) and selecting Widgets from the dropdown menu.
+The Widgets feature provides you with code for your personal website so your dataset can be displayed. There are two types of Widgets for a dataset: the Dataset Widget and the Dataset Citation Widget. The Widgets are found by going to your dataset page, clicking the Edit Dataset button and selecting Thumbnails and Widgets from the dropdown menu.
 
 In the Widgets tab, you can copy and paste the code snippets for the widget you would like to add to your website. If you need to adjust the height of the widget on your website, you may do so by editing the `heightPx=500` parameter in the code snippet.
 
@@ -407,7 +407,7 @@ will be removed as soon as you Publish.
 Submit for Review *(Law School Dataverse Collection Only)*
 ==========================================================
 
-If you have a Contributor role (can edit metadata, upload files, and edit files, edit Terms, Guestbook, and Submit datasets for review) in a Dataverse collection you can submit your dataset for review when you have finished uploading your files and filling in all of the relevant metadata fields. To Submit for Review, go to your dataset and click on the “Submit for Review” button, which is located next to the “Edit” button on the upper-right. Once Submitted for Review: the Admin or Curator for this Dataverse collection will be notified to review this dataset before they decide to either “Publish” the dataset or “Return to Author”. If the dataset is published the contributor will be notified that it is now published. If the dataset is returned to the author, the contributor of this dataset will be notified that they need to make modifications before it can be submitted for review again.
+If you have a Contributor role (can edit metadata, upload files, and edit files, edit Terms, Guestbook, and Submit datasets for review) in a Dataverse collection you can submit your dataset for review when you have finished uploading your files and filling in all of the relevant metadata fields. To Submit for Review, go to your dataset and click on the “Submit for Review” button, which is located next to the “Edit Dataset” button on the upper-right. Once Submitted for Review: the Admin or Curator for this Dataverse collection will be notified to review this dataset before they decide to either “Publish” the dataset or “Return to Author”. If the dataset is published the contributor will be notified that it is now published. If the dataset is returned to the author, the contributor of this dataset will be notified that they need to make modifications before it can be submitted for review again.
 
 Private URL for Reviewing an Unpublished Dataset
 =======================================================
@@ -415,7 +415,7 @@ Private URL for Reviewing an Unpublished Dataset
 Creating a Private URL for your dataset allows you to share your dataset (for viewing and downloading of files) before it is published to a wide group of individuals who may not have a user account on UVa's Dataverse Repository. Anyone you send the Private URL to will not have to log into UVa's Dataverse Repository to view the dataset.
 
 #. Go to your unpublished dataset
-#. Select the “Edit” button
+#. Select the “Edit Dataset” button
 #. Select “Private URL” in the dropdown menu
 #. In the pop-up select “Create Private URL” or "Create URL for Anonymized Access". The latter supports anonymous review by removing author names and other potentially identifying information from citations, version history tables, and some metadata fields
 #. Copy the Private URL which has been created for this dataset and it can now be shared with anyone you wish to have access to view or download files in your unpublished dataset.
@@ -471,7 +471,7 @@ Deaccession Your Dataset [not recommended]
 
 .. warning:: It is not recommended that you deaccession a dataset or a version of a dataset. This is a very serious action that should only occur if there is a legal or valid reason for the dataset to no longer be accessible to the public. If you absolutely must deaccession, you can deaccession a version of a dataset or an entire dataset.
 
-To deaccession, go to your published dataset (or add a new one and publish it), click the “Edit” button, and from the dropdown menu select “Deaccession Dataset”. If you have multiple versions of a dataset, you can select here which versions you want to deaccession or choose to deaccession the entire dataset.
+To deaccession, go to your published dataset (or add a new one and publish it), click the “Edit Dataset” button, and from the dropdown menu select “Deaccession Dataset”. If you have multiple versions of a dataset, you can select here which versions you want to deaccession or choose to deaccession the entire dataset.
 
 You must also include a reason as to why this dataset was deaccessioned. Select the most appropriate reason from the dropdown list of options. If you select “Other”, you must also provide additional information.
 
