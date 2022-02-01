@@ -74,7 +74,7 @@ Once you have uploaded files, you will be able to edit the file name, add a desc
 
 All file formats are supported, up to 6GB per file for LibraData Dataverse Repository.  
 
-**Please contact `libra@virginia.edu <mailto:libra@virginia.edu>`_  if you need to upload a file that is larger than 6GB.**
+**Please contact** `libra@virginia.edu <mailto:libra@virginia.edu>`_  **if you need to upload a file that is larger than 6GB.**
 
 Certain file types in a Dataverse installation are supported by additional functionality, which can include downloading in different formats, previews, file-level metadata preservation, file-level data citation with UNFs, and exploration through data visualization and analysis. See the :ref:`File Handling <file-handling>` section of this page for more information.
 
@@ -128,26 +128,6 @@ Tabular Data Files
 Files in certain formats - Stata, SPSS, R, Excel(xlsx) and CSV - may
 be ingested as tabular data (see "Tabular Data Ingest" section for
 details). 
-
-COMING SOON:
-Tabular data files can be further explored and manipulated
-with `TwoRavens <http://guides.dataverse.org/en/latest/user/data-exploration/tworavens.html>`_ - a
-statistical data exploration application integrated with the Dataverse software. It
-allows the user to run statistical models, view summary statistics,
-download subsets of variable vectors and more. To start, click on the "Explore"
-button, found next to each relevant tabular file (the application
-will be opened in a new window). To download subsets of variables
-click on the "Download" button found next to a relevant tabular file
-and select "Data Subset" in the dropdown menu. You will then be able
-to create your subset using the interface opened in a new window (this
-functionality is also provided by the `TwoRavens
-<http://guides.dataverse.org/en/latest/user/data-exploration/tworavens.html>`_ project). See the `TwoRavens
-documentation section <http://guides.dataverse.org/en/latest/user/data-exploration/tworavens.html>`_ for
-more information.
-
-To use the ingest functionality for tabular files, a file can only be up to 2GB in size, however, to upload a tabular file without using ingest, a file can be up to 6GB in size.
-
-**For files larger that 6GB, please contact `libra@virginia.edu <mailto:libra@virginia.edu>`_  for upload assistance.**
 
 Additional download options available for tabular data (found
 in the same drop-down menu under the "Download" button): 
