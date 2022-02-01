@@ -74,7 +74,7 @@ Once you have uploaded files, you will be able to edit the file name, add a desc
 
 All file formats are supported, up to 6GB per file for LibraData Dataverse Repository.  
 
-**Please contact `libra@virginia.edu <mailto:libra@virginia.edu>`_ if you need to upload a file that is larger than 6GB.**
+**Please contact `libra@virginia.edu <mailto:libra@virginia.edu>`_  if you need to upload a file that is larger than 6GB.**
 
 Certain file types in a Dataverse installation are supported by additional functionality, which can include downloading in different formats, previews, file-level metadata preservation, file-level data citation with UNFs, and exploration through data visualization and analysis. See the :ref:`File Handling <file-handling>` section of this page for more information.
 
@@ -147,7 +147,7 @@ more information.
 
 To use the ingest functionality for tabular files, a file can only be up to 2GB in size, however, to upload a tabular file without using ingest, a file can be up to 6GB in size.
 
-**For files larger that 6GB, please contact `libra@virginia.edu <mailto:libra@virginia.edu>`_ for upload assistance.**
+**For files larger that 6GB, please contact `libra@virginia.edu <mailto:libra@virginia.edu>`_  for upload assistance.**
 
 Additional download options available for tabular data (found
 in the same drop-down menu under the "Download" button): 
@@ -193,7 +193,7 @@ If the uploaded .zip file contains a folder structure, the Dataverse software wi
 These folder names are subject to strict validation rules. Only the following characters are allowed: the alphanumerics, '_', '-', '.' and ' ' (white space). When a zip archive is uploaded, the folder names are automatically sanitized, with any invalid characters replaced by the '.' character. Any sequences of dots are further replaced with a single dot. For example, the folder name ``data&info/code=@137`` will be converted to ``data.info/code.137``. When uploading through the Web UI, the user can change the values further on the edit form presented, before clicking the 'Save' button.
 
 .. note:: If you upload multiple .zip files to one dataset, any subdirectories that are identical across multiple .zips will be merged together when the user downloads the full dataset.
-.. note:: To keep a "zip" file zipped on upload, you need to "zip" the .zip file (double zip). Contact `libra@virginia.edu<mailto:libra@virginia.edu>`_ if you need help with zip files.
+.. note:: To keep a "zip" file zipped on upload, you need to "zip" the .zip file (double zip). Contact `libra@virginia.edu <mailto:libra@virginia.edu>`_  if you need help with zip files.
 
 Other File Types
 ---------------------------------------------
@@ -295,7 +295,7 @@ Roles & Permissions
 
 Dataverse installation user accounts can be granted roles that define which actions they are allowed to take on specific dataverse collections, datasets, and/or files. Each role comes with a set of permissions, which define the specific actions that users may take.
 
-Roles and permissions may also be granted to groups. Groups can be defined as a collection of Dataverse installation user accounts, a collection of IP addresses (e.g. all users of a library's computers), or a collection of all users who log in using a particular institutional login (e.g. everyone who logs in with a particular university's account credentials). Groups can only be created by LibraData administrator, please contact `libra@virginia.edu<mailto:libra.virginia.edu>`_ if you need a group set up.
+Roles and permissions may also be granted to groups. Groups can be defined as a collection of Dataverse installation user accounts, a collection of IP addresses (e.g. all users of a library's computers), or a collection of all users who log in using a particular institutional login (e.g. everyone who logs in with a particular university's account credentials). Groups can only be created by LibraData administrator, please contact `libra@virginia.edu <mailto:libra@virginia.edu>`_  if you need a group set up.
 
 Dataset-Level 
 ----------------
