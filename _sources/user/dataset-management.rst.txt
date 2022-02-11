@@ -410,7 +410,8 @@ Embargoes
 
 Embargoes make file content inaccessible after a dataset version is published  - until the embargo end date.  This means that file previews and the ability to download files will be blocked.  
 
-To set am embargo: 
+To set am embargo:
+ 
 #. First upload the files to your dataset.
 #. From the dataset page, select your file(s) by clicking the checkbox next to each file, or by clicking the box at the top left of the file list to select all.
 #. Click "Edit Files" choose "Embargo".
