@@ -1,7 +1,7 @@
 # dataverse-docs
 User Guides for LibraData UVa Dataverse Repository
 
-**NOTE:** *These pages are no longer used as *guides*, but used to re-direct to the new Libguides for UVA Dataverse.*
+**NOTE: *These pages are no longer used as *guides*, but used to re-direct to the new Libguides for UVA Dataverse.***
 
 Guide links are used in email notifications AND are seen in the application on various pages. 
 
